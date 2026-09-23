@@ -39,6 +39,10 @@
       ? '<div class="cv-variants">' + esc(cv.positionVariants.join(' · ')) + '</div>'
       : '';
 
+    var metaParts = [p.city, p.workFormat, cv.salary ? 'Ожидания: ' + cv.salary : '']
+      .filter(Boolean);
+    var headMeta = '<div class="cv-head-meta">' + esc(metaParts.join(' · ')) + '</div>';
+
     var contacts = [
       contact('mail', p.email, 'mailto:' + p.email, false),
       contact('phone', p.phone, 'tel:' + p.phoneHref, false),
@@ -53,6 +57,7 @@
           '<h1 class="cv-name">' + esc(p.name) + '</h1>' +
           '<div class="cv-position">' + esc(cv.position) + '</div>' +
           variants +
+          headMeta +
         '</div>' +
         '<div class="cv-head-side">' + contacts + '</div>' +
       '</header>';
