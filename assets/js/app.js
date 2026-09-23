@@ -26,6 +26,18 @@
   function $(sel, root) { return (root || document).querySelector(sel); }
   function $all(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
 
+  function setText(sel, value, root) {
+    var el = $(sel, root);
+    if (el) el.textContent = value;
+    return el;
+  }
+
+  function setHTML(sel, value, root) {
+    var el = $(sel, root);
+    if (el) el.innerHTML = value;
+    return el;
+  }
+
   function esc(str) {
     return String(str == null ? '' : str)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -43,19 +55,19 @@
 
   function renderProfile(p) {
     document.title = p.name + ' — ' + p.role;
-    $('#brandName').textContent = p.name;
-    $('#brandRole').textContent = p.role;
-    $('#heroName').textContent = p.name;
-    $('#heroRole').textContent = p.role;
-    $('#heroTagline').textContent = p.tagline;
-    $('#aboutSummary').textContent = p.summary;
-    if (p.availability) $('#heroAvailability').textContent = p.availability;
+    setText('#brandName', p.name);
+    setText('#brandRole', p.role);
+    setText('#heroName', p.name);
+    setText('#heroRole', p.role);
+    setText('#heroTagline', p.tagline);
+    setText('#aboutSummary', p.summary);
+    if (p.availability) setText('#heroAvailability', p.availability);
 
-    $('#stats').innerHTML = (p.stats || []).map(function (s) {
+    setHTML('#stats', (p.stats || []).map(function (s) {
       return '<div class="stat"><b>' + esc(s.value) + '</b><span>' + esc(s.label) + '</span></div>';
-    }).join('');
+    }).join(''));
 
-    $('#skillsGrid').innerHTML = (p.skillGroups || []).map(function (g) {
+    setHTML('#skillsGrid', (p.skillGroups || []).map(function (g) {
       return '' +
         '<article class="skill-card">' +
           '<div class="skill-card-head">' +
@@ -66,9 +78,9 @@
             return '<span class="chip">' + esc(i) + '</span>';
           }).join('') + '</div>' +
         '</article>';
-    }).join('');
+    }).join(''));
 
-    $('#timeline').innerHTML = (p.experience || []).map(function (e) {
+    setHTML('#timeline', (p.experience || []).map(function (e) {
       var bullets = (e.bullets || []).length
         ? '<ul class="tl-list">' + e.bullets.map(function (b) { return '<li>' + esc(b) + '</li>'; }).join('') + '</ul>'
         : '';
@@ -86,47 +98,53 @@
             bullets + link +
           '</div>' +
         '</div>';
-    }).join('');
+    }).join(''));
 
-    $('#languages').innerHTML = (p.languages || []).map(function (l) {
+    setHTML('#languages', (p.languages || []).map(function (l) {
       return '<div class="lang-row"><strong>' + esc(l.name) + '</strong><span>' + esc(l.level) + '</span></div>';
-    }).join('');
+    }).join(''));
 
     var edu = (p.education || [])[0];
     if (edu) {
       var period = edu.period
         ? '<span class="edu-period">' + esc(edu.period) + '</span>'
         : '';
-      $('#educationInline').innerHTML =
+      setHTML('#educationInline',
         '<div class="edu-item">' +
           '<div class="edu-item-top">' +
             '<strong>' + esc(edu.institution) + '</strong>' + period +
           '</div>' +
           '<div class="edu-line">' + esc(edu.program) + '</div>' +
           '<div class="edu-line">' + esc(edu.degree) + '</div>' +
-        '</div>';
+        '</div>');
     }
 
-    $('#achievements').innerHTML = (p.achievements || []).map(function (a) {
+    setHTML('#achievements', (p.achievements || []).map(function (a) {
       return '' +
         '<div class="ach-row">' +
           '<span class="ach-icon">' + window.icon(a.icon, 'award') + '</span>' +
           '<span><strong>' + esc(a.title) + '</strong><span>' + esc(a.detail || '') + '</span></span>' +
         '</div>';
-    }).join('');
+    }).join(''));
 
-    $('#contactGrid').innerHTML = (p.contacts || []).map(function (c) {
+    setHTML('#contactGrid', (p.contacts || []).map(function (c) {
       return '' +
         '<a class="contact-card" href="' + esc(c.href) + '"' + (c.href.indexOf('mailto:') === 0 ? '' : ' target="_blank" rel="noopener"') + '>' +
           '<span class="focus-icon">' + window.icon(c.icon, 'link') + '</span>' +
           '<span><strong>' + esc(c.label) + '</strong><span>' + esc(c.value) + '</span></span>' +
         '</a>';
-    }).join('');
+    }).join(''));
 
     var gh = (p.contacts || []).filter(function (c) { return c.icon === 'github'; })[0];
-    if (gh) $('#navGithub').href = gh.href;
+    if (gh) {
+      var ghBtn = $('#navGithub');
+      if (ghBtn) ghBtn.href = gh.href;
+    }
     var tg = (p.contacts || []).filter(function (c) { return c.icon === 'telegram'; })[0];
-    if (tg) $('#navTelegram').href = tg.href;
+    if (tg) {
+      var tgBtn = $('#navTelegram');
+      if (tgBtn) tgBtn.href = tg.href;
+    }
   }
 
   /* ---------------- projects ---------------- */
@@ -196,7 +214,7 @@
     );
     defs.push({ id: 'archive', label: CATEGORY_LABEL.archive });
 
-    $('#filters').innerHTML = defs.map(function (d) {
+    setHTML('#filters', defs.map(function (d) {
       var count = d.id === 'all'
         ? state.projects.length
         : state.projects.filter(function (p) {
@@ -204,26 +222,30 @@
           }).length;
       return '<button class="filter-btn' + (state.filter === d.id ? ' active' : '') + '" data-filter="' + d.id + '">' +
         esc(d.label) + '<span class="count">' + count + '</span></button>';
-    }).join('');
+    }).join(''));
   }
 
   function renderLibrary() {
     var filtered = state.projects.filter(matches);
     var showingAll = state.filter === 'all' && !state.query.trim();
 
-    $('#featuredBlock').style.display = showingAll ? '' : 'none';
+    var featuredBlock = $('#featuredBlock');
+    if (featuredBlock) featuredBlock.style.display = showingAll ? '' : 'none';
     if (showingAll) {
       var feat = state.projects.filter(function (p) { return p.featured; });
-      $('#featuredGrid').innerHTML = feat.map(cardHTML).join('');
+      setHTML('#featuredGrid', feat.map(cardHTML).join(''));
     }
 
-    $('#allBlock').style.display = '';
+    var allBlock = $('#allBlock');
+    if (allBlock) allBlock.style.display = '';
     var list = showingAll
       ? state.projects.filter(function (p) { return !p.featured; })
       : filtered;
-    $('.lib-label', $('#allBlock')).textContent = showingAll ? 'Все проекты' : 'Результаты: ' + filtered.length;
-    $('#projectsGrid').innerHTML = list.map(cardHTML).join('');
-    $('#emptyState').style.display = filtered.length ? 'none' : '';
+    var label = $('.lib-label', allBlock);
+    if (label) label.textContent = showingAll ? 'Все проекты' : 'Результаты: ' + filtered.length;
+    setHTML('#projectsGrid', list.map(cardHTML).join(''));
+    var empty = $('#emptyState');
+    if (empty) empty.style.display = filtered.length ? 'none' : '';
 
     observeReveals();
   }
@@ -256,7 +278,11 @@
       links += '<a class="btn btn-ghost btn-sm" href="' + esc(p.links.registryPdf) + '" target="_blank" rel="noopener">' + window.icon('award') + 'Свидетельство (PDF)</a>';
     }
 
-    $('#modalPanel').innerHTML = '' +
+    var panel = $('#modalPanel');
+    var modal = $('#modal');
+    if (!panel || !modal) return;
+
+    panel.innerHTML = '' +
       '<div class="modal-cover" style="background:linear-gradient(135deg,' + esc(grad[0]) + ',' + esc(grad[1]) + ')">' +
         '<button class="modal-close" data-close aria-label="Закрыть">' + window.icon('close') + '</button>' +
         '<span class="cover-mono">' + esc(mono) + '</span>' +
@@ -278,18 +304,20 @@
       '</div>';
 
     lastFocus = document.activeElement;
-    $('#modal').classList.add('open');
-    $('#modal').setAttribute('aria-hidden', 'false');
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('no-scroll');
-    var closeBtn = $('.modal-close', $('#modalPanel'));
+    var closeBtn = $('.modal-close', panel);
     if (closeBtn) closeBtn.focus();
   }
 
   function closeModal() {
-    $('#modal').classList.remove('open');
-    $('#modal').setAttribute('aria-hidden', 'true');
+    var modal = $('#modal');
+    if (!modal) return;
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('no-scroll');
-    if (lastFocus) lastFocus.focus();
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
   }
 
   /* ---------------- reveals ---------------- */
@@ -315,8 +343,13 @@
 
   /* ---------------- init ---------------- */
 
+  function on(sel, event, handler) {
+    var el = $(sel);
+    if (el) el.addEventListener(event, handler);
+  }
+
   function bindEvents() {
-    $('#filters').addEventListener('click', function (e) {
+    on('#filters', 'click', function (e) {
       var btn = e.target.closest('[data-filter]');
       if (!btn) return;
       state.filter = btn.getAttribute('data-filter');
@@ -325,7 +358,7 @@
     });
 
     var searchTimer;
-    $('#searchInput').addEventListener('input', function (e) {
+    on('#searchInput', 'input', function (e) {
       clearTimeout(searchTimer);
       var v = e.target.value;
       searchTimer = setTimeout(function () {
@@ -345,33 +378,44 @@
     });
 
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && $('#modal').classList.contains('open')) closeModal();
+      var modal = $('#modal');
+      if (e.key === 'Escape' && modal && modal.classList.contains('open')) closeModal();
       if (e.key === 'Enter' && document.activeElement && document.activeElement.classList.contains('pcard')) {
         openModal(document.activeElement.getAttribute('data-id'));
       }
     });
 
     var nav = $('#nav');
-    var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 12); };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    if (nav) {
+      var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 12); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
 
-    $('#navToggle').addEventListener('click', function () {
-      $('#navLinks').classList.toggle('open');
+    on('#navToggle', 'click', function () {
+      var links = $('#navLinks');
+      if (links) links.classList.toggle('open');
     });
     $all('#navLinks a').forEach(function (a) {
-      a.addEventListener('click', function () { $('#navLinks').classList.remove('open'); });
+      a.addEventListener('click', function () {
+        var links = $('#navLinks');
+        if (links) links.classList.remove('open');
+      });
     });
   }
 
   function init() {
-    $('#year').textContent = new Date().getFullYear();
+    setText('#year', new Date().getFullYear());
     bindEvents();
     observeReveals();
 
     Promise.all([loadJSON('data/profile.json'), loadJSON('data/projects.json')])
       .then(function (res) {
-        renderProfile(res[0]);
+        try {
+          renderProfile(res[0]);
+        } catch (err) {
+          console.error('Ошибка отрисовки профиля:', err);
+        }
         state.projects = res[1].projects || [];
         renderFilters();
         renderLibrary();
@@ -379,7 +423,7 @@
       })
       .catch(function (err) {
         console.error(err);
-        $('#projectsGrid').innerHTML = '<div class="empty-state">Ошибка загрузки данных: ' + esc(err.message) + '</div>';
+        setHTML('#projectsGrid', '<div class="empty-state">Ошибка загрузки данных: ' + esc(err.message) + '</div>');
       });
   }
 
