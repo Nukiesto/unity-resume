@@ -12,7 +12,7 @@
     { "label": "GitHub", "value": "Nukiesto", "href": "https://github.com/Nukiesto", "icon": "github" }
   ],
   "stats": [
-    { "value": "47", "label": "проектов в портфолио" },
+    { "value": "48", "label": "проектов в портфолио" },
     { "value": "8", "label": "направлений в стеке" },
     { "value": "12+", "label": "Unity-проектов на ECS/DI" },
     { "value": "3", "label": "собственных фреймворка и SDK" }
