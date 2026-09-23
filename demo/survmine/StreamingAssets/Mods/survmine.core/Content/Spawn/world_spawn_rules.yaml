@@ -1,0 +1,11 @@
+tickIntervalSeconds: 1
+candidateAttemptsPerTick: 8
+successfulSpawnsPerTick: 1
+baseGlobalCap: 20
+additionalCapPerPlayer: 8
+maximumGlobalCap: 44
+minimumSpawnDistance: 18
+maximumSpawnDistance: 32
+despawnDistance: 48
+cameraPadding: 2
+cleanupBudgetPerTick: 8

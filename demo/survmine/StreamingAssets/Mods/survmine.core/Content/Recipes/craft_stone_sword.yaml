@@ -1,0 +1,14 @@
+id: survmine:craft/stone_sword
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- itemStableId: survmine:cobblestone
+  count: 2
+- itemStableId: survmine:stick
+  count: 1
+outputs:
+- itemStableId: survmine:stone_sword
+  count: 1
+  chance: 1
+category: instrument
+sortOrder: 0

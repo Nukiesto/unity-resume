@@ -1,0 +1,12 @@
+stableId: survmine:ragdoll/player
+formatVersion: 1
+parts:
+  - partKey: body
+    shape: box
+    size: { x: 0.25, y: 0.75 }
+    mass: 5
+  - partKey: head
+    parentPartKey: body
+    shape: circle
+    size: { x: 0.5, y: 0.5 }
+    mass: 1

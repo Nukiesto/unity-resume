@@ -1,0 +1,11 @@
+id: survmine:craft/planks_birch
+type: survmine:crafting
+inputs:
+- itemStableId: survmine:log_birch
+  count: 1
+outputs:
+- itemStableId: survmine:planks_birch
+  count: 4
+  chance: 1
+category: block
+sortOrder: 0

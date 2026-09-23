@@ -1,0 +1,63 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: false
+  isLightObstacle: true
+  isInteractable: false
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: true
+  isCanBurn: true
+  mustHasSolidDowner: false
+  toBreakHasNotBlockDowner: true
+  mustHasSolidAround: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: true
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Hand
+  soundTypeDig: Grass
+  blockBreakBy: Axe
+  timeBreaking: 0.4
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: true
+blockResources:
+  destroyedClip: null
+isMultiBlock: false
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+blockTile: reeds
+itemBlockStableId: survmine:reeds
+components:
+- !verticalplantgrowth
+  plantStableId: survmine:reeds
+  requiredGroundStableIds:
+    - survmine:sand
+    - survmine:grass_block
+    - survmine:dirt
+    - survmine:reeds
+  growthTimeRange: {x: 60, y: 180}
+  maxHeight: 3
+stableId: survmine:reeds
+isLightSource: false
+lightInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+mustHasBlockDownerExp: true
+mustHasDownerBlockData:
+  - survmine:sand
+  - survmine:grass_block
+  - survmine:dirt
+  - survmine:reeds

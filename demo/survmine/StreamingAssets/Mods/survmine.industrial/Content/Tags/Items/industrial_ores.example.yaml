@@ -1,0 +1,5 @@
+stableId: survmine:industrial/ores
+items:
+  - survmine:industrial/copper_ore
+  - survmine:industrial/tin_ore
+  - survmine:industrial/uranium_ore

@@ -1,0 +1,14 @@
+id: survmine:craft/tnt_side
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- itemStableId: survmine:sand
+  count: 5
+- itemStableId: survmine:gunpowder
+  count: 4
+outputs:
+- itemStableId: survmine:tnt
+  count: 1
+  chance: 1
+category: block
+sortOrder: 0

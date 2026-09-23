@@ -1,0 +1,10 @@
+id: survmine.industrial
+name: SurvMine Industrial
+version: 0.1.0
+dependencies:
+  - survmine.core
+modules:
+  content: true
+  graphics: true
+  audio: true
+  options: false

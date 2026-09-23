@@ -1,0 +1,17 @@
+id: survmine:worldgen/noise/humidity
+noiseType: Perlin
+rotationType3D: None
+frequency: 0.018
+threshold: 0
+invert: false
+fractal:
+  fractalType: None
+  octaves: 1
+  lacunarity: 0.5
+  gain: 0.005
+  weightedStrength: 0
+  pingPongStrength: 0
+cellular:
+  cellularJitter: 0.366
+  cellularDistanceFunction: EuclideanSq
+  cellularReturnType: Distance

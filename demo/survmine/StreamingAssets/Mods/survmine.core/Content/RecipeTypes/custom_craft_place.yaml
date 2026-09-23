@@ -1,0 +1,5 @@
+stableId: survmine:custom_craft_place
+displayName: Custom Craft Place
+usesCraftPlace: true
+usesDuration: false
+usesEnergy: false

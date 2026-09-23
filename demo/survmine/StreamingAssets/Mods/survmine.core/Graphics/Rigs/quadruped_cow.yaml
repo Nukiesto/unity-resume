@@ -1,0 +1,39 @@
+stableId: survmine:rig/quadruped_cow
+formatVersion: 1
+pixelsPerUnit: 16
+parts:
+  # Pose derived from measured sprite sizes (rule: size = regionPx / PPU):
+  # body 12x10px -> 0.75x0.625u, head 8x8px -> 0.5u, legs 4x6px -> 0.25x0.375u.
+  # Feet land on the collider bottom (y 0): leg pivot abs y 0.34,
+  # 0.9 x 0.375 below pivot = 0.3375.
+  - key: body
+    type: sprite
+    bindPosition: { x: 0, y: 0.5 }
+    bindScale: { x: 1, y: 1 }
+    geometry: { x: 0.75, y: 0.625 }
+    pivot: { x: 0.5, y: 0.5 }
+    sortingOffset: 0
+  - key: head
+    type: sprite
+    parentPartKey: body
+    bindPosition: { x: 0.45, y: 0.3 }
+    bindScale: { x: 1, y: 1 }
+    geometry: { x: 0.5, y: 0.5 }
+    pivot: { x: 0.25, y: 0.4 }
+    sortingOffset: 1
+  - key: leg_front
+    type: sprite
+    parentPartKey: body
+    bindPosition: { x: 0.25, y: -0.16 }
+    bindScale: { x: 1, y: 1 }
+    geometry: { x: 0.25, y: 0.375 }
+    pivot: { x: 0.5, y: 0.9 }
+    sortingOffset: 1
+  - key: leg_back
+    type: sprite
+    parentPartKey: body
+    bindPosition: { x: -0.25, y: -0.16 }
+    bindScale: { x: 1, y: 1 }
+    geometry: { x: 0.25, y: 0.375 }
+    pivot: { x: 0.5, y: 0.9 }
+    sortingOffset: -1

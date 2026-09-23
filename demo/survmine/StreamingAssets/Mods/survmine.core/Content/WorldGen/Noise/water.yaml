@@ -1,0 +1,17 @@
+id: survmine:worldgen/noise/water
+noiseType: Cellular
+rotationType3D: None
+frequency: 0.06
+threshold: 0.476
+invert: false
+fractal:
+  fractalType: FBm
+  octaves: 4
+  lacunarity: 7.87
+  gain: 1.35
+  weightedStrength: 0.043
+  pingPongStrength: 0
+cellular:
+  cellularJitter: 1
+  cellularDistanceFunction: Euclidean
+  cellularReturnType: Distance2

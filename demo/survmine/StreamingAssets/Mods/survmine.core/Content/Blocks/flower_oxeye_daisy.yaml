@@ -1,0 +1,50 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: false
+  isLightObstacle: true
+  isInteractable: false
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: true
+  isCanBurn: true
+  mustHasSolidDowner: true
+  toBreakHasNotBlockDowner: true
+  mustHasSolidAround: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: true
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Hand
+  soundTypeDig: Grass
+  blockBreakBy: Axe
+  timeBreaking: 0.2
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: true
+blockResources:
+  destroyedClip: null
+isMultiBlock: false
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+blockTile: flower_oxeye_daisy
+itemBlockStableId: survmine:flower_oxeye_daisy
+components: []
+stableId: survmine:flower_oxeye_daisy
+isLightSource: false
+lightInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

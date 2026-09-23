@@ -1,0 +1,5 @@
+stableId: survmine:compressing
+displayName: Compressing
+usesCraftPlace: false
+usesDuration: true
+usesEnergy: true

@@ -1,0 +1,12 @@
+id: survmine:craft/trapdoor
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- tagStableId: survmine:wood/planks
+  count: 6
+outputs:
+- itemStableId: survmine:trapdoor
+  count: 1
+  chance: 1
+category: block
+sortOrder: 0

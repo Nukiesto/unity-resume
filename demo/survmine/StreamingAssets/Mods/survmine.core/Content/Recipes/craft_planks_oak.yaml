@@ -1,0 +1,11 @@
+id: survmine:craft/planks_oak
+type: survmine:crafting
+inputs:
+- itemStableId: survmine:log_oak
+  count: 1
+outputs:
+- itemStableId: survmine:planks_oak
+  count: 4
+  chance: 1
+category: block
+sortOrder: 0

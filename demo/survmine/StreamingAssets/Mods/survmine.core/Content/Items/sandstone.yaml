@@ -1,0 +1,12 @@
+name: Каменный песок
+description: ''
+canStack: true
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: sandstone_normal
+isLightSource: false
+itemType: Block
+maxCount: 999
+showInSandBox: true
+components: []
+stableId: survmine:sandstone
+blockDataStableId: survmine:sandstone

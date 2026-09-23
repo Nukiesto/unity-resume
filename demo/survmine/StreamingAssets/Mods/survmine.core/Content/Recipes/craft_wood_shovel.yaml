@@ -1,0 +1,14 @@
+id: survmine:craft/wood_shovel
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- tagStableId: survmine:wood/planks
+  count: 1
+- itemStableId: survmine:stick
+  count: 2
+outputs:
+- itemStableId: survmine:wood_shovel
+  count: 1
+  chance: 1
+category: instrument
+sortOrder: 0

@@ -1,0 +1,9 @@
+stableId: survmine:industrial/ores
+blocks:
+  - survmine:coal_ore
+  - survmine:diamond_ore
+  - survmine:emerald_ore
+  - survmine:gold_ore
+  - survmine:iron_ore
+  - survmine:lapis_ore
+  - survmine:redstone_ore

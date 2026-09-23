@@ -1,0 +1,12 @@
+id: survmine:craft/iron_helmet
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- itemStableId: survmine:iron_ingot
+  count: 5
+outputs:
+- itemStableId: survmine:iron_helmet
+  count: 1
+  chance: 1
+category: instrument
+sortOrder: 0

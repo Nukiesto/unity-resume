@@ -1,0 +1,9 @@
+stableId: survmine:events/player_attack
+formatVersion: 1
+animationSet: survmine:animations/player
+events:
+  - stateKey: attack
+    time: 0.3
+    kindId: survmine:activate
+    actionKey: melee_attack
+    originPart: body

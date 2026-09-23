@@ -1,0 +1,57 @@
+stableId: survmine:rig/humanoid
+formatVersion: 1
+pixelsPerUnit: 16
+parts:
+  # Full-height figure (~1.93u): feet land on the collider bottom via y: 0.6,
+  # head top reaches ~1.48. The visual intentionally exceeds the ~0.9u hitbox.
+  # Sorting follows the legacy EntityBase prefab (front=r, back=l):
+  # body 0, head 0, leg_back -1, leg_front 1, arm_back -1, arm_front 3.
+  # Armor layers slot in at +1 over their part (head/body 1, leg 0/2, arm 0/4).
+  - key: body
+    type: sprite
+    bindPosition: { x: 0, y: 0.6 }
+    bindScale: { x: 1, y: 1 }
+    geometry: { x: 0.25, y: 0.75 }
+    pivot: { x: 0.5, y: 0.5 }
+    sortingOffset: 0
+  - key: head
+    type: sprite
+    parentPartKey: body
+    bindPosition: { x: 0, y: 1 }
+    bindScale: { x: 1, y: 1 }
+    geometry: { x: 1, y: 1 }
+    pivot: { x: 0.5, y: 0.5 }
+    sortingOffset: 0
+  # Limbs stack joint-over-joint; only sorting separates near from far.
+  - key: arm_front
+    type: sprite
+    parentPartKey: body
+    bindPosition: { x: 0.02, y: 0.25 }
+    bindScale: { x: 1, y: 1 }
+    geometry: { x: 0.25, y: 0.75 }
+    pivot: { x: 0.5, y: 0.9 }
+    sortingOffset: 3
+  - key: arm_back
+    type: sprite
+    parentPartKey: body
+    bindPosition: { x: 0.02, y: 0.25 }
+    bindScale: { x: 1, y: 1 }
+    geometry: { x: 0.25, y: 0.75 }
+    pivot: { x: 0.5, y: 0.9 }
+    sortingOffset: -1
+  - key: leg_front
+    type: sprite
+    parentPartKey: body
+    bindPosition: { x: 0, y: -0.375 }
+    bindScale: { x: 1, y: 1 }
+    geometry: { x: 0.25, y: 0.75 }
+    pivot: { x: 0.5, y: 0.9 }
+    sortingOffset: 1
+  - key: leg_back
+    type: sprite
+    parentPartKey: body
+    bindPosition: { x: 0, y: -0.375 }
+    bindScale: { x: 1, y: 1 }
+    geometry: { x: 0.25, y: 0.75 }
+    pivot: { x: 0.5, y: 0.9 }
+    sortingOffset: -1

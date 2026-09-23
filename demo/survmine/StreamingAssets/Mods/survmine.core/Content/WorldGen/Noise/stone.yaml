@@ -1,0 +1,17 @@
+id: survmine:worldgen/noise/stone
+noiseType: Perlin
+rotationType3D: None
+frequency: 0.006
+threshold: 0
+invert: false
+fractal:
+  fractalType: FBm
+  octaves: 4
+  lacunarity: 4.82
+  gain: 0.49
+  weightedStrength: 1
+  pingPongStrength: 0
+cellular:
+  cellularJitter: 0.468
+  cellularDistanceFunction: EuclideanSq
+  cellularReturnType: Distance

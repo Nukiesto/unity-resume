@@ -1,0 +1,114 @@
+stableId: survmine:entity/cow
+extends: survmine:entity/base
+prefabKey: survmine:mob
+visual:
+  rigProfile: survmine:rig/quadruped_cow
+  mobVisual: survmine:visual/cow
+  animationSet: survmine:animations/cow
+  colliderProfile: survmine:collider/cow
+  ragdollProfile: survmine:ragdoll/quadruped
+naturalSpawn:
+  dayTime: Day
+  weight: 80
+  cap: 8
+  footprint:
+    width: 1
+    height: 1
+    requiresSolidGround: true
+components:
+  - kindId: survmine:animated_character
+    patch: {}
+  - kindId: survmine:alive
+    patch: {}
+  - kindId: survmine:audio
+    patch:
+      audioInterval: 0
+      deathAudioSlot: 'audio.death'
+      eatingAudioSlot: 'audio.eating'
+      fallBigAudioSlot: 'audio.fall_big'
+      fallSmallAudioSlot: 'audio.fall_small'
+      takeDamageAudioSlot: 'audio.take_damage'
+      walkAudioSlot: 'audio.walk'
+      walkClips:
+        - 'survmine.core:Minecraft/mob/cow/step1'
+        - 'survmine.core:Minecraft/mob/cow/step2'
+        - 'survmine.core:Minecraft/mob/cow/step3'
+        - 'survmine.core:Minecraft/mob/cow/step4'
+      takeDamageClips:
+        - 'survmine.core:Minecraft/mob/cow/hurt1'
+        - 'survmine.core:Minecraft/mob/cow/hurt2'
+        - 'survmine.core:Minecraft/mob/cow/hurt3'
+      deathClips:
+        - 'survmine.core:Minecraft/mob/cow/say1'
+        - 'survmine.core:Minecraft/mob/cow/say2'
+        - 'survmine.core:Minecraft/mob/cow/say3'
+        - 'survmine.core:Minecraft/mob/cow/say4'
+  - kindId: survmine:bot
+    patch:
+      findPlayerOverSolid: false
+      mustMoveToPlayer: false
+      stopDistanceFoundPlayer: 1
+      viewDistance: 6
+  - kindId: survmine:burn
+    patch:
+      burnRendererSlot: 'burn.renderer'
+  - kindId: survmine:can_suffocate
+    patch: {}
+  - kindId: survmine:character_controller
+    patch:
+      boxColliderSlot: 'controller.collider'
+      gameObjectSlot: 'controller.game_object'
+      jumpingThreshold: 0
+      oneWayPlatformMask: 8
+      platformMask: 512
+      rigidbodySlot: 'controller.rigidbody'
+      skinWidth: 0.0248
+      slopeLimit: 0
+      slopeSpeedMultiplier:
+        preWrapMode: ClampForever
+        postWrapMode: ClampForever
+        keys:
+          -
+            time: 1
+            value: 1
+            inTangent: 0
+            outTangent: 0
+            inWeight: 0
+            outWeight: 0
+            weightedMode: None
+      totalHorizontalRays: 6
+      totalVerticalRays: 6
+      transformSlot: 'controller.transform'
+      triggerMask: 17552
+  - kindId: survmine:health
+    patch:
+      healthSyncSlot: 'health.sync'
+      hpDefault: 20
+      hpMax: 20
+  - kindId: survmine:idle
+    patch:
+      enterStateTimeMax: 4
+      enterStateTimeMin: 3
+      randomMoveTimeMax: 10
+      randomMoveTimeMin: 5
+  - kindId: survmine:movement
+    patch:
+      dustEffectStableId: 'survmine:entity_dust'
+      fallDamageMax: 10
+      fallDamageMin: 7
+      gravity: -25
+      groundDamping: 20
+      inAirDamping: 5
+      jumpHeight: 1.1
+      ladderMoveSpeed: 4
+      minFallDistance: 5
+      runSpeed: 1.5
+  - kindId: survmine:ragdoll
+    patch:
+      fadeOutTime: 3
+  - kindId: survmine:sync
+    patch:
+      netId: 0
+removeComponents:
+  - survmine:armor_renderer
+  - survmine:sword

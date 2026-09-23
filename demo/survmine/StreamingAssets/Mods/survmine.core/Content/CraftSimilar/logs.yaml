@@ -1,0 +1,8 @@
+stableId: survmine:similar/logs
+itemStableIds:
+  - survmine:log_acacia
+  - survmine:log_big_oak
+  - survmine:log_birch
+  - survmine:log_jungle
+  - survmine:log_oak
+  - survmine:log_spruce

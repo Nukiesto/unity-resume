@@ -1,0 +1,56 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: false
+  isLightObstacle: true
+  isInteractable: false
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: true
+  isCanBurn: true
+  mustHasSolidDowner: true
+  toBreakHasNotBlockDowner: true
+  mustHasSolidAround: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: true
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Hand
+  soundTypeDig: Grass
+  blockBreakBy: Axe
+  timeBreaking: 1.5
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: true
+  isHasUI: false
+  canPush: true
+blockResources:
+  destroyedClip: null
+isMultiBlock: false
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+blockTile: sapling_acacia
+itemBlockStableId: survmine:sapling_acacia
+components:
+- !sapling
+  growthTimeRange: {x: 60, y: 180}
+  tree:
+    nameTree: Acacia
+    logStableId: survmine:log_acacia
+    leavesStableId: survmine:leaves_acacia
+stableId: survmine:sapling_acacia
+isLightSource: false
+lightInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

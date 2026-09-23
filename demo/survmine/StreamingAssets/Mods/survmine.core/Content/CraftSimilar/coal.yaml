@@ -1,0 +1,4 @@
+stableId: survmine:similar/coal
+itemStableIds:
+  - survmine:charcoal
+  - survmine:coal

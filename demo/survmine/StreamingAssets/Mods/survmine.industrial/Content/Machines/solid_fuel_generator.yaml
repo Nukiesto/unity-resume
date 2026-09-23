@@ -1,0 +1,9 @@
+id: survmine:solid_fuel_generator
+blockStableId: survmine:solid_fuel_generator
+energyCost: 0
+energyPerFuel: 4000
+slots:
+  - id: fuel
+    role: Fuel
+    index: 0
+    count: 1

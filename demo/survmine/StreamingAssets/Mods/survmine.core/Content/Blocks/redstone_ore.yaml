@@ -1,0 +1,63 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: true
+  isLightObstacle: true
+  isInteractable: false
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: false
+  isCanBurn: false
+  mustHasSolidDowner: false
+  toBreakHasNotBlockDowner: false
+  mustHasSolidAround: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: true
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Hand
+  soundTypeDig: Stone
+  blockBreakBy: Pickaxe
+  timeBreaking: 3.5
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: true
+blockResources:
+  destroyedClip: null
+isMultiBlock: false
+hasCustomDrop: true
+dropContainer:
+  drops:
+  - itemStableId: survmine:redstone_dust
+    hasProbExist: false
+    percentProbExist: 0
+    hasRangeProb: true
+    countRange: {x: 3, y: 8}
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+blockTile: redstone_ore
+itemBlockStableId: survmine:redstone_ore
+components:
+- !ore
+  minGenerationHeight: 0
+  maxGenerationHeight: 20
+  veinSpawnChance: 0.35
+  veinSizeMin: 4
+  veinSizeMax: 10
+  veinSpacing: 20
+- !inbounds {}
+stableId: survmine:redstone_ore
+isLightSource: true
+lightInfo:
+  falloffStrength: 0.5
+  innerOuterAngle: {x: 360, y: 360}
+  intensity: 0.03
+  lightColor: {r: 1, g: 0, b: 0, a: 1}
+  radiusInner: 0
+  radiusOuter: 4
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

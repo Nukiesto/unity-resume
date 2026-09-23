@@ -1,0 +1,17 @@
+id: survmine:worldgen/noise/dirt
+noiseType: Perlin
+rotationType3D: None
+frequency: 0.006
+threshold: 0
+invert: false
+fractal:
+  fractalType: Ridged
+  octaves: 2
+  lacunarity: 4.95
+  gain: 0.63
+  weightedStrength: 0.069
+  pingPongStrength: 0.205
+cellular:
+  cellularJitter: 0
+  cellularDistanceFunction: EuclideanSq
+  cellularReturnType: Distance

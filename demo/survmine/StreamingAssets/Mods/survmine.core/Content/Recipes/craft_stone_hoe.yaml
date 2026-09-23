@@ -1,0 +1,14 @@
+id: survmine:craft/stone_hoe
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- itemStableId: survmine:cobblestone
+  count: 3
+- itemStableId: survmine:stick
+  count: 2
+outputs:
+- itemStableId: survmine:stone_hoe
+  count: 1
+  chance: 1
+category: instrument
+sortOrder: 0

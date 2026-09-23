@@ -1,0 +1,12 @@
+stableId: survmine:ragdoll/bird
+formatVersion: 1
+parts:
+  - partKey: body
+    shape: box
+    size: { x: 0.5, y: 0.5 }
+    mass: 2
+  - partKey: head
+    parentPartKey: body
+    shape: circle
+    size: { x: 0.3, y: 0.3 }
+    mass: 0.5

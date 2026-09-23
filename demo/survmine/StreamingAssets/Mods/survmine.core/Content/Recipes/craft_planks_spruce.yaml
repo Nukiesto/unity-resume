@@ -1,0 +1,11 @@
+id: survmine:craft/planks_spruce
+type: survmine:crafting
+inputs:
+- itemStableId: survmine:log_spruce
+  count: 1
+outputs:
+- itemStableId: survmine:planks_spruce
+  count: 4
+  chance: 1
+category: block
+sortOrder: 0

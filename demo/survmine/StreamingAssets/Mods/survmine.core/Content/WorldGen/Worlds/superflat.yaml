@@ -1,0 +1,23 @@
+id: survmine:worldgen/world/superflat
+worldType: SuperFlat
+
+size:
+  surfaceHeight: 5
+  startSurfaceHeight: 89
+
+palette:
+  mainDirtStableId: survmine:dirt
+  grassBlockStableId: survmine:grass_block
+  stoneStableId: survmine:stone
+  limiterStableId: survmine:bedrock
+
+superFlatLayers:
+  - fromY: 1
+    toY: 89
+    blockStableId: survmine:stone
+  - fromY: 89
+    toY: 93
+    blockStableId: survmine:dirt
+  - fromY: 93
+    toY: 94
+    blockStableId: survmine:grass_block

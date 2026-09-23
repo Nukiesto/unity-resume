@@ -1,0 +1,5 @@
+stableId: survmine:collider/chicken
+formatVersion: 1
+shape: box
+size: { x: 0.5, y: 0.6 }
+offset: { x: 0, y: 0.3 }

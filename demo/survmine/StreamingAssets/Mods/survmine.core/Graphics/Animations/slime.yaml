@@ -1,0 +1,206 @@
+stableId: survmine:animations/slime
+formatVersion: 1
+rigProfile: survmine:rig/blob
+states:
+  - key: idle
+    loop: true
+    interruptible: true
+    resume: false
+    duration: 2
+    tracks:
+      - partKey: body
+        required: true
+        keys:
+          - time: 0
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: ease_in_out
+          - time: 2
+            position: { x: 0, y: 0.03 }
+            rotation: 0
+            scale: { x: 1.02, y: 0.98 }
+            easing: ease_in_out
+      - partKey: face
+        required: true
+        keys:
+          - time: 0
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: ease_in_out
+          - time: 2
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: ease_in_out
+  - key: walk
+    loop: true
+    interruptible: true
+    resume: false
+    duration: 0.8
+    tracks:
+      - partKey: body
+        required: true
+        keys:
+          - time: 0
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: linear
+          - time: 0.4
+            position: { x: 0, y: 0.08 }
+            rotation: 0
+            scale: { x: 0.92, y: 1.1 }
+            easing: linear
+          - time: 0.8
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: linear
+      - partKey: face
+        required: true
+        keys:
+          - time: 0
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: linear
+          - time: 0.8
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: linear
+  - key: fall
+    loop: true
+    interruptible: true
+    resume: false
+    duration: 0.5
+    tracks:
+      - partKey: body
+        required: true
+        keys:
+          - time: 0
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: linear
+          - time: 0.5
+            position: { x: 0, y: -0.02 }
+            rotation: 0
+            scale: { x: 1.05, y: 0.95 }
+            easing: linear
+      - partKey: face
+        required: true
+        keys:
+          - time: 0
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: linear
+          - time: 0.5
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: linear
+  - key: hurt
+    loop: false
+    interruptible: true
+    resume: false
+    duration: 0.4
+    tracks:
+      - partKey: body
+        required: true
+        keys:
+          - time: 0
+            position: { x: -0.08, y: 0 }
+            rotation: -4
+            scale: { x: 1.1, y: 0.9 }
+            easing: ease_out
+          - time: 0.4
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: ease_out
+      - partKey: face
+        required: true
+        keys:
+          - time: 0
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: ease_out
+          - time: 0.4
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: ease_out
+  - key: death
+    loop: false
+    interruptible: false
+    resume: false
+    duration: 1
+    tracks:
+      - partKey: body
+        required: true
+        keys:
+          - time: 0
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: ease_in
+          - time: 1
+            position: { x: 0, y: -0.25 }
+            rotation: 0
+            scale: { x: 1.4, y: 0.4 }
+            easing: ease_in
+      - partKey: face
+        required: true
+        keys:
+          - time: 0
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: ease_in
+          - time: 1
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: ease_in
+  - key: attack
+    loop: false
+    interruptible: true
+    resume: false
+    duration: 0.6
+    tracks:
+      - partKey: body
+        required: true
+        keys:
+          - time: 0
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: ease_out
+          - time: 0.3
+            position: { x: 0.1, y: 0.05 }
+            rotation: 0
+            scale: { x: 1.15, y: 0.9 }
+            easing: ease_out
+          - time: 0.6
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: ease_in_out
+      - partKey: face
+        required: true
+        keys:
+          - time: 0
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: ease_out
+          - time: 0.6
+            position: { x: 0, y: 0 }
+            rotation: 0
+            scale: { x: 1, y: 1 }
+            easing: ease_in_out

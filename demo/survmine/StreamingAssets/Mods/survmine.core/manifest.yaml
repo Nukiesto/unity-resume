@@ -1,0 +1,9 @@
+id: survmine.core
+name: SurvMine Core
+version: 0.1.0
+dependencies: []
+modules:
+  content: true
+  graphics: true
+  audio: true
+  options: true

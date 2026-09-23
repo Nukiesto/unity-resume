@@ -1,0 +1,12 @@
+id: survmine:craft/ladder
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- tagStableId: survmine:wood/planks
+  count: 7
+outputs:
+- itemStableId: survmine:ladder
+  count: 4
+  chance: 1
+category: block
+sortOrder: 0

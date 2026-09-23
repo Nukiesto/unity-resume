@@ -1,0 +1,1 @@
+# SurvMine audio manifest v1: relativePath|compressedBytes|policy (preload|lazy|stream)

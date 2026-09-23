@@ -1,0 +1,13 @@
+id: survmine:industrial/macerate_copper_ore
+type: survmine:macerating
+inputs:
+  - itemStableId: survmine:industrial/copper_ore
+    count: 1
+outputs:
+  - itemStableId: survmine:industrial/copper_dust
+    count: 2
+    chance: 1
+duration: 5
+energyCost: 800
+category: industrial
+sortOrder: 0

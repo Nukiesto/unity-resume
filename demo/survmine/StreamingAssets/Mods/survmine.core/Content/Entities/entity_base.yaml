@@ -1,0 +1,90 @@
+stableId: survmine:entity/base
+prefabKey: survmine:entity_base
+components:
+  - kindId: survmine:animated_character
+    patch: {}
+  - kindId: survmine:armor_renderer
+    patch:
+      bodyArmorSlot: 'armor.body'
+      headArmorSlot: 'armor.head'
+      leftArmArmorSlot: 'armor.left_arm'
+      leftBootArmorSlot: 'armor.left_boot'
+      leftLegArmorSlot: 'armor.left_leg'
+      rightArmArmorSlot: 'armor.right_arm'
+      rightBootArmorSlot: 'armor.right_boot'
+      rightLegArmorSlot: 'armor.right_leg'
+  - kindId: survmine:audio
+    patch:
+      audioInterval: 0
+      walkAudioSlot: 'audio.walk'
+      attackAudioSlot: 'audio.attack'
+      takeDamageAudioSlot: 'audio.take_damage'
+      fallBigAudioSlot: 'audio.fall_big'
+      fallSmallAudioSlot: 'audio.fall_small'
+      deathAudioSlot: 'audio.death'
+      eatingAudioSlot: 'audio.eating'
+      fallBigClips:
+        - 'survmine.core:Minecraft/damage/fallbig'
+      fallSmallClips:
+        - 'survmine.core:Minecraft/damage/fallsmall'
+      eatingClips:
+        - 'survmine.core:Minecraft/random/eat1'
+        - 'survmine.core:Minecraft/random/eat2'
+        - 'survmine.core:Minecraft/random/eat3'
+  - kindId: survmine:burn
+    patch:
+      burnRendererSlot: 'burn.renderer'
+  - kindId: survmine:can_suffocate
+    patch: {}
+  - kindId: survmine:character_controller
+    patch:
+      boxColliderSlot: 'controller.collider'
+      gameObjectSlot: 'controller.game_object'
+      jumpingThreshold: 0
+      oneWayPlatformMask: 8
+      platformMask: 512
+      rigidbodySlot: 'controller.rigidbody'
+      skinWidth: 0.0248
+      slopeLimit: 0
+      slopeSpeedMultiplier:
+        preWrapMode: ClampForever
+        postWrapMode: ClampForever
+        keys:
+          -
+            time: 1
+            value: 1
+            inTangent: 0
+            outTangent: 0
+            inWeight: 0
+            outWeight: 0
+            weightedMode: None
+      totalHorizontalRays: 6
+      totalVerticalRays: 6
+      transformSlot: 'controller.transform'
+      triggerMask: 17552
+  - kindId: survmine:health
+    patch:
+      healthSyncSlot: 'health.sync'
+      hpDefault: 0
+      hpMax: 100
+  - kindId: survmine:movement
+    patch:
+      dustEffectStableId: 'survmine:entity_dust'
+      fallDamageMax: 10
+      fallDamageMin: 7
+      gravity: -25
+      groundDamping: 20
+      inAirDamping: 5
+      jumpHeight: 1.1
+      ladderMoveSpeed: 4
+      minFallDistance: 5
+      runSpeed: 6
+  - kindId: survmine:sword
+    patch:
+      damageDelay: 0.2
+      swordLayerMask: 256
+      swordPositionSlot: 'sword.position'
+  - kindId: survmine:sync
+    patch:
+      netId: 0
+removeComponents:

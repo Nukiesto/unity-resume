@@ -1,0 +1,27 @@
+name: Золотая мотыга
+description: ''
+canStack: false
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: gold_hoe
+isLightSource: false
+itemType: Instrument
+light2DInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+maxCount: 1
+showInSandBox: true
+components:
+  - !hoe
+    farmlandStableId: survmine:farmland
+    dirtStableId: survmine:dirt
+    grassStableId: survmine:grass_block
+    seedStableId: survmine:seeds_wheat
+    seedDropChancePercent: 50
+  - !breakable
+    valueCurrent: 50
+    valueMax: 50
+stableId: survmine:gold_hoe

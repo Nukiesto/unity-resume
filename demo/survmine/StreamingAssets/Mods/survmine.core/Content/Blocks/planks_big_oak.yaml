@@ -1,0 +1,50 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: true
+  isLightObstacle: true
+  isInteractable: false
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: false
+  isCanBurn: false
+  mustHasSolidDowner: false
+  toBreakHasNotBlockDowner: false
+  mustHasSolidAround: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: true
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Hand
+  soundTypeDig: Wood
+  blockBreakBy: Axe
+  timeBreaking: 1.5
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: true
+blockResources:
+  destroyedClip: null
+isMultiBlock: false
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+blockTile: planks_big_oak
+itemBlockStableId: survmine:planks_big_oak
+components: []
+stableId: survmine:planks_big_oak
+isLightSource: false
+lightInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

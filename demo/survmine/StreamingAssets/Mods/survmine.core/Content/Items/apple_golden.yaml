@@ -1,0 +1,14 @@
+name: Золотое яблоко
+description: ''
+canStack: true
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: apple_golden
+isLightSource: false
+itemType: Block
+maxCount: 999
+showInSandBox: true
+components:
+- !meal
+  mealValue: 25
+  eatTime: 0.5
+stableId: survmine:apple_golden

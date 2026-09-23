@@ -1,0 +1,11 @@
+id: survmine:craft/boat
+type: survmine:crafting
+inputs:
+- tagStableId: survmine:wood/planks
+  count: 6
+outputs:
+- itemStableId: survmine:boat
+  count: 1
+  chance: 1
+category: block
+sortOrder: 0

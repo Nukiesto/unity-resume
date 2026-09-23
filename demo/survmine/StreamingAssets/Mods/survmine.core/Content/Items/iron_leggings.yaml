@@ -1,0 +1,31 @@
+name: Железные штаны
+description: ''
+canStack: false
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: iron_leggings
+isLightSource: false
+itemType: Block
+light2DInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+maxCount: 1
+showInSandBox: true
+components:
+- !armor
+  armorType: Legs
+  armorSpriteHead: null
+  armorSpriteBody:
+    body: null
+    leftArm: null
+    rightArm: null
+  armorSpriteLegs:
+    left: iron_layer_2_1
+    right: iron_layer_2_0
+  armorSpriteBoots:
+    left: null
+    right: null
+stableId: survmine:iron_leggings

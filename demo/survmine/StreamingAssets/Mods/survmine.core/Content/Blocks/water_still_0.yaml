@@ -1,0 +1,53 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: false
+  isSolid: false
+  isLightObstacle: true
+  isInteractable: false
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: false
+  isCanBurn: false
+  mustHasSolidDowner: false
+  toBreakHasNotBlockDowner: false
+  mustHasSolidAround: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: false
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Hardest
+  soundTypeDig: Stone
+  blockBreakBy: Pickaxe
+  timeBreaking: 1.5
+  toSave: true
+  canToReplace: true
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: false
+blockResources:
+  destroyedClip:
+isMultiBlock: false
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+visualKey: WaterTile
+components:
+  - !fluidpart
+    TimeToDestroy: 0.5
+    TimeCanSet: 0.5
+  - !water {}
+stableId: survmine:water_still_0
+isLightSource: false
+lightInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

@@ -1,0 +1,11 @@
+id: survmine:macerate_emerald_ore
+type: survmine:macerating
+inputs:
+  - itemStableId: survmine:emerald_ore
+    count: 1
+outputs:
+  - itemStableId: survmine:emerald_dust
+    count: 2
+    chance: 1
+category: machine
+sortOrder: 0

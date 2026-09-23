@@ -1,0 +1,11 @@
+id: survmine:craft/crafting_table_front
+type: survmine:crafting
+inputs:
+- tagStableId: survmine:wood/planks
+  count: 4
+outputs:
+- itemStableId: survmine:crafting_table
+  count: 1
+  chance: 1
+category: block
+sortOrder: 0

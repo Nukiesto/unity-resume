@@ -1,0 +1,17 @@
+id: survmine:worldgen/noise/cave
+noiseType: Perlin
+rotationType3D: None
+frequency: 0.106
+threshold: 0.542
+invert: false
+fractal:
+  fractalType: Ridged
+  octaves: 1
+  lacunarity: 0.5
+  gain: 0.005
+  weightedStrength: 0
+  pingPongStrength: 0.017
+cellular:
+  cellularJitter: 0
+  cellularDistanceFunction: EuclideanSq
+  cellularReturnType: Distance

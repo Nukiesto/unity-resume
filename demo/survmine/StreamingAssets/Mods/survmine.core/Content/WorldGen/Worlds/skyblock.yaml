@@ -1,0 +1,323 @@
+id: survmine:worldgen/world/skyblock
+worldType: SkyBlock
+
+size:
+  surfaceHeight: 5
+  startSurfaceHeight: 89
+
+palette:
+  stoneStableId: survmine:stone
+  limiterStableId: survmine:bedrock
+
+skyBlock:
+  islandRegionChunks: 4
+  islandDensity: 1
+  baseIslandY: 90
+  islandYVariation: {x: -4, y: 4}
+  maxLootStacks: 27
+  spawnerBlockStableId: survmine:mob_spawner
+
+  archetypes:
+    - name: Starting Island
+      weight: 1
+      isStartingIsland: true
+      sizeRange: {x: 5, y: 7}
+      heightRange: {x: 2, y: 3}
+      undersideDepthRange: {x: 2, y: 4}
+      surfaceBlockStableId: survmine:grass_block
+      fillBlockStableId: survmine:dirt
+      undersideBlockStableId: survmine:dirt
+      generateTrees: true
+      treeDensity: 0.6
+      tree:
+        nameTree: Oak
+        logStableId: survmine:log_oak
+        leavesStableId: survmine:leaves_oak
+      oreChance: 0
+      oreStableIds: []
+      placeSpawner: false
+      lootTable:
+        entries: []
+        rolls: 0
+        includeAllEntriesOnce: false
+
+    - name: Stone Island
+      weight: 3
+      sizeRange: {x: 5, y: 8}
+      heightRange: {x: 2, y: 4}
+      undersideDepthRange: {x: 1, y: 3}
+      surfaceBlockStableId: survmine:stone
+      fillBlockStableId: survmine:stone
+      undersideBlockStableId: survmine:stone
+      generateTrees: false
+      treeDensity: 0
+      oreChance: 0.06
+      oreStableIds:
+        - survmine:coal_ore
+        - survmine:iron_ore
+      placeSpawner: false
+      lootTable:
+        entries:
+          - itemStableId: survmine:stone
+            weight: 2
+            countRange: {x: 8, y: 16}
+          - itemStableId: survmine:coal
+            weight: 1
+            countRange: {x: 2, y: 6}
+          - itemStableId: survmine:planks_oak
+            weight: 1
+            countRange: {x: 4, y: 8}
+          - itemStableId: survmine:torch
+            weight: 1
+            countRange: {x: 2, y: 6}
+        rolls: 3
+        includeAllEntriesOnce: false
+
+    - name: Forest Island
+      weight: 3
+      sizeRange: {x: 6, y: 9}
+      heightRange: {x: 3, y: 5}
+      undersideDepthRange: {x: 2, y: 4}
+      surfaceBlockStableId: survmine:grass_block
+      fillBlockStableId: survmine:dirt
+      undersideBlockStableId: survmine:dirt
+      generateTrees: true
+      treeDensity: 0.5
+      tree:
+        nameTree: Birch
+        logStableId: survmine:log_birch
+        leavesStableId: survmine:leaves_birch
+      oreChance: 0
+      oreStableIds: []
+      placeSpawner: false
+      lootTable:
+        entries:
+          - itemStableId: survmine:sapling_birch
+            weight: 2
+            countRange: {x: 1, y: 2}
+          - itemStableId: survmine:apple
+            weight: 2
+            countRange: {x: 1, y: 3}
+          - itemStableId: survmine:seeds_wheat
+            weight: 1
+            countRange: {x: 2, y: 4}
+          - itemStableId: survmine:planks_oak
+            weight: 1
+            countRange: {x: 4, y: 8}
+        rolls: 3
+        includeAllEntriesOnce: false
+
+    - name: Desert Island
+      weight: 2
+      sizeRange: {x: 5, y: 8}
+      heightRange: {x: 2, y: 3}
+      undersideDepthRange: {x: 1, y: 3}
+      surfaceBlockStableId: survmine:sand
+      fillBlockStableId: survmine:sandstone
+      undersideBlockStableId: survmine:sandstone
+      generateTrees: false
+      treeDensity: 0
+      oreChance: 0
+      oreStableIds: []
+      placeSpawner: false
+      lootTable:
+        entries:
+          - itemStableId: survmine:sand
+            weight: 2
+            countRange: {x: 8, y: 16}
+          - itemStableId: survmine:sandstone
+            weight: 1
+            countRange: {x: 4, y: 8}
+          - itemStableId: survmine:seeds_wheat
+            weight: 1
+            countRange: {x: 2, y: 4}
+        rolls: 3
+        includeAllEntriesOnce: false
+
+    - name: Snowy Island
+      weight: 2
+      sizeRange: {x: 5, y: 8}
+      heightRange: {x: 2, y: 4}
+      undersideDepthRange: {x: 1, y: 3}
+      surfaceBlockStableId: survmine:snow
+      fillBlockStableId: survmine:dirt
+      undersideBlockStableId: survmine:stone
+      generateTrees: true
+      treeDensity: 0.4
+      tree:
+        nameTree: Spruce
+        logStableId: survmine:log_spruce
+        leavesStableId: survmine:leaves_spruce
+      oreChance: 0
+      oreStableIds: []
+      placeSpawner: false
+      lootTable:
+        entries:
+          - itemStableId: survmine:snowball
+            weight: 2
+            countRange: {x: 4, y: 10}
+          - itemStableId: survmine:ice
+            weight: 1
+            countRange: {x: 2, y: 6}
+          - itemStableId: survmine:sapling_spruce
+            weight: 1
+            countRange: {x: 1, y: 2}
+        rolls: 3
+        includeAllEntriesOnce: false
+
+    - name: Spawner Island
+      weight: 1
+      sizeRange: {x: 6, y: 8}
+      heightRange: {x: 2, y: 3}
+      undersideDepthRange: {x: 2, y: 4}
+      surfaceBlockStableId: survmine:cobblestone
+      fillBlockStableId: survmine:cobblestone
+      undersideBlockStableId: survmine:stone
+      generateTrees: false
+      treeDensity: 0
+      oreChance: 0.05
+      oreStableIds:
+        - survmine:coal_ore
+      placeSpawner: true
+      spawnerEntityStableId: survmine:entity/zombie
+      lootTable:
+        entries:
+          - itemStableId: survmine:coal
+            weight: 2
+            countRange: {x: 2, y: 6}
+          - itemStableId: survmine:iron_ingot
+            weight: 1
+            countRange: {x: 1, y: 3}
+          - itemStableId: survmine:torch
+            weight: 1
+            countRange: {x: 2, y: 6}
+        rolls: 2
+        includeAllEntriesOnce: false
+
+    - name: Nether Island
+      weight: 1
+      sizeRange: {x: 5, y: 8}
+      heightRange: {x: 2, y: 4}
+      undersideDepthRange: {x: 1, y: 3}
+      surfaceBlockStableId: survmine:netherrack
+      fillBlockStableId: survmine:netherrack
+      undersideBlockStableId: survmine:netherrack
+      generateTrees: false
+      treeDensity: 0
+      oreChance: 0.05
+      oreStableIds:
+        - survmine:quartz_ore
+      placeSpawner: false
+      lootTable:
+        entries:
+          - itemStableId: survmine:glowstone
+            weight: 2
+            countRange: {x: 2, y: 6}
+          - itemStableId: survmine:soul_sand
+            weight: 1
+            countRange: {x: 2, y: 6}
+          - itemStableId: survmine:blaze_powder
+            weight: 1
+            countRange: {x: 1, y: 2}
+        rolls: 3
+        includeAllEntriesOnce: false
+
+  startingLootTable:
+    includeAllEntriesOnce: true
+    rolls: 0
+    entries:
+      - itemStableId: survmine:bucket_water
+        weight: 1
+        countRange: {x: 1, y: 1}
+      - itemStableId: survmine:bucket_lava
+        weight: 1
+        countRange: {x: 1, y: 1}
+      - itemStableId: survmine:sapling_oak
+        weight: 1
+        countRange: {x: 1, y: 1}
+      - itemStableId: survmine:sapling_birch
+        weight: 1
+        countRange: {x: 1, y: 1}
+      - itemStableId: survmine:seeds_wheat
+        weight: 1
+        countRange: {x: 2, y: 2}
+      - itemStableId: survmine:apple
+        weight: 1
+        countRange: {x: 2, y: 2}
+      - itemStableId: survmine:bread
+        weight: 1
+        countRange: {x: 2, y: 2}
+      - itemStableId: survmine:dirt
+        weight: 1
+        countRange: {x: 8, y: 12}
+      - itemStableId: survmine:stone
+        weight: 1
+        countRange: {x: 8, y: 12}
+      - itemStableId: survmine:planks_oak
+        weight: 1
+        countRange: {x: 8, y: 12}
+
+  distanceLootTiers:
+    - minRegionDistance: 1
+      table:
+        includeAllEntriesOnce: false
+        rolls: 2
+        entries:
+          - itemStableId: survmine:iron_ingot
+            weight: 3
+            countRange: {x: 2, y: 4}
+          - itemStableId: survmine:gold_ingot
+            weight: 2
+            countRange: {x: 1, y: 3}
+          - itemStableId: survmine:redstone_dust
+            weight: 2
+            countRange: {x: 4, y: 8}
+          - itemStableId: survmine:lapis_block
+            weight: 1
+            countRange: {x: 1, y: 2}
+    - minRegionDistance: 3
+      table:
+        includeAllEntriesOnce: false
+        rolls: 2
+        entries:
+          - itemStableId: survmine:diamond
+            weight: 2
+            countRange: {x: 1, y: 2}
+          - itemStableId: survmine:emerald
+            weight: 2
+            countRange: {x: 1, y: 2}
+          - itemStableId: survmine:obsidian
+            weight: 2
+            countRange: {x: 2, y: 4}
+          - itemStableId: survmine:quartz
+            weight: 2
+            countRange: {x: 2, y: 6}
+          - itemStableId: survmine:blaze_rod
+            weight: 1
+            countRange: {x: 1, y: 2}
+          - itemStableId: survmine:apple_golden
+            weight: 1
+            countRange: {x: 1, y: 1}
+    - minRegionDistance: 6
+      table:
+        includeAllEntriesOnce: false
+        rolls: 2
+        entries:
+          - itemStableId: survmine:gold_block
+            weight: 2
+            countRange: {x: 1, y: 2}
+          - itemStableId: survmine:diamond_block
+            weight: 1
+            countRange: {x: 1, y: 1}
+          - itemStableId: survmine:emerald_block
+            weight: 1
+            countRange: {x: 1, y: 1}
+          - itemStableId: survmine:ender_eye
+            weight: 1
+            countRange: {x: 1, y: 1}
+          - itemStableId: survmine:diamond_pickaxe
+            weight: 1
+            countRange: {x: 1, y: 1}
+          - itemStableId: survmine:anvil
+            weight: 1
+            countRange: {x: 1, y: 1}

@@ -1,0 +1,9 @@
+stableId: survmine:events/slime_attack
+formatVersion: 1
+animationSet: survmine:animations/slime
+events:
+  - stateKey: attack
+    time: 0.3
+    kindId: survmine:activate
+    actionKey: melee_attack
+    originPart: face

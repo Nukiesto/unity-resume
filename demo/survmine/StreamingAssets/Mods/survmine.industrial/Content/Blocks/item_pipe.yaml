@@ -1,0 +1,51 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: false
+  isLightObstacle: false
+  isInteractable: false
+  isScalable: false
+  isRotatable: true
+  mustHasBlockDowner: false
+  isCanBurn: false
+  mustHasSolidDowner: false
+  toBreakHasNotBlockDowner: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: true
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Low
+  soundTypeDig: Stone
+  blockBreakBy: Pickaxe
+  timeBreaking: 0.3
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: false
+blockResources:
+  destroyedClip: null
+isMultiBlock: false
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+blockTile: industrial_transport_item_pipe
+itemBlockStableId: survmine:item_pipe
+components:
+  - !pipe
+    maxTransfer: 8
+stableId: survmine:item_pipe
+isLightSource: false
+lightInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

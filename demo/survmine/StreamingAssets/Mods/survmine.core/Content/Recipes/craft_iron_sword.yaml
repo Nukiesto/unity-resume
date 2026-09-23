@@ -1,0 +1,14 @@
+id: survmine:craft/iron_sword
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- itemStableId: survmine:iron_ingot
+  count: 2
+- itemStableId: survmine:stick
+  count: 1
+outputs:
+- itemStableId: survmine:iron_sword
+  count: 1
+  chance: 1
+category: instrument
+sortOrder: 0

@@ -1,0 +1,12 @@
+id: survmine:craft/bowl
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- tagStableId: survmine:wood/planks
+  count: 3
+outputs:
+- itemStableId: survmine:bowl
+  count: 9
+  chance: 1
+category: meal
+sortOrder: 0

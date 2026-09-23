@@ -1,0 +1,24 @@
+name: Железный меч
+description: ''
+canStack: false
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: iron_sword
+isLightSource: false
+itemType: Instrument
+light2DInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+maxCount: 1
+showInSandBox: true
+components:
+- !sword
+  damage: 35
+  radius: 1
+- !breakable
+  valueCurrent: 150
+  valueMax: 150
+stableId: survmine:iron_sword

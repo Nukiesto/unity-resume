@@ -7,10 +7,10 @@
 assets/img/screenshots/
 ├── survmine/          ← SurvMine
 ├── survmine3d/        ← SurvMine 3D
-├── corncraft/         ← CornCraft
+├── tankgame/          ← TankGame
 ├── quest/             ← Демоны молодости
-├── train/             ← VR Train Simulator
-└── …                  ← ещё 45 папок
+├── trainsimulator/    ← VR-тренажёр ЕРМАК
+└── …                  ← ещё 42 папки
 ```
 
 ## Как добавить скриншоты

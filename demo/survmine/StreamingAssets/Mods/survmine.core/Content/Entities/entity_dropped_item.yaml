@@ -1,0 +1,12 @@
+stableId: survmine:entity/dropped_item
+prefabKey: survmine:dropped_item
+components:
+  - kindId: survmine:burn
+    patch:
+      burnRendererSlot: 'burn.renderer'
+  - kindId: survmine:dropped_item
+    patch:
+      cannotTakeItemTime: 2
+      itemLifetime: 60
+      itemsCount: 0
+removeComponents:

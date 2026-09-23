@@ -1,0 +1,5 @@
+stableId: survmine:macerating
+displayName: Macerating
+usesCraftPlace: false
+usesDuration: true
+usesEnergy: true

@@ -1,0 +1,17 @@
+id: survmine:worldgen/noise/trees
+noiseType: Perlin
+rotationType3D: None
+frequency: 0.1
+threshold: 0.675
+invert: false
+fractal:
+  fractalType: FBm
+  octaves: 3
+  lacunarity: 8
+  gain: 4
+  weightedStrength: 0
+  pingPongStrength: 0
+cellular:
+  cellularJitter: 0
+  cellularDistanceFunction: EuclideanSq
+  cellularReturnType: Distance

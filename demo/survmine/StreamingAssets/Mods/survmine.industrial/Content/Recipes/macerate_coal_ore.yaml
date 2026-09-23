@@ -1,0 +1,11 @@
+id: survmine:macerate_coal_ore
+type: survmine:macerating
+inputs:
+  - itemStableId: survmine:coal_ore
+    count: 1
+outputs:
+  - itemStableId: survmine:coal_dust
+    count: 2
+    chance: 1
+category: machine
+sortOrder: 0

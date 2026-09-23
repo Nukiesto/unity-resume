@@ -1,0 +1,50 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: true
+  isLightObstacle: true
+  isInteractable: false
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: false
+  isCanBurn: false
+  mustHasSolidDowner: false
+  toBreakHasNotBlockDowner: false
+  mustHasSolidAround: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: true
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Hand
+  soundTypeDig: Stone
+  blockBreakBy: Pickaxe
+  timeBreaking: 1.5
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: true
+blockResources:
+  destroyedClip: null
+isMultiBlock: false
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+blockTile: hardened_clay_stained_magenta
+itemBlockStableId: survmine:hardened_clay_stained_magenta
+components: []
+stableId: survmine:hardened_clay_stained_magenta
+isLightSource: false
+lightInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

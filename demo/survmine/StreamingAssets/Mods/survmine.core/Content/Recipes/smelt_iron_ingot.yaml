@@ -1,0 +1,13 @@
+id: survmine:smelt/iron_ingot
+type: survmine:smelting
+craftPlaceStableId: survmine:furnace
+inputs:
+- itemStableId: survmine:iron_ore
+  count: 1
+outputs:
+- itemStableId: survmine:iron_ingot
+  count: 1
+  chance: 1
+duration: 1
+category: material
+sortOrder: 0

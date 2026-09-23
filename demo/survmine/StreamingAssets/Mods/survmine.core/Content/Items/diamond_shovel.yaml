@@ -1,0 +1,24 @@
+name: Алмазная лопата
+description: ''
+canStack: false
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: diamond_shovel
+isLightSource: false
+itemType: Instrument
+light2DInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+maxCount: 1
+showInSandBox: true
+components:
+- !shovel
+  breakingLevel: Hard
+  digModifier: 2.25
+- !breakable
+  valueCurrent: 300
+  valueMax: 300
+stableId: survmine:diamond_shovel

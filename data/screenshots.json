@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-23T18:18:17.942Z",
-  "projectCount": 18,
-  "imageCount": 118,
+  "generatedAt": "2026-09-23T19:27:48.372Z",
+  "projectCount": 21,
+  "imageCount": 155,
   "projects": {
     "awards": {
       "cover": "assets/img/screenshots/awards/Снимок экрана (8).png",
@@ -32,6 +32,16 @@
         "assets/img/screenshots/firstaidtraining/Рисунок5.png"
       ]
     },
+    "hardcore-geometry": {
+      "cover": "assets/img/screenshots/hardcore-geometry/0OtJb6.png",
+      "images": [
+        "assets/img/screenshots/hardcore-geometry/0OtJb6.png",
+        "assets/img/screenshots/hardcore-geometry/6VQIuU.png",
+        "assets/img/screenshots/hardcore-geometry/b73My5.png",
+        "assets/img/screenshots/hardcore-geometry/N1_VDm.png",
+        "assets/img/screenshots/hardcore-geometry/w33NUd.png"
+      ]
+    },
     "horror": {
       "cover": "assets/img/screenshots/horror/cover.png",
       "images": [
@@ -48,6 +58,18 @@
         "assets/img/screenshots/horror/Снимок экрана (58).png",
         "assets/img/screenshots/horror/Снимок экрана (59).png",
         "assets/img/screenshots/horror/Снимок экрана (60).png"
+      ]
+    },
+    "literature": {
+      "cover": "assets/img/screenshots/literature/cover.png",
+      "images": [
+        "assets/img/screenshots/literature/cover.png",
+        "assets/img/screenshots/literature/Literature_r9gCfrrozQ.gif",
+        "assets/img/screenshots/literature/Literature_xkghtuuCVj.gif",
+        "assets/img/screenshots/literature/Снимок экрана (91).png",
+        "assets/img/screenshots/literature/Снимок экрана (92).png",
+        "assets/img/screenshots/literature/Снимок экрана (93).png",
+        "assets/img/screenshots/literature/Снимок экрана (94).png"
       ]
     },
     "minigame1": {
@@ -99,6 +121,7 @@
       "cover": "assets/img/screenshots/presentation/cover.png",
       "images": [
         "assets/img/screenshots/presentation/cover.png",
+        "assets/img/screenshots/presentation/Presentation_sRAM3YWH6M.gif",
         "assets/img/screenshots/presentation/Снимок экрана (34).png",
         "assets/img/screenshots/presentation/Снимок экрана (35).png",
         "assets/img/screenshots/presentation/Снимок экрана (36).png",
@@ -160,13 +183,18 @@
       "cover": "assets/img/screenshots/survmine/cover.png",
       "images": [
         "assets/img/screenshots/survmine/cover.png",
+        "assets/img/screenshots/survmine/Снимок экрана (32) (Пользовательское).png",
+        "assets/img/screenshots/survmine/Снимок экрана (33).png",
+        "assets/img/screenshots/survmine/Снимок экрана (34).png",
+        "assets/img/screenshots/survmine/Снимок экрана (35) (Пользовательское) (1).png",
         "assets/img/screenshots/survmine/Снимок экрана (76).png",
         "assets/img/screenshots/survmine/Снимок экрана (78).png",
         "assets/img/screenshots/survmine/Снимок экрана (79).png",
         "assets/img/screenshots/survmine/Снимок экрана (80).png",
         "assets/img/screenshots/survmine/Снимок экрана (81).png",
         "assets/img/screenshots/survmine/Снимок экрана (82).png",
-        "assets/img/screenshots/survmine/Снимок экрана (83).png"
+        "assets/img/screenshots/survmine/Снимок экрана (83).png",
+        "assets/img/screenshots/survmine/Снимок экрана 2025-09-28 160325.png"
       ]
     },
     "survmine3d": {
@@ -185,6 +213,30 @@
         "assets/img/screenshots/survminemodtool/cover.png",
         "assets/img/screenshots/survminemodtool/Снимок экрана (85).png",
         "assets/img/screenshots/survminemodtool/Снимок экрана (86).png"
+      ]
+    },
+    "tankgame": {
+      "cover": "assets/img/screenshots/tankgame/cover.png",
+      "images": [
+        "assets/img/screenshots/tankgame/cover.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-28 215931.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-28 220000.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-28 221633.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 002933.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 004616.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 004621.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 005349.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 010722.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 011140.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 013021.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 015309.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 020016.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 020039.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 152439.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 152555.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 153423.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 155414.png",
+        "assets/img/screenshots/tankgame/Снимок экрана 2026-05-29 232939.png"
       ]
     },
     "tankgame-2d": {

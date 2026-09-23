@@ -1,0 +1,12 @@
+stableId: survmine:ragdoll/quadruped
+formatVersion: 1
+parts:
+  - partKey: body
+    shape: box
+    size: { x: 0.9, y: 0.6 }
+    mass: 4
+  - partKey: head
+    parentPartKey: body
+    shape: circle
+    size: { x: 0.4, y: 0.4 }
+    mass: 1

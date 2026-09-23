@@ -1,0 +1,19 @@
+id: survmine:furnace
+blockStableId: survmine:furnace
+recipeType: survmine:smelting
+processTime: 1.0
+energyCost: 0
+fuelConsumptionRate: 0.06
+slots:
+  - id: input
+    role: Input
+    index: 0
+    count: 1
+  - id: fuel
+    role: Fuel
+    index: 1
+    count: 1
+  - id: output
+    role: Output
+    index: 2
+    count: 1

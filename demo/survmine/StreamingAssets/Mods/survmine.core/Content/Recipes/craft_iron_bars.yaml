@@ -1,0 +1,11 @@
+id: survmine:craft/iron_bars
+type: survmine:crafting
+inputs:
+- itemStableId: survmine:iron_ingot
+  count: 6
+outputs:
+- itemStableId: survmine:iron_bars
+  count: 1
+  chance: 1
+category: block
+sortOrder: 0

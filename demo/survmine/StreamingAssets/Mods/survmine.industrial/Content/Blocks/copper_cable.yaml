@@ -1,0 +1,57 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: false
+  isLightObstacle: false
+  isInteractable: false
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: false
+  isCanBurn: false
+  mustHasSolidDowner: false
+  toBreakHasNotBlockDowner: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: true
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Low
+  soundTypeDig: Stone
+  blockBreakBy: Pickaxe
+  timeBreaking: 0.3
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: false
+blockResources:
+  destroyedClip: null
+isMultiBlock: false
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+blockTile: industrial_wiring_copper_cable
+itemBlockStableId: survmine:copper_cable
+components:
+  - !energycontainer
+    energy: 0
+    maxEnergy: 512
+    maxSizePacketCanReceive: 512
+    subGraph: 0
+  - !energytransport
+    maxInput: 512
+    maxOutput: 512
+stableId: survmine:copper_cable
+isLightSource: false
+lightInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

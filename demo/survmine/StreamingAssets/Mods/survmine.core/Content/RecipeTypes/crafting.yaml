@@ -1,0 +1,5 @@
+stableId: survmine:crafting
+displayName: Crafting
+usesCraftPlace: false
+usesDuration: false
+usesEnergy: false

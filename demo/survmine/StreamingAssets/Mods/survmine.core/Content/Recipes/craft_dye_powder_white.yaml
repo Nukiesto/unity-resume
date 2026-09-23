@@ -1,0 +1,11 @@
+id: survmine:craft/dye_powder_white
+type: survmine:crafting
+inputs:
+- itemStableId: survmine:bone
+  count: 1
+outputs:
+- itemStableId: survmine:dye_powder_white
+  count: 4
+  chance: 1
+category: resource
+sortOrder: 0

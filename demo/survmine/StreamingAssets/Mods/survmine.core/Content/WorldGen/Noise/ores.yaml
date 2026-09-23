@@ -1,0 +1,17 @@
+id: survmine:worldgen/noise/ores
+noiseType: Cellular
+rotationType3D: None
+frequency: 0.06
+threshold: 0.476
+invert: false
+fractal:
+  fractalType: FBm
+  octaves: 2
+  lacunarity: 1.04
+  gain: 0.25
+  weightedStrength: 0.053
+  pingPongStrength: 0
+cellular:
+  cellularJitter: 1
+  cellularDistanceFunction: EuclideanSq
+  cellularReturnType: Distance

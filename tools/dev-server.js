@@ -41,7 +41,18 @@ const MIME = {
   '.bin': 'application/octet-stream',
   '.bundle': 'application/octet-stream',
   '.hash': 'application/octet-stream',
-  '.resource': 'application/octet-stream'
+  '.resource': 'application/octet-stream',
+  '.yaml': 'text/yaml; charset=utf-8',
+  '.yml': 'text/yaml; charset=utf-8',
+  '.wav': 'audio/wav',
+  '.ogg': 'audio/ogg',
+  '.mp3': 'audio/mpeg',
+  '.mp4': 'video/mp4',
+  '.webm': 'video/webm',
+  '.ttf': 'font/ttf',
+  '.otf': 'font/otf',
+  '.woff': 'font/woff',
+  '.woff2': 'font/woff2'
 };
 
 function send(res, status, body, headers) {

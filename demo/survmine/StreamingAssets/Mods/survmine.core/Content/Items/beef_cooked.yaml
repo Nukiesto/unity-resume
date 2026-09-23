@@ -1,0 +1,14 @@
+name: Запеченная свинина
+description: ''
+canStack: true
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: beef_cooked
+isLightSource: false
+itemType: Block
+maxCount: 999
+showInSandBox: true
+components:
+- !meal
+  mealValue: 50
+  eatTime: 1
+stableId: survmine:beef_cooked

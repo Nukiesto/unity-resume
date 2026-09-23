@@ -1,0 +1,55 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: false
+  isLightObstacle: true
+  isInteractable: true
+  isScalable: true
+  isRotatable: false
+  mustHasBlockDowner: true
+  isCanBurn: true
+  mustHasSolidDowner: true
+  toBreakHasNotBlockDowner: true
+  mustHasSolidAround: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: true
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Hand
+  soundTypeDig: Wood
+  blockBreakBy: Axe
+  timeBreaking: 1.5
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: true
+blockResources:
+  destroyedClip:
+isMultiBlock: true
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 2, y: 1}
+  elements:
+    - relativePos: {x: 0, y: 0}
+      tile: bed_feet_side
+    - relativePos: {x: 1, y: 0}
+      tile: bed_head_side
+blockTile: bed_feet_side
+itemBlockStableId: survmine:bed
+components:
+  - !bed {}
+stableId: survmine:bed
+isLightSource: false
+lightInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

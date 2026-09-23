@@ -1,0 +1,68 @@
+id: survmine:block_break_burst
+
+# Renderer (original: Entity layer, order 0, billboard, max particle size 0.5)
+sortingLayerName: Entity
+sortingOrder: 0
+renderMode: Billboard
+alignment: View
+sortMode: None
+minParticleSize: 0
+maxParticleSize: 0.5
+materialShader: SpriteLit
+
+# Main module
+duration: 1
+loop: false
+playOnAwake: false
+simulationSpace: World
+scalingMode: Hierarchy
+maxParticles: 10000
+gravityModifier: 1
+startLifetime:
+  min: 5
+  max: 5
+startSpeed:
+  min: 2
+  max: 2
+startSize:
+  min: 0.1
+  max: 0.2
+startRotation:
+  min: 0
+  max: 0
+startColor:
+  r: 1
+  g: 1
+  b: 1
+  a: 1
+
+# Emission module: single burst of 12 when the block finally breaks
+rateOverTime: 0
+bursts:
+  - time: 0
+    count: 12
+
+# Shape module: box, rotated to lie flat in the 2D plane
+shape: Box
+shapeAngle: 25
+shapeRadius: 1
+radiusThickness: 1
+shapeRotation: { x: 90, y: 0, z: 0 }
+shapeScale: { x: 1, y: 1, z: 1 }
+
+# Collision module: 2D collision against the solid tilemap layer
+collision:
+  enabled: true
+  type: World
+  mode: Collision2D
+  dampen: 0.2
+  bounce: 0
+  lifetimeLoss: 0
+  minKillSpeed: 0
+  maxKillSpeed: 10000
+  radiusScale: 1
+  layerMask: Solid
+  collidesWithDynamic: true
+  voxelSize: 0.5
+  quality: 0
+  maxCollisionShapes: 256

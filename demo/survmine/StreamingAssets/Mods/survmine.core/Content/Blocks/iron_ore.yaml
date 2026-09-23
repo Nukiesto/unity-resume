@@ -1,0 +1,65 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: true
+  isLightObstacle: true
+  isInteractable: false
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: false
+  isCanBurn: false
+  mustHasSolidDowner: false
+  toBreakHasNotBlockDowner: false
+  mustHasSolidAround: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: true
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Hand
+  soundTypeDig: Stone
+  blockBreakBy: Pickaxe
+  timeBreaking: 1.5
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: true
+blockResources:
+  destroyedClip: null
+isMultiBlock: false
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+blockTile: iron_ore
+itemBlockStableId: survmine:iron_ore
+components:
+- !ore
+  # Вертикальный диапазон генерации (в блоках от уровня моря)
+  minGenerationHeight: 32    # Минимальная высота (ниже — ближе к центру мира)
+  maxGenerationHeight: 80    # Максимальная высота
+  
+  # Редкость залежей: вероятность появления в ячейке сетки (0.0–1.0)
+  veinSpawnChance: 0.45      # 35% шанс появления залежи в ячейке
+  
+  # Размер залежи (количество блоков руды в одной вене)
+  veinSizeMin: 5             # Минимум 5 блоков
+  veinSizeMax: 14            # Максимум 14 блоков
+  
+  # Плотность распределения: размер ячейки сетки в блоках
+  # Меньше значение = чаще залежи (но не чаще чем раз в ячейку)
+  veinSpacing: 20            # Залежи размещаются в сетке 20×20 блоков
+stableId: survmine:iron_ore
+isLightSource: false
+lightInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

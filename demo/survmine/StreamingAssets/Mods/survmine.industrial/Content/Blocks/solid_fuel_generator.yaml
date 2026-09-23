@@ -1,0 +1,59 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: true
+  isLightObstacle: true
+  isInteractable: true
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: false
+  isCanBurn: false
+  mustHasSolidDowner: false
+  toBreakHasNotBlockDowner: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: true
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Low
+  soundTypeDig: Stone
+  blockBreakBy: Pickaxe
+  timeBreaking: 2
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: false
+  isHasUI: true
+  canPush: true
+blockResources:
+  destroyedClip: null
+isMultiBlock: false
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+blockTile: industrial_generator_solid_fuel_generator
+itemBlockStableId: survmine:solid_fuel_generator
+components:
+  - !energycontainer
+    energy: 0
+    maxEnergy: 40000
+    maxSizePacketCanReceive: 512
+    subGraph: 0
+  - !energytransport
+    maxInput: 512
+    maxOutput: 512
+  - !machine
+    machineStableId: survmine:solid_fuel_generator
+stableId: survmine:solid_fuel_generator
+isLightSource: false
+lightInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

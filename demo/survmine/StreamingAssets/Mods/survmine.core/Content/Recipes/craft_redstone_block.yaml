@@ -1,0 +1,12 @@
+id: survmine:craft/redstone_block
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- itemStableId: survmine:redstone_dust
+  count: 9
+outputs:
+- itemStableId: survmine:redstone_block
+  count: 1
+  chance: 1
+category: block
+sortOrder: 0

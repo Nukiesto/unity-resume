@@ -1,0 +1,11 @@
+id: survmine:macerate_diamond_ore
+type: survmine:macerating
+inputs:
+  - itemStableId: survmine:diamond_ore
+    count: 1
+outputs:
+  - itemStableId: survmine:diamond_dust
+    count: 2
+    chance: 1
+category: machine
+sortOrder: 0

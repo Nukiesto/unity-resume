@@ -1,0 +1,51 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: true
+  isLightObstacle: true
+  isInteractable: false
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: false
+  isCanBurn: false
+  mustHasSolidDowner: false
+  toBreakHasNotBlockDowner: false
+  mustHasSolidAround: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: true
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Hand
+  soundTypeDig: Stone
+  blockBreakBy: Pickaxe
+  timeBreaking: 1
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: true
+blockResources:
+  destroyedClip: null
+isMultiBlock: false
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+blockTile: glowstone
+itemBlockStableId: survmine:glowstone
+components:
+- !inbounds {}
+stableId: survmine:glowstone
+isLightSource: true
+lightInfo:
+  falloffStrength: 0.5
+  innerOuterAngle: {x: 360, y: 360}
+  intensity: 5
+  lightColor: {r: 1, g: 0.7176471, b: 0, a: 1}
+  radiusInner: 0
+  radiusOuter: 5
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

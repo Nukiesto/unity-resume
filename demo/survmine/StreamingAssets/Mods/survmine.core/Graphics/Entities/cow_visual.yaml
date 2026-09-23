@@ -1,0 +1,36 @@
+stableId: survmine:visual/cow
+formatVersion: 1
+rigProfile: survmine:rig/quadruped_cow
+skinKey: cow
+parts:
+  # Face table (cow.png 64x32, Y-flipped): body = top/spine face x28-40 y04-14
+  # (12x10px -> 0.75x0.625u); head side x8-16 y06-13; legs bottom-cut x4-8/x12-16
+  # y26-32 (4x6px -> 0.25x0.375u, hoof end). Rule: size = regionPx / PPU.
+  - partKey: body
+    region: { x: 0.4375, y: 0.5625, width: 0.1875, height: 0.3125 }
+    pivot: { x: 0.5, y: 0.5 }
+    bindOffset: { x: 0, y: 0 }
+    bindRotation: 0
+    bindScale: { x: 1, y: 1 }
+  - partKey: head
+    region: { x: 0.125, y: 0.5625, width: 0.125, height: 0.25 }
+    pivot: { x: 0.25, y: 0.4 }
+    bindOffset: { x: 0, y: 0 }
+    bindRotation: 0
+    bindScale: { x: 1, y: 1 }
+  - partKey: leg_front
+    region: { x: 0.0625, y: 0, width: 0.0625, height: 0.1875 }
+    pivot: { x: 0.5, y: 0.9 }
+    bindOffset: { x: 0, y: 0 }
+    bindRotation: 0
+    bindScale: { x: 1, y: 1 }
+  - partKey: leg_back
+    region: { x: 0.1875, y: 0, width: 0.0625, height: 0.1875 }
+    pivot: { x: 0.5, y: 0.9 }
+    bindOffset: { x: 0, y: 0 }
+    bindRotation: 0
+    bindScale: { x: 1, y: 1 }
+animationSets:
+  - survmine:animations/cow
+colliderProfile: survmine:collider/cow
+ragdollProfile: survmine:ragdoll/quadruped

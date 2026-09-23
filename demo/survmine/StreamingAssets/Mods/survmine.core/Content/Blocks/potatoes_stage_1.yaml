@@ -1,0 +1,60 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: false
+  isLightObstacle: true
+  isInteractable: false
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: true
+  isCanBurn: true
+  mustHasSolidDowner: true
+  toBreakHasNotBlockDowner: true
+  mustHasSolidAround: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: true
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Hand
+  soundTypeDig: Grass
+  blockBreakBy: None
+  timeBreaking: 0.2
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: true
+blockResources:
+  destroyedClip:
+isMultiBlock: false
+hasCustomDrop: true
+dropContainer:
+  drops:
+    - itemStableId: survmine:potato
+      hasProbExist: false
+      percentProbExist: 0
+      hasRangeProb: false
+      countRange:
+        x: 1
+        y: 1
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+blockTile: potatoes_stage_1
+components:
+- !cropgrowth
+  nextStageStableId: survmine:potatoes_stage_2
+  requiredSoilStableId: survmine:farmland
+  growthTimeRange: {x: 35, y: 65}
+stableId: survmine:potatoes_stage_1
+isLightSource: false
+lightInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

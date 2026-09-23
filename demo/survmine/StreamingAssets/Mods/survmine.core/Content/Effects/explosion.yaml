@@ -1,0 +1,75 @@
+id: survmine:explosion
+
+# Renderer (original: Blocks layer, order 0, billboard, max particle size 0.5)
+sortingLayerName: Blocks
+sortingOrder: 0
+renderMode: Billboard
+alignment: View
+sortMode: None
+minParticleSize: 0
+maxParticleSize: 0.5
+materialShader: SpriteLit
+
+# Main module
+duration: 5
+loop: false
+playOnAwake: false
+simulationSpace: World
+scalingMode: Hierarchy
+maxParticles: 1000
+gravityModifier: 1
+startLifetime:
+  min: 0.2
+  max: 0.8
+startSpeed:
+  min: 15
+  max: 25
+startSize:
+  min: 0.2
+  max: 0.3
+startRotation:
+  min: 0
+  max: 0
+startColor:
+  r: 1
+  g: 1
+  b: 1
+  a: 1
+startColorGradient:
+  enabled: true
+  stops:
+    - time: 0
+      color: { r: 0.17, g: 0.17, b: 0.17, a: 1 }
+    - time: 1
+      color: { r: 0.66, g: 0.66, b: 0.66, a: 1 }
+
+# Emission module: one burst of 800 at t=0
+rateOverTime: 0
+bursts:
+  - time: 0
+    count: 800
+
+# Shape module: cone, half angle 25 degrees
+shape: Cone
+shapeAngle: 25
+shapeRadius: 1
+radiusThickness: 1
+shapeRotation: { x: 0, y: 0, z: 0 }
+shapeScale: { x: 1, y: 1, z: 1 }
+
+# Collision module: 2D collision against the solid tilemap layer
+collision:
+  enabled: true
+  type: World
+  mode: Collision2D
+  dampen: 0
+  bounce: 1
+  lifetimeLoss: 0
+  minKillSpeed: 0
+  maxKillSpeed: 10000
+  radiusScale: 1
+  layerMask: Solid
+  collidesWithDynamic: true
+  voxelSize: 0.5
+  quality: 0
+  maxCollisionShapes: 256

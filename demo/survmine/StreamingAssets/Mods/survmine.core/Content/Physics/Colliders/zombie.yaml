@@ -1,0 +1,5 @@
+stableId: survmine:collider/zombie
+formatVersion: 1
+shape: box
+size: { x: 0.5, y: 1.9 }
+offset: { x: 0, y: 0.5 }

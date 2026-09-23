@@ -1,0 +1,12 @@
+id: survmine:craft/bed
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- tagStableId: survmine:wood/planks
+  count: 6
+outputs:
+- itemStableId: survmine:bed
+  count: 1
+  chance: 1
+category: block
+sortOrder: 0

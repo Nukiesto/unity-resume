@@ -1,0 +1,13 @@
+id: survmine:craft/torch_on
+type: survmine:crafting
+inputs:
+- itemStableId: survmine:stick
+  count: 1
+- tagStableId: survmine:fuel/solid
+  count: 1
+outputs:
+- itemStableId: survmine:torch
+  count: 4
+  chance: 1
+category: block
+sortOrder: 0

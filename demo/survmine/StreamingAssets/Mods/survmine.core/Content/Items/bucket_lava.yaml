@@ -1,0 +1,23 @@
+name: Ведро лавы
+description: ''
+canStack: false
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: bucket_lava
+isLightSource: true
+itemType: Block
+light2DInfo:
+  falloffStrength: 0.5
+  innerOuterAngle: {x: 360, y: 360}
+  intensity: 1
+  lightColor: {r: 0.8156863, g: 0.2705882, b: 0.03529412, a: 1}
+  radiusInner: 0
+  radiusOuter: 5
+maxCount: 1
+showInSandBox: true
+components:
+- !fluidbucket
+  emptyBucketItemStableId: survmine:bucket_empty
+  fluidBlockStableId: survmine:lava_flow
+- !fuel
+  value: 200
+stableId: survmine:bucket_lava

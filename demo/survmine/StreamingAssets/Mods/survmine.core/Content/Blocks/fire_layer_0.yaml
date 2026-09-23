@@ -1,0 +1,55 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: true
+  isSolid: false
+  isLightObstacle: false
+  isInteractable: false
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: false
+  isCanBurn: false
+  mustHasSolidDowner: false
+  toBreakHasNotBlockDowner: false
+  mustHasSolidAround: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: false
+  canPlaceToBack: true
+  setComponentsOnBack: false
+  breakingLevel: Hand
+  soundTypeDig: Stone
+  blockBreakBy: Pickaxe
+  timeBreaking: 1.5
+  toSave: true
+  canToReplace: false
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: false
+blockResources:
+  destroyedClip: null
+isMultiBlock: false
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+blockTile: fire_layer_0
+components:
+- !fire
+  lifeTime: 200
+  newTime: 20
+  extinguishTime: 20
+  lifeRemaining: 0
+  timeRemaining: 0
+stableId: survmine:fire_layer_0
+isLightSource: true
+lightInfo:
+  falloffStrength: 0.5
+  innerOuterAngle: {x: 360, y: 360}
+  intensity: 1
+  lightColor: {r: 0.8117648, g: 0.4745098, b: 0.01568628, a: 1}
+  radiusInner: 0
+  radiusOuter: 5
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

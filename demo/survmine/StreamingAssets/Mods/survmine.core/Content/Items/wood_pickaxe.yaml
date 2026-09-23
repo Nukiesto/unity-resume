@@ -1,0 +1,26 @@
+name: Деревянная кирка
+description: ''
+canStack: false
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: wood_pickaxe
+isLightSource: false
+itemType: Instrument
+light2DInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+maxCount: 1
+showInSandBox: true
+components:
+- !breakable
+  valueCurrent: 50
+  valueMax: 50
+- !pickaxe
+  breakingLevel: Low
+  digModifier: 1.5
+- !fuel
+  value: 25
+stableId: survmine:wood_pickaxe

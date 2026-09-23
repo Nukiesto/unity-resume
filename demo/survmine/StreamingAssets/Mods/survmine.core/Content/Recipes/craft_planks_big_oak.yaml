@@ -1,0 +1,11 @@
+id: survmine:craft/planks_big_oak
+type: survmine:crafting
+inputs:
+- itemStableId: survmine:log_big_oak
+  count: 1
+outputs:
+- itemStableId: survmine:planks_big_oak
+  count: 4
+  chance: 1
+category: block
+sortOrder: 0

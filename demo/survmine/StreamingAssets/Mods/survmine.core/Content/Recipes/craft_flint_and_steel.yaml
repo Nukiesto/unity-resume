@@ -1,0 +1,13 @@
+id: survmine:craft/flint_and_steel
+type: survmine:crafting
+inputs:
+- itemStableId: survmine:flint
+  count: 1
+- itemStableId: survmine:iron_ingot
+  count: 1
+outputs:
+- itemStableId: survmine:flint_and_steel
+  count: 1
+  chance: 1
+category: instrument
+sortOrder: 0

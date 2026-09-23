@@ -1,0 +1,5 @@
+stableId: survmine:smelting
+displayName: Smelting
+usesCraftPlace: true
+usesDuration: true
+usesEnergy: false

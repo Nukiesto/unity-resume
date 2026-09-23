@@ -1,0 +1,14 @@
+id: survmine:compressor
+blockStableId: survmine:compressor
+recipeType: survmine:compressing
+processTime: 5.0
+energyCost: 800
+slots:
+  - id: input
+    role: Input
+    index: 0
+    count: 1
+  - id: output
+    role: Output
+    index: 1
+    count: 1

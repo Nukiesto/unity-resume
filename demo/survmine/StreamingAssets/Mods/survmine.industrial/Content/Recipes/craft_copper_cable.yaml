@@ -1,0 +1,12 @@
+id: survmine:craft/copper_cable
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+  - itemStableId: survmine:iron_ingot
+    count: 3
+outputs:
+  - itemStableId: survmine:copper_cable
+    count: 6
+    chance: 1
+category: machine
+sortOrder: 1

@@ -1,0 +1,124 @@
+id: survmine:worldgen/world/default
+worldType: Default
+
+size:
+  surfaceHeight: 5
+  startSurfaceHeight: 89
+
+palette:
+  mainDirtStableId: survmine:dirt
+  grassBlockStableId: survmine:grass_block
+  stoneStableId: survmine:stone
+  mossyStoneStableId: survmine:cobblestone_mossy
+  grassStableId: survmine:tall_grass
+  limiterStableId: survmine:bedrock
+  lavaStableId: survmine:lava_flow
+  waterStableId: survmine:water_tile
+  chestStableId: survmine:chest
+  vineStableId: survmine:vine
+  torchStableId: survmine:torch
+  sandStableId: survmine:sand
+  oreStableIds:
+    - survmine:coal_ore
+    - survmine:diamond_ore
+    - survmine:emerald_ore
+    - survmine:gold_ore
+    - survmine:iron_ore
+    - survmine:lapis_ore
+    - survmine:redstone_ore
+  roomLootItemStableIds:
+    - survmine:apple
+    - survmine:arrow
+    - survmine:bread
+    - survmine:coal
+    - survmine:iron_ingot
+
+noise:
+  caveNoiseStableId: survmine:worldgen/noise/cave
+  oresNoiseStableId: survmine:worldgen/noise/ores
+  stoneNoiseStableId: survmine:worldgen/noise/stone
+  dirtNoiseStableId: survmine:worldgen/noise/dirt
+  treesNoiseStableId: survmine:worldgen/noise/trees
+  lavaNoiseStableId: survmine:worldgen/noise/lava
+  waterNoiseStableId: survmine:worldgen/noise/water
+
+biomes:
+  temperatureNoiseStableId: survmine:worldgen/noise/temperature
+  temperatureRange: {x: -50, y: 80}
+  entries:
+    - name: Default
+      temperature: 15
+      canGrass: true
+      surfaceBlockStableId: survmine:dirt
+      tree:
+        nameTree: Oak
+        logStableId: survmine:log_oak
+        leavesStableId: survmine:leaves_oak
+    - name: Desert
+      temperature: 30
+      canGrass: false
+      surfaceBlockStableId: survmine:sand
+      tree:
+        nameTree: Cactus
+        logStableId: survmine:cactus
+    - name: Forest
+      temperature: 20
+      canGrass: true
+      surfaceBlockStableId: survmine:dirt
+      tree:
+        nameTree: Oak
+        logStableId: survmine:log_oak
+        leavesStableId: survmine:leaves_oak
+    - name: SnowyDesert
+      temperature: -20
+      canGrass: false
+      surfaceBlockStableId: survmine:snow
+    - name: Tundra
+      temperature: -10
+      canGrass: true
+      surfaceBlockStableId: survmine:dirt
+      tree:
+        nameTree: BigOak
+        logStableId: survmine:log_big_oak
+        leavesStableId: survmine:leaves_big_oak_block
+    - name: Ocean
+      temperature: 90000
+      canGrass: false
+      surfaceBlockStableId: survmine:dirt
+
+defaultModules:
+  cave:
+    dissolveDelta: 5
+  water:
+    noiseScale: 0.1
+    threshold: 0.8
+  room:
+    chancePercent: 40
+    minWidth: 5
+    maxWidth: 10
+    minHeight: 5
+    maxHeight: 10
+    maxRoomsPerChunk: 1
+    maxRoomY: 70
+    tallRoomHeightThreshold: 5
+    tallTorchFromTop: 3
+    lootCountMin: 1
+    lootCountMax: 4
+    lootStackMin: 1
+    lootStackMax: 9
+  vine:
+    noiseScale: 0.1
+    threshold: 0.6
+    maxLength: 6
+  landscape:
+    depressionNoiseScale: 0.05
+    depressionThreshold: 0.4
+    maxDepressionDepth: 10
+    waterLevel: 92
+    surfaceNoiseScale: 0.1
+    surfaceNoiseAmplitude: 5
+  trees:
+    leafRadius: 2
+    leavesTopPadding: 3
+    minHeight: 4
+    maxHeight: 6

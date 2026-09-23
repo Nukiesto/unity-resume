@@ -1,0 +1,14 @@
+id: survmine:craft/solid_fuel_generator
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+  - itemStableId: survmine:iron_ingot
+    count: 8
+  - itemStableId: survmine:furnace
+    count: 1
+outputs:
+  - itemStableId: survmine:solid_fuel_generator
+    count: 1
+    chance: 1
+category: machine
+sortOrder: 0

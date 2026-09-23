@@ -1,0 +1,11 @@
+id: survmine:craft/stonebrick
+type: survmine:crafting
+inputs:
+- itemStableId: survmine:stone
+  count: 4
+outputs:
+- itemStableId: survmine:stonebrick
+  count: 4
+  chance: 1
+category: block
+sortOrder: 0

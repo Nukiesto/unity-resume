@@ -1,0 +1,24 @@
+name: Огниво
+description: ''
+canStack: false
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: flint_and_steel
+isLightSource: false
+itemType: Block
+light2DInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+maxCount: 1
+showInSandBox: true
+components:
+- !flintandsteel
+  fireBlockStableId: survmine:fire_layer_0
+  useItemClip: null
+- !breakable
+  valueCurrent: 200
+  valueMax: 200
+stableId: survmine:flint_and_steel

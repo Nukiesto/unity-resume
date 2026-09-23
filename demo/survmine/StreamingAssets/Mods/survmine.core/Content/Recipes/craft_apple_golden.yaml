@@ -1,0 +1,13 @@
+id: survmine:craft/apple_golden
+type: survmine:crafting
+inputs:
+- itemStableId: survmine:apple
+  count: 1
+- itemStableId: survmine:gold_ingot
+  count: 1
+outputs:
+- itemStableId: survmine:apple_golden
+  count: 2
+  chance: 1
+category: meal
+sortOrder: 0

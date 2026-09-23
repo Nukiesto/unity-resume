@@ -1,0 +1,19 @@
+name: Чит-палочка
+description: Ломает любой блок без ограничений.
+canStack: false
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: blaze_rod
+isLightSource: false
+itemType: Instrument
+light2DInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+maxCount: 1
+showInSandBox: true
+components:
+- !cheatwand
+stableId: survmine:cheat_wand

@@ -1,0 +1,9 @@
+stableId: survmine:events/zombie_attack
+formatVersion: 1
+animationSet: survmine:animations/zombie
+events:
+  - stateKey: attack
+    time: 0.3
+    kindId: survmine:activate
+    actionKey: melee_attack
+    originPart: head

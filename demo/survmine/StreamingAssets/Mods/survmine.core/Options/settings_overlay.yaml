@@ -1,0 +1,160 @@
+sections:
+  - key: game
+    titleKey: Game
+    options:
+      - key: language
+        kind: dropdown
+        valueType: language
+        labelKey: Language
+        optionsSource: available_languages
+      - key: input_mode
+        kind: dropdown
+        valueType: enum
+        enumType: Runtime.Game.Core.Input.InputMode
+        defaultValue: "Auto"
+        labelKey: InputMode
+        optionsSource: enum
+        optionLabelKeyPrefix: InputMode
+      - key: auto_jump
+        kind: toggle
+        valueType: bool
+        defaultValue: "false"
+        labelKey: Option.AutoJump
+        label: Auto jump
+      - key: inventory_allow_player_input
+        kind: toggle
+        valueType: bool
+        defaultValue: "false"
+        labelKey: Option.InventoryAllowPlayerInput
+        label: Allow player input in inventory
+  - key: audio
+    titleKey: Audio
+    options:
+      - key: music
+        kind: slider
+        mode: normal
+        valueType: float
+        defaultValue: "1"
+        labelKey: Option.Music
+        min: 0
+        max: 1
+        format: percent
+      - key: sound
+        kind: slider
+        mode: normal
+        valueType: float
+        defaultValue: "1"
+        labelKey: Option.Sound
+        min: 0
+        max: 1
+        format: percent
+      - key: advanced_audio
+        kind: toggle
+        valueType: bool
+        defaultValue: "true"
+        labelKey: Option.AdvancedAudio
+        label: Advanced sound system (Exp.)
+  - key: graphics
+    titleKey: Graphics
+    options:
+      - key: quality_level
+        kind: dropdown
+        valueType: int
+        defaultValue: "0"
+        labelKey: QualityLevel
+        optionsSource: quality_levels
+        optionLabelKeyPrefix: QualityLevel
+      - key: render_scale
+        kind: slider
+        mode: stepped
+        step: 0.1
+        valueType: float
+        defaultValue: "1"
+        labelKey: RenderScale
+        min: 0.1
+        max: 2.0
+        format: percent
+      - key: upscale_filter
+        kind: dropdown
+        valueType: enum
+        enumType: UnityEngine.Rendering.Universal.UpscalingFilterSelection
+        defaultValue: "Linear"
+        labelKey: UpscaleFilter
+        optionsSource: enum
+        optionLabelKeyPrefix: UpscaleFilter
+      - key: sun_shadows
+        kind: toggle
+        valueType: bool
+        defaultValue: "true"
+        labelKey: Option.SunShadows
+      - key: ui_blur
+        kind: toggle
+        valueType: bool
+        defaultValue: "true"
+        labelKey: Option.UiBlur
+        label: UI blur
+      - key: particles
+        kind: toggle
+        valueType: bool
+        defaultValue: "true"
+        labelKey: Option.Particles
+        label: Particles
+      - key: vsync
+        kind: toggle
+        valueType: bool
+        defaultValue: "false"
+        labelKey: Option.VSync
+  - key: controls
+    title: Controls
+    options:
+      - key: input
+        kind: controls
+        valueType: string
+        defaultValue: ""
+        labelKey: Controls
+  - key: internal
+    options:
+      - key: joystick_type
+        kind: hidden
+        visible: false
+        valueType: int
+        defaultValue: "0"
+        min: 0
+      - key: optimization_measure_frame_interval
+        kind: hidden
+        visible: false
+        valueType: int
+        defaultValue: "1"
+        min: 1
+        max: 120
+      - key: optimization_measure_tick_interval
+        kind: hidden
+        visible: false
+        valueType: int
+        defaultValue: "1"
+        min: 1
+        max: 120
+      - key: optimization_ui_frame_interval
+        kind: hidden
+        visible: false
+        valueType: int
+        defaultValue: "8"
+        min: 1
+        max: 120
+      - key: optimization_ui_tick_interval
+        kind: hidden
+        visible: false
+        valueType: int
+        defaultValue: "4"
+        min: 1
+        max: 120
+      - key: debug_panel_allow_player_movement
+        kind: hidden
+        visible: false
+        valueType: bool
+        defaultValue: "false"
+      - key: debug_panel_allow_block_highlight
+        kind: hidden
+        visible: false
+        valueType: bool
+        defaultValue: "false"

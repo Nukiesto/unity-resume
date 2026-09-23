@@ -1,0 +1,19 @@
+name: Факел
+description: ''
+canStack: true
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: torch_on
+isLightSource: true
+itemType: Block
+light2DInfo:
+  falloffStrength: 0.5
+  innerOuterAngle: {x: 360, y: 360}
+  intensity: 1
+  lightColor: {r: 1, g: 0.7176471, b: 0, a: 1}
+  radiusInner: 0
+  radiusOuter: 5
+maxCount: 999
+showInSandBox: true
+components: []
+stableId: survmine:torch
+blockDataStableId: survmine:torch

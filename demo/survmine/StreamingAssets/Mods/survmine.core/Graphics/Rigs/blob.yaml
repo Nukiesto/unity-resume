@@ -1,0 +1,55 @@
+stableId: survmine:rig/blob
+formatVersion: 1
+pixelsPerUnit: 16
+parts:
+- key: body
+  type: transform
+  parentPartKey: ''
+  bindPosition:
+    x: 0
+    y: 0
+  bindRotation: 0
+  bindScale:
+    x: 1
+    y: 1
+  geometry:
+    x: 1
+    y: 1
+  pivot:
+    x: 0.5
+    y: 0.5
+  sortingOffset: 0
+- key: shell
+  type: sprite
+  parentPartKey: body
+  bindPosition:
+    x: 0
+    y: 0.45
+  bindRotation: 0
+  bindScale:
+    x: 1
+    y: 1
+  geometry:
+    x: 1
+    y: 1
+  pivot:
+    x: 0.5
+    y: 0.5
+  sortingOffset: 0
+- key: face
+  type: sprite
+  parentPartKey: body
+  bindPosition:
+    x: 0
+    y: 0.45
+  bindRotation: 0
+  bindScale:
+    x: 1
+    y: 1
+  geometry:
+    x: 1
+    y: 1
+  pivot:
+    x: 0.5
+    y: 0.5
+  sortingOffset: 1

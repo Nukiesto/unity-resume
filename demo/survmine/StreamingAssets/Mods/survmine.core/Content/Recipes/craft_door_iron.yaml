@@ -1,0 +1,12 @@
+id: survmine:craft/door_iron
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- itemStableId: survmine:iron_ingot
+  count: 6
+outputs:
+- itemStableId: survmine:door_iron
+  count: 3
+  chance: 1
+category: block
+sortOrder: 0

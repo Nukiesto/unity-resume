@@ -1,0 +1,14 @@
+id: survmine:craft/iron_axe
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- itemStableId: survmine:iron_ingot
+  count: 3
+- itemStableId: survmine:stick
+  count: 2
+outputs:
+- itemStableId: survmine:iron_axe
+  count: 1
+  chance: 1
+category: instrument
+sortOrder: 0

@@ -1,0 +1,12 @@
+id: survmine:craft/bucket_empty
+type: survmine:custom_craft_place
+craftPlaceTagStableId: survmine:craft_place/basic
+inputs:
+- itemStableId: survmine:iron_ingot
+  count: 3
+outputs:
+- itemStableId: survmine:bucket_empty
+  count: 3
+  chance: 1
+category: resource
+sortOrder: 0

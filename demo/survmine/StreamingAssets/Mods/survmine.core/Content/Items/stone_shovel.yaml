@@ -1,0 +1,24 @@
+name: Каменная лопата
+description: ''
+canStack: false
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: stone_shovel
+isLightSource: false
+itemType: Instrument
+light2DInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+maxCount: 1
+showInSandBox: true
+components:
+- !shovel
+  breakingLevel: Low
+  digModifier: 1.5
+- !breakable
+  valueCurrent: 75
+  valueMax: 75
+stableId: survmine:stone_shovel

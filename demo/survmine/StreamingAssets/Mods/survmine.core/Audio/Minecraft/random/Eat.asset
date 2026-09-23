@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-6207954424874675425
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: eat2_{-6207954424874675425}
+  m_AudioClip: {fileID: 8300000, guid: 33e7acdb2289fed4faa86f02eb8ebe2e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &3099785187388217396
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: eat3_{3099785187388217396}
+  m_AudioClip: {fileID: 8300000, guid: 5bc8680b1cd99c04aacf4fc1b1a6df13, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5859210077881896523
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: eat1_{5859210077881896523}
+  m_AudioClip: {fileID: 8300000, guid: 3cf1a2ce8b0804545825b2fb46a589d6, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Eat
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: -25.737267, y: 12.868633}
+  m_PitchRandomizationRange: {x: -250.93834, y: 247.72127}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 5859210077881896523}
+  - {fileID: -6207954424874675425}
+  - {fileID: 3099785187388217396}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 1
+  m_TriggerMode: 1
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 0
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0

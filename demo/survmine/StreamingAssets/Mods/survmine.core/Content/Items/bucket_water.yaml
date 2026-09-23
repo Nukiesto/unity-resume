@@ -1,0 +1,21 @@
+name: Ведро воды
+description: ''
+canStack: false
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: bucket_water
+isLightSource: false
+itemType: Block
+light2DInfo:
+  falloffStrength: 0
+  innerOuterAngle: {x: 0, y: 0}
+  intensity: 0
+  lightColor: {r: 0, g: 0, b: 0, a: 0}
+  radiusInner: 0
+  radiusOuter: 0
+maxCount: 1
+showInSandBox: true
+components:
+- !fluidbucket
+  emptyBucketItemStableId: survmine:bucket_empty
+  fluidBlockStableId: survmine:water_tile
+stableId: survmine:bucket_water

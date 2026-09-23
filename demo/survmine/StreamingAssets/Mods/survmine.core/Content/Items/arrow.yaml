@@ -1,0 +1,11 @@
+name: Стрела
+description: ''
+canStack: true
+color: {r: 1, g: 1, b: 1, a: 1}
+icon: arrow
+isLightSource: false
+itemType: Block
+maxCount: 999
+showInSandBox: false
+components: []
+stableId: survmine:arrow

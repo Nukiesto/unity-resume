@@ -1,0 +1,11 @@
+id: survmine:craft/glowstone
+type: survmine:crafting
+inputs:
+- itemStableId: survmine:glowstone_dust
+  count: 9
+outputs:
+- itemStableId: survmine:glowstone
+  count: 1
+  chance: 1
+category: block
+sortOrder: 0

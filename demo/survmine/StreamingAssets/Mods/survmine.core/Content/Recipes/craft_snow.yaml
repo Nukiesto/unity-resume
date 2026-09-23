@@ -1,0 +1,11 @@
+id: survmine:craft/snow
+type: survmine:crafting
+inputs:
+- itemStableId: survmine:snowball
+  count: 4
+outputs:
+- itemStableId: survmine:snow
+  count: 1
+  chance: 1
+category: block
+sortOrder: 0

@@ -1,0 +1,72 @@
+stableId: survmine:rig/bird
+formatVersion: 1
+pixelsPerUnit: 16
+parts:
+- key: body
+  type: sprite
+  parentPartKey: ''
+  bindPosition:
+    x: 0
+    y: 0.35
+  bindRotation: 0
+  bindScale:
+    x: 1
+    y: 1
+  geometry:
+    x: 0.375
+    y: 0.5
+  pivot:
+    x: 0.5
+    y: 0.5
+  sortingOffset: 0
+- key: head
+  type: sprite
+  parentPartKey: body
+  bindPosition:
+    x: 0.08712308
+    y: 0.3069643
+  bindRotation: 0
+  bindScale:
+    x: 1
+    y: 1
+  geometry:
+    x: 0.3125
+    y: 0.375
+  pivot:
+    x: 0.25
+    y: 0.4
+  sortingOffset: 1
+- key: wing
+  type: sprite
+  parentPartKey: body
+  bindPosition:
+    x: -0.26267856
+    y: 0.076964304
+  bindRotation: 0
+  bindScale:
+    x: 1
+    y: 1
+  geometry:
+    x: 0.375
+    y: 0.25
+  pivot:
+    x: 0.2
+    y: 0.8
+  sortingOffset: 1
+- key: nose
+  type: transform
+  parentPartKey: body
+  bindPosition:
+    x: 0.55580056
+    y: 0.22058907
+  bindRotation: 0
+  bindScale:
+    x: 1
+    y: 1
+  geometry:
+    x: 0.2
+    y: 0.2
+  pivot:
+    x: 0.5
+    y: 0.5
+  sortingOffset: 0

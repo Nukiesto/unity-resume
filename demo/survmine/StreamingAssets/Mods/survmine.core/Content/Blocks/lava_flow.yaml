@@ -1,0 +1,53 @@
+blockProps:
+  isBreackable: true
+  isCanBreakPlayer: false
+  isSolid: false
+  isLightObstacle: false
+  isInteractable: false
+  isScalable: false
+  isRotatable: false
+  mustHasBlockDowner: false
+  isCanBurn: false
+  mustHasSolidDowner: false
+  toBreakHasNotBlockDowner: false
+  mustHasSolidAround: false
+  toBreakHasNotBlockAround: false
+  backBlockAsSupport: false
+  canDropItem: false
+  canPlaceToBack: false
+  setComponentsOnBack: false
+  breakingLevel: Hardest
+  soundTypeDig: Stone
+  blockBreakBy: Pickaxe
+  timeBreaking: 1.5
+  toSave: true
+  canToReplace: true
+  isBrokeByFluid: false
+  isHasUI: false
+  canPush: false
+blockResources:
+  destroyedClip: null
+isMultiBlock: false
+hasCustomDrop: false
+dropContainer:
+  drops: []
+multiBlockData:
+  maxPoint: {x: 0, y: 0}
+  elements: []
+visualKey: LavaTile
+components:
+- !fluidsource
+  fluidPartStableId: survmine:lava_flow_single
+- !lava {}
+- !inbounds {}
+stableId: survmine:lava_flow
+isLightSource: true
+lightInfo:
+  falloffStrength: 0.5
+  innerOuterAngle: {x: 360, y: 360}
+  intensity: 1
+  lightColor: {r: 0.8156863, g: 0.2705882, b: 0.03529412, a: 1}
+  radiusInner: 0
+  radiusOuter: 5
+mustHasBlockDownerExp: false
+mustHasDownerBlockData: []

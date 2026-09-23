@@ -1,0 +1,5 @@
+stableId: survmine:collider/slime
+formatVersion: 1
+shape: box
+size: { x: 0.9, y: 0.8 }
+offset: { x: 0, y: 0.4 }

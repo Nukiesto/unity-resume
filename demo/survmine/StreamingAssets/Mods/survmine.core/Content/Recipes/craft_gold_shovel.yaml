@@ -1,0 +1,11 @@
+id: survmine:craft/gold_shovel
+type: survmine:crafting
+inputs:
+- itemStableId: survmine:iron_ingot
+  count: 1
+outputs:
+- itemStableId: survmine:gold_shovel
+  count: 1
+  chance: 1
+category: instrument
+sortOrder: 0

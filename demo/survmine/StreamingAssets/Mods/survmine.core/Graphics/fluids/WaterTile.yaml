@@ -1,0 +1,10 @@
+visualKey: WaterTile
+shaderName: Shader Graphs/FluidShader
+tileSpriteAlias: water_still
+fillSpriteAlias: water_still
+edgeSpriteAlias: water_flow
+sortingLayerName: Entity
+sortingOrder: 32767
+physicsLayerName: Water
+flowForce: 10
+particleForce: 25
