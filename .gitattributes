@@ -11,3 +11,13 @@
 *.jpg binary
 *.jpeg binary
 *.ico binary
+*.webp binary
+*.avif binary
+*.gif binary
+*.apk binary
+*.aab binary
+*.mp4 binary
+*.webm binary
+*.fbx binary
+*.psd binary
+*.pdf binary

@@ -1,0 +1,215 @@
+{
+  "generatedAt": "2026-09-23T18:18:17.942Z",
+  "projectCount": 18,
+  "imageCount": 118,
+  "projects": {
+    "awards": {
+      "cover": "assets/img/screenshots/awards/Снимок экрана (8).png",
+      "images": [
+        "assets/img/screenshots/awards/Снимок экрана (8).png",
+        "assets/img/screenshots/awards/Снимок экрана (9).png",
+        "assets/img/screenshots/awards/Снимок экрана (10).png",
+        "assets/img/screenshots/awards/Снимок экрана (11).png",
+        "assets/img/screenshots/awards/Снимок экрана (12).png",
+        "assets/img/screenshots/awards/Снимок экрана (13).png"
+      ]
+    },
+    "firesafetyquest": {
+      "cover": "assets/img/screenshots/firesafetyquest/cover.jpg",
+      "images": [
+        "assets/img/screenshots/firesafetyquest/cover.jpg",
+        "assets/img/screenshots/firesafetyquest/123.png",
+        "assets/img/screenshots/firesafetyquest/photo_2026-09-24_01-58-35.jpg",
+        "assets/img/screenshots/firesafetyquest/photo_2026-09-24_01-58-42.jpg"
+      ]
+    },
+    "firstaidtraining": {
+      "cover": "assets/img/screenshots/firstaidtraining/cover.png",
+      "images": [
+        "assets/img/screenshots/firstaidtraining/cover.png",
+        "assets/img/screenshots/firstaidtraining/Рисунок2.png",
+        "assets/img/screenshots/firstaidtraining/Рисунок4.png",
+        "assets/img/screenshots/firstaidtraining/Рисунок5.png"
+      ]
+    },
+    "horror": {
+      "cover": "assets/img/screenshots/horror/cover.png",
+      "images": [
+        "assets/img/screenshots/horror/cover.png",
+        "assets/img/screenshots/horror/Снимок экрана (48).png",
+        "assets/img/screenshots/horror/Снимок экрана (49).png",
+        "assets/img/screenshots/horror/Снимок экрана (50).png",
+        "assets/img/screenshots/horror/Снимок экрана (51).png",
+        "assets/img/screenshots/horror/Снимок экрана (52).png",
+        "assets/img/screenshots/horror/Снимок экрана (53).png",
+        "assets/img/screenshots/horror/Снимок экрана (55).png",
+        "assets/img/screenshots/horror/Снимок экрана (56).png",
+        "assets/img/screenshots/horror/Снимок экрана (57).png",
+        "assets/img/screenshots/horror/Снимок экрана (58).png",
+        "assets/img/screenshots/horror/Снимок экрана (59).png",
+        "assets/img/screenshots/horror/Снимок экрана (60).png"
+      ]
+    },
+    "minigame1": {
+      "cover": "assets/img/screenshots/minigame1/Снимок экрана (14).png",
+      "images": [
+        "assets/img/screenshots/minigame1/Снимок экрана (14).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (15).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (16).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (17).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (18).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (19).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (20).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (21).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (22).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (23).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (24).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (25).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (26).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (27).png",
+        "assets/img/screenshots/minigame1/Снимок экрана (28).png"
+      ]
+    },
+    "musicplayer": {
+      "cover": "assets/img/screenshots/musicplayer/Снимок экрана (29).png",
+      "images": [
+        "assets/img/screenshots/musicplayer/Снимок экрана (29).png",
+        "assets/img/screenshots/musicplayer/Снимок экрана (30).png",
+        "assets/img/screenshots/musicplayer/Снимок экрана (31).png",
+        "assets/img/screenshots/musicplayer/Снимок экрана (32).png"
+      ]
+    },
+    "new-rpg": {
+      "cover": "assets/img/screenshots/new-rpg/Снимок экрана (61).png",
+      "images": [
+        "assets/img/screenshots/new-rpg/Снимок экрана (61).png",
+        "assets/img/screenshots/new-rpg/Снимок экрана (62).png",
+        "assets/img/screenshots/new-rpg/Снимок экрана (63).png",
+        "assets/img/screenshots/new-rpg/Снимок экрана (64).png"
+      ]
+    },
+    "organiser": {
+      "cover": "assets/img/screenshots/organiser/Снимок экрана (88).png",
+      "images": [
+        "assets/img/screenshots/organiser/Снимок экрана (88).png",
+        "assets/img/screenshots/organiser/Снимок экрана (89).png"
+      ]
+    },
+    "presentation": {
+      "cover": "assets/img/screenshots/presentation/cover.png",
+      "images": [
+        "assets/img/screenshots/presentation/cover.png",
+        "assets/img/screenshots/presentation/Снимок экрана (34).png",
+        "assets/img/screenshots/presentation/Снимок экрана (35).png",
+        "assets/img/screenshots/presentation/Снимок экрана (36).png",
+        "assets/img/screenshots/presentation/Снимок экрана (37).png",
+        "assets/img/screenshots/presentation/Снимок экрана (38).png",
+        "assets/img/screenshots/presentation/Снимок экрана (39).png",
+        "assets/img/screenshots/presentation/Снимок экрана (40).png",
+        "assets/img/screenshots/presentation/Снимок экрана (41).png"
+      ]
+    },
+    "quest": {
+      "cover": "assets/img/screenshots/quest/cover.png",
+      "images": [
+        "assets/img/screenshots/quest/cover.png",
+        "assets/img/screenshots/quest/Рисунок10.png",
+        "assets/img/screenshots/quest/Рисунок11.png",
+        "assets/img/screenshots/quest/Рисунок12.png",
+        "assets/img/screenshots/quest/Рисунок13.png",
+        "assets/img/screenshots/quest/Снимок экрана 2026-09-24 020454.png",
+        "assets/img/screenshots/quest/Снимок экрана 2026-09-24 020510.png",
+        "assets/img/screenshots/quest/Снимок экрана 2026-09-24 020525.png",
+        "assets/img/screenshots/quest/Снимок экрана 2026-09-24 020542.png",
+        "assets/img/screenshots/quest/Снимок экрана 2026-09-24 020600.png",
+        "assets/img/screenshots/quest/Снимок экрана 2026-09-24 020610.png",
+        "assets/img/screenshots/quest/Снимок экрана 2026-09-24 020618.png",
+        "assets/img/screenshots/quest/Снимок экрана 2026-09-24 020650.png",
+        "assets/img/screenshots/quest/Снимок экрана 2026-09-24 020705.png",
+        "assets/img/screenshots/quest/Снимок экрана 2026-09-24 020722.png",
+        "assets/img/screenshots/quest/Снимок экрана 2026-09-24 020737.png",
+        "assets/img/screenshots/quest/Снимок экрана 2026-09-24 020746.png",
+        "assets/img/screenshots/quest/Снимок экрана 2026-09-24 020804.png"
+      ]
+    },
+    "simple-rpg": {
+      "cover": "assets/img/screenshots/simple-rpg/cover.png",
+      "images": [
+        "assets/img/screenshots/simple-rpg/cover.png",
+        "assets/img/screenshots/simple-rpg/Снимок экрана (66).png",
+        "assets/img/screenshots/simple-rpg/Снимок экрана (67).png"
+      ]
+    },
+    "strategy-economic": {
+      "cover": "assets/img/screenshots/strategy-economic/Снимок экрана (71).png",
+      "images": [
+        "assets/img/screenshots/strategy-economic/Снимок экрана (71).png",
+        "assets/img/screenshots/strategy-economic/Снимок экрана (72).png",
+        "assets/img/screenshots/strategy-economic/Снимок экрана (73).png"
+      ]
+    },
+    "strategy2d": {
+      "cover": "assets/img/screenshots/strategy2d/Снимок экрана (68).png",
+      "images": [
+        "assets/img/screenshots/strategy2d/Снимок экрана (68).png",
+        "assets/img/screenshots/strategy2d/Снимок экрана (69).png",
+        "assets/img/screenshots/strategy2d/Снимок экрана (70).png"
+      ]
+    },
+    "survmine": {
+      "cover": "assets/img/screenshots/survmine/cover.png",
+      "images": [
+        "assets/img/screenshots/survmine/cover.png",
+        "assets/img/screenshots/survmine/Снимок экрана (76).png",
+        "assets/img/screenshots/survmine/Снимок экрана (78).png",
+        "assets/img/screenshots/survmine/Снимок экрана (79).png",
+        "assets/img/screenshots/survmine/Снимок экрана (80).png",
+        "assets/img/screenshots/survmine/Снимок экрана (81).png",
+        "assets/img/screenshots/survmine/Снимок экрана (82).png",
+        "assets/img/screenshots/survmine/Снимок экрана (83).png"
+      ]
+    },
+    "survmine3d": {
+      "cover": "assets/img/screenshots/survmine3d/Снимок экрана (42).png",
+      "images": [
+        "assets/img/screenshots/survmine3d/Снимок экрана (42).png",
+        "assets/img/screenshots/survmine3d/Снимок экрана (43).png",
+        "assets/img/screenshots/survmine3d/Снимок экрана (44).png",
+        "assets/img/screenshots/survmine3d/Снимок экрана (45).png",
+        "assets/img/screenshots/survmine3d/Снимок экрана (46).png"
+      ]
+    },
+    "survminemodtool": {
+      "cover": "assets/img/screenshots/survminemodtool/cover.png",
+      "images": [
+        "assets/img/screenshots/survminemodtool/cover.png",
+        "assets/img/screenshots/survminemodtool/Снимок экрана (85).png",
+        "assets/img/screenshots/survminemodtool/Снимок экрана (86).png"
+      ]
+    },
+    "tankgame-2d": {
+      "cover": "assets/img/screenshots/tankgame-2d/Снимок экрана (74).png",
+      "images": [
+        "assets/img/screenshots/tankgame-2d/Снимок экрана (74).png",
+        "assets/img/screenshots/tankgame-2d/Снимок экрана (75).png"
+      ]
+    },
+    "trainsimulator": {
+      "cover": "assets/img/screenshots/trainsimulator/cover.png",
+      "images": [
+        "assets/img/screenshots/trainsimulator/cover.png",
+        "assets/img/screenshots/trainsimulator/6.gif",
+        "assets/img/screenshots/trainsimulator/7.gif",
+        "assets/img/screenshots/trainsimulator/8.gif",
+        "assets/img/screenshots/trainsimulator/9.gif",
+        "assets/img/screenshots/trainsimulator/ezgif-7-f42f648c24.gif",
+        "assets/img/screenshots/trainsimulator/photo_2024-12-25_15-20-37.jpg",
+        "assets/img/screenshots/trainsimulator/photo_2026-09-24_00-57-34.jpg",
+        "assets/img/screenshots/trainsimulator/photo_2026-09-24_00-57-38.jpg",
+        "assets/img/screenshots/trainsimulator/Рисунок7.png",
+        "assets/img/screenshots/trainsimulator/Рисунок8.png",
+        "assets/img/screenshots/trainsimulator/Рисунок9.png"
+      ]
+    }
+  }
+}
