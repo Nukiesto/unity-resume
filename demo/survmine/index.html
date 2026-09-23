@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>SurvMine — WebGL демо</title>
+<meta name="theme-color" content="#0a0c11">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<script src="Build/SurvMineWeb.loader.js"></script>
+<style>
+  :root { --bg:#0a0c11; --surface:#141824; --border:#262d40; --text:#e8ecf4; --muted:#7b8499; --accent:#7c5cff; --accent-2:#22d3ee; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; overflow: hidden; }
+  #unity-container { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+  #unity-canvas { width: 100%; height: 100%; background: #000; display: block; }
+  #unity-loading-bar {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    display: none; flex-direction: column; align-items: center; gap: 18px; width: min(420px, 82vw); text-align: center;
+  }
+  .logo {
+    width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center;
+    background: linear-gradient(135deg, #22c55e, #0ea5e9); color: #08090d; font-weight: 800; font-size: 21px;
+    box-shadow: 0 16px 40px -14px rgba(34, 197, 94, .8);
+  }
+  #unity-loading-bar h1 { font-size: 20px; margin: 0; font-weight: 700; letter-spacing: -.02em; }
+  #unity-loading-bar .step { font-size: 13px; color: var(--muted); min-height: 18px; }
+  .bar { width: 100%; height: 6px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); overflow: hidden; }
+  .bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--accent), var(--accent-2)); transition: width .25s ease; }
+  .pct { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  #unity-warning { position: fixed; left: 50%; top: 16px; transform: translateX(-50%); z-index: 20; width: min(720px, 92vw); }
+  #unity-warning > div { margin-bottom: 8px; border-radius: 10px; font-size: 13.5px; color: #0a0c11; font-weight: 600; }
+  #error {
+    position: fixed; inset: 0; display: none; flex-direction: column; align-items: center; justify-content: center;
+    gap: 16px; padding: 30px; text-align: center; background: var(--bg); z-index: 30;
+  }
+  #error h2 { margin: 0; font-size: 20px; }
+  #error p { margin: 0; max-width: 560px; color: var(--muted); font-size: 14px; line-height: 1.6; }
+  #error code { color: #fca5a5; font-size: 12.5px; word-break: break-all; }
+  #error a { display: inline-block; margin-top: 6px; padding: 11px 20px; border-radius: 11px; font-size: 14px; font-weight: 600;
+    text-decoration: none; color: #fff; background: linear-gradient(135deg, var(--accent), #5b46d6); }
+</style>
+</head>
+<body>
+<div id="unity-container">
+  <canvas id="unity-canvas" tabindex="-1"></canvas>
+  <div id="unity-loading-bar">
+    <div class="logo">SM</div>
+    <h1>SurvMine</h1>
+    <div class="step" id="step">Подготовка…</div>
+    <div class="bar"><i id="barFill"></i></div>
+    <div class="pct" id="pct">0%</div>
+  </div>
+  <div id="unity-warning"></div>
+</div>
+
+<div id="error">
+  <h2>Не удалось запустить демо</h2>
+  <p id="errorText"></p>
+  <p id="errorDetailWrap" style="display:none"><code id="errorDetail"></code></p>
+  <a href="../../index.html#library">Вернуться к портфолио</a>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var barFill = document.getElementById('barFill');
+  var pctEl = document.getElementById('pct');
+  var stepEl = document.getElementById('step');
+  var loadingBar = document.getElementById('unity-loading-bar');
+  var canvas = document.getElementById('unity-canvas');
+  var warningBanner = document.getElementById('unity-warning');
+
+  function setProgress(p) {
+    p = Math.max(0, Math.min(1, p));
+    barFill.style.width = (p * 100).toFixed(1) + '%';
+    pctEl.textContent = Math.round(p * 100) + '%';
+  }
+
+  function setStep(text) { stepEl.textContent = text; }
+
+  function fail(message, detail) {
+    loadingBar.style.display = 'none';
+    document.getElementById('error').style.display = 'flex';
+    document.getElementById('errorText').textContent = message;
+    if (detail) {
+      document.getElementById('errorDetailWrap').style.display = 'block';
+      document.getElementById('errorDetail').textContent = detail;
+    }
+  }
+
+  function unityShowBanner(msg, type) {
+    var div = document.createElement('div');
+    div.innerHTML = msg;
+    div.style.padding = '10px';
+    div.style.background = type === 'error' ? '#f87171' : (type === 'warning' ? '#fbbf24' : '#a5b4fc');
+    warningBanner.appendChild(div);
+    if (type !== 'error') {
+      setTimeout(function () { if (div.parentNode) div.parentNode.removeChild(div); }, 6000);
+    }
+  }
+
+  function hasGzipStream() {
+    if (typeof DecompressionStream !== 'function') return false;
+    try { return !!new DecompressionStream('gzip'); } catch (e) { return false; }
+  }
+
+  /* Fetch a build file and return an object URL.
+     Handles both cases: the host serves the .gz as-is (we decompress),
+     or the host sets Content-Encoding: gzip (browser already decompressed). */
+  async function fetchAsset(url, type, onProgress) {
+    var res = await fetch(url);
+    if (!res.ok) throw new Error(url + ' → HTTP ' + res.status);
+
+    var preDecoded = !!res.headers.get('content-encoding');
+    var total = preDecoded ? 0 : (parseInt(res.headers.get('content-length') || '0', 10) || 0);
+    var loaded = 0;
+
+    var body = res.body;
+    if (body && typeof TransformStream === 'function') {
+      body = body.pipeThrough(new TransformStream({
+        transform: function (chunk, ctrl) {
+          loaded += chunk.byteLength;
+          if (onProgress) onProgress(loaded, total);
+          ctrl.enqueue(chunk);
+        }
+      }));
+    }
+
+    var buffer = await new Response(body).arrayBuffer();
+    var bytes = new Uint8Array(buffer);
+    var isGzip = bytes.length > 2 && bytes[0] === 0x1f && bytes[1] === 0x8b;
+
+    if (isGzip) {
+      if (!hasGzipStream()) {
+        throw new Error('NO_GZIP_STREAM');
+      }
+      setStep(stepEl.textContent + ' (распаковка)');
+      var stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+      return URL.createObjectURL(new Blob([await new Response(stream).arrayBuffer()], { type: type }));
+    }
+
+    return URL.createObjectURL(new Blob([bytes], { type: type }));
+  }
+
+  async function start() {
+    loadingBar.style.display = 'flex';
+    setProgress(0.01);
+    setStep('Подготовка файлов…');
+
+    var files = [
+      { url: 'Build/SurvMineWeb.framework.js.gz', label: 'Загрузка движка…', weight: 0.03, type: 'text/javascript' },
+      { url: 'Build/SurvMineWeb.wasm.gz', label: 'Загрузка WebAssembly…', weight: 0.65, type: 'application/wasm' },
+      { url: 'Build/SurvMineWeb.data.gz', label: 'Загрузка игровых данных…', weight: 0.32, type: 'application/octet-stream' }
+    ];
+
+    var doneWeight = 0;
+    var urls = {};
+
+    try {
+      for (var i = 0; i < files.length; i++) {
+        var f = files[i];
+        setStep(f.label);
+        urls[f.url] = await fetchAsset(f.url, f.type, function (loaded, total) {
+          var frac = total ? loaded / total : 0;
+          setProgress(doneWeight + frac * f.weight);
+        });
+        doneWeight += f.weight;
+        setProgress(doneWeight);
+      }
+    } catch (e) {
+      var msg = String(e && e.message || e);
+      if (msg === 'NO_GZIP_STREAM') {
+        fail('Ваш браузер не поддерживает распаковку gzip в потоке (DecompressionStream). ' +
+             'Демо работает в Chrome 80+, Edge, Firefox 113+ и Safari 16.4+.');
+      } else {
+        fail('Ошибка загрузки игровых файлов.', msg);
+      }
+      return;
+    }
+
+    setStep('Запуск движка…');
+
+    var config = {
+      arguments: [],
+      dataUrl: urls['Build/SurvMineWeb.data.gz'],
+      frameworkUrl: urls['Build/SurvMineWeb.framework.js.gz'],
+      codeUrl: urls['Build/SurvMineWeb.wasm.gz'],
+      streamingAssetsUrl: 'StreamingAssets',
+      companyName: 'Nukiesto',
+      productName: 'SurvMine',
+      productVersion: '1.1.1',
+      showBanner: unityShowBanner
+    };
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      var meta = document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+      document.head.appendChild(meta);
+    }
+
+    try {
+      var instance = await createUnityInstance(canvas, config, function (progress) {
+        setProgress(0.95 + progress * 0.05);
+        if (progress >= 1) setStep('Почти готово…');
+      });
+      loadingBar.style.display = 'none';
+      window.unityInstance = instance;
+    } catch (e) {
+      fail('Движок Unity не смог запуститься.', String(e && e.message || e));
+    }
+  }
+
+  start();
+})();
+</script>
+</body>
+</html>

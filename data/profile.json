@@ -1,0 +1,115 @@
+{
+  "name": "Алексей Батанов",
+  "handle": "Nukiesto",
+  "role": "Unity Developer",
+  "tagline": "Разрабатываю игры, VR-тренажёры и SDK: от архитектуры и геймплея до релиза и CI/CD.",
+  "summary": "Unity-разработчик с опытом в игровых системах, VR и коммерческих SDK. Делаю проекты полного цикла: проектирую архитектуру, пишу геймплей и сетевой код, собираю инструменты и платёжные интеграции, настраиваю сборку и CI/CD. Работал над VR-квестом, внесённым в реестр программ для ЭВМ, VR-тренажёрами и SDK оплаты для игр. Открыт к интересным задачам в геймдеве и XR.",
+  "location": "Россия",
+  "availability": "Открыт к предложениям",
+  "contacts": [
+    { "label": "Email", "value": "nukiesto@gmail.com", "href": "mailto:nukiesto@gmail.com", "icon": "mail" },
+    { "label": "Telegram", "value": "@Nukiesto", "href": "https://t.me/Nukiesto", "icon": "telegram" },
+    { "label": "GitHub", "value": "Nukiesto", "href": "https://github.com/Nukiesto", "icon": "github" }
+  ],
+  "stats": [
+    { "value": "40+", "label": "проектов в портфолио" },
+    { "value": "6", "label": "XR-платформ и стеков" },
+    { "value": "12+", "label": "Unity-проектов на ECS/DI" },
+    { "value": "3", "label": "собственных фреймворка и SDK" }
+  ],
+  "skillGroups": [
+    {
+      "title": "Движки и языки",
+      "icon": "engine",
+      "items": ["Unity", "Godot", "C#", ".NET", "Python", "Dart / Flutter", "JavaScript", "PowerShell"]
+    },
+    {
+      "title": "Архитектура и DI",
+      "icon": "layers",
+      "items": ["VContainer", "Zenject", "SurvDI", "LeoECS Lite", "MessagePipe", "UniTask", "UniRx", "Assembly Definitions"]
+    },
+    {
+      "title": "Сети и мультиплеер",
+      "icon": "network",
+      "items": ["Netcode for GameObjects", "Unity Multiplayer Services", "Photon", "Mirror", "WASM-моды"]
+    },
+    {
+      "title": "XR и платформы",
+      "icon": "vr",
+      "items": ["OpenXR", "Meta / Oculus XR", "Pico XR", "SteamVR", "XR Interaction Toolkit", "Android", "WebGL"]
+    },
+    {
+      "title": "Монетизация и сервисы",
+      "icon": "wallet",
+      "items": ["VK Pay", "Yandex Pay", "RuStore", "Playgama Bridge", "Unity IAP", "Google Firebase", "CloudSave"]
+    },
+    {
+      "title": "Инструменты и практики",
+      "icon": "tools",
+      "items": ["Addressables", "Git", "CI/CD", "GitHub Actions", "Gitea Actions", "Docker", "FMOD", "ArcGIS", "DOTS / Burst", "NUnit"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Unity Developer — VR-квест «Демоны молодости»",
+      "period": "Разработка",
+      "kind": "Коммерческий проект",
+      "description": "VR-квест с системой задач, чекпоинтами, инвентарём и взаимодействием с предметами. Проект внесён в реестр программ для ЭВМ.",
+      "bullets": [
+        "Реализовал систему игровых задач с подсказками и последовательным прогрессом",
+        "Сделал чекпоинты и перенос игрока между сценами/комнатами",
+        "Поддержка нескольких XR-платформ: Meta/Oculus, Pico, SteamVR",
+        "Собрал геймплейные механики: двери, ключи, сейфы, телепорты, враги"
+      ],
+      "link": { "label": "Свидетельство в реестре ЭВМ", "href": "" }
+    },
+    {
+      "role": "Unity Developer — VR-тренажёр кабины машиниста (прототип)",
+      "period": "Разработка",
+      "kind": "Прототип",
+      "description": "Прототип VR-тренажёра кабины машиниста поезда с процедурной генерацией инфраструктуры и физикой подвижного состава.",
+      "bullets": [
+        "Процедурная генерация рельефа и железнодорожной инфраструктуры из геоданных (OSM / ASC-сетки)",
+        "Физика локомотива и вагонов, взаимодействие с органами управления кабины",
+        "Полный XR-стек: OpenXR, Oculus, SteamVR, XR Interaction Toolkit",
+        "Python-утилиты для подготовки геоданных"
+      ]
+    },
+    {
+      "role": "Разработка SDK оплаты для игры",
+      "period": "Разработка",
+      "kind": "SDK / интеграция",
+      "description": "Мультиплатформенный SDK монетизации: встроенные покупки, реклама, лидерборды и сохранения для мобильных и веб-платформ.",
+      "bullets": [
+        "Интеграция платёжных провайдеров VK Pay и Yandex Pay",
+        "Поддержка WebGL-платформ (Yandex Игры, VK, Playgama) и Android / RuStore",
+        "Модули Advertisement, IAP, Leaderboard, SaveSystem, PlatformDetector",
+        "Тестовый харнесс и юнит-тесты для платёжных сценариев"
+      ]
+    },
+    {
+      "role": "Фриланс — Unity-разработка",
+      "period": "Разные проекты",
+      "kind": "Фриланс",
+      "description": "Серия заказных и личных проектов: прототипы, мини-игры, обучающие приложения, инструменты и бэкенд-сервисы.",
+      "bullets": [
+        "Игровые прототипы на Unity: шутеры, стратегии, RPG, хорроры, voxel-песочницы",
+        "Обучающие и презентационные приложения с интеграцией медиа и данных",
+        "Собственные инструменты: DI-фреймворк SurvDI, редактор модов SurvMineModTool",
+        "Бэкенд-сервисы: платёжный сервер VK, телеграм-боты, homelab-инфраструктура"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "ИрГУПС",
+      "program": "Информационные системы и технологии",
+      "degree": "Бакалавриат",
+      "note": "Иркутский государственный университет путей сообщения"
+    }
+  ],
+  "languages": [
+    { "name": "Русский", "level": "Родной" },
+    { "name": "Английский", "level": "Чтение технической документации, рабочий уровень" }
+  ]
+}

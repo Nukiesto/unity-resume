@@ -1,2 +1,13 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Binary game build artifacts — never normalize line endings
+*.br binary
+*.gz binary
+*.wasm binary
+*.data binary
+*.unityweb binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
