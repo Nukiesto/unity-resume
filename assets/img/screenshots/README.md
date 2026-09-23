@@ -10,7 +10,7 @@ assets/img/screenshots/
 ├── tankgame/          ← TankGame
 ├── quest/             ← Демоны молодости
 ├── trainsimulator/    ← VR-тренажёр ЕРМАК
-└── …                  ← ещё 43 папки
+└── …                  ← ещё 28 папок
 ```
 
 ## Как добавить скриншоты

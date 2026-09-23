@@ -17,10 +17,6 @@
       "label": "VR / XR"
     },
     {
-      "id": "media",
-      "label": "VR/AR-медиа"
-    },
-    {
       "id": "sdk",
       "label": "SDK и платформы"
     },
@@ -197,7 +193,7 @@
       "title": "Hardcore Geometry",
       "subtitle": "2D-экшен с разрушаемой геометрией",
       "category": "games",
-      "featured": false,
+      "featured": true,
       "status": "Прототип",
       "year": "2021",
       "engine": "Unity 2021.2.9f1",
@@ -271,7 +267,8 @@
         ],
         "icon": "heart",
         "monogram": "UT"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "marsexpansion",
@@ -465,7 +462,8 @@
         ],
         "icon": "gun",
         "monogram": "VS"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "trainsimulator",
@@ -629,7 +627,8 @@
         ],
         "icon": "firstaid",
         "monogram": "ВЭ"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "xr-media",
@@ -666,7 +665,8 @@
         ],
         "icon": "vr",
         "monogram": "180"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "survdi",
@@ -1079,7 +1079,8 @@
         ],
         "icon": "terminal",
         "monogram": "CS"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "execution",
@@ -1223,7 +1224,8 @@
         ],
         "icon": "globe",
         "monogram": "G2"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "literature",
@@ -1363,7 +1365,8 @@
         ],
         "icon": "wand",
         "monogram": "JG"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "horror",
@@ -1433,7 +1436,8 @@
         ],
         "icon": "ghost",
         "monogram": "P1"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "strategy2d",
@@ -1614,7 +1618,8 @@
         ],
         "icon": "sword",
         "monogram": "R2"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "rpg-old",
@@ -1650,7 +1655,8 @@
         ],
         "icon": "wand",
         "monogram": "RD"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "shooter",
@@ -1686,7 +1692,8 @@
         ],
         "icon": "gun",
         "monogram": "DS"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "coopgame",
@@ -1722,7 +1729,8 @@
         ],
         "icon": "network",
         "monogram": "CO"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "shooterold",
@@ -1756,7 +1764,8 @@
         ],
         "icon": "gun",
         "monogram": "FP"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "russian-survivor",
@@ -1792,7 +1801,8 @@
         ],
         "icon": "gun",
         "monogram": "RS"
-      }
+      },
+      "hidden": true
     },
     {
       "id": "minivn",
@@ -1827,7 +1837,8 @@
         ],
         "icon": "book",
         "monogram": "VN"
-      }
+      },
+      "hidden": true
     }
   ]
 }

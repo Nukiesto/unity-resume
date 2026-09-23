@@ -4,7 +4,6 @@
   var CATEGORY_LABEL = {
     games: 'Игра',
     vr: 'VR / XR',
-    media: 'VR/AR-медиа',
     sdk: 'SDK',
     tools: 'Инструмент',
     backend: 'Бэкенд',
@@ -572,7 +571,8 @@
         } catch (err) {
           console.error('Ошибка отрисовки профиля:', err);
         }
-        state.projects = res[1].projects || [];
+        /* `hidden: true` keeps a project in the data but out of the library. */
+        state.projects = (res[1].projects || []).filter(function (p) { return !p.hidden; });
         renderFilters();
         renderLibrary();
         observeReveals();
