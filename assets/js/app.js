@@ -4,6 +4,7 @@
   var CATEGORY_LABEL = {
     games: 'Игра',
     vr: 'VR / XR',
+    media: 'VR/AR-медиа',
     sdk: 'SDK',
     tools: 'Инструмент',
     backend: 'Бэкенд',
@@ -93,14 +94,26 @@
 
     var edu = (p.education || [])[0];
     if (edu) {
+      var period = edu.period
+        ? '<span class="edu-period">' + esc(edu.period) + '</span>'
+        : '';
       $('#educationInline').innerHTML =
-        '<div style="font-size:14.5px;font-weight:600">' + esc(edu.institution) + '</div>' +
-        '<div style="font-size:13px;color:var(--muted);margin-top:2px">' + esc(edu.program) + '</div>' +
-        '<div style="font-size:13px;color:var(--muted)">' + esc(edu.degree) + '</div>';
-      $('#eduTitle').textContent = edu.institution + ' — ' + edu.program;
-      $('#eduSubtitle').textContent = edu.note || '';
-      $('#eduDegree').textContent = edu.degree;
+        '<div class="edu-item">' +
+          '<div class="edu-item-top">' +
+            '<strong>' + esc(edu.institution) + '</strong>' + period +
+          '</div>' +
+          '<div class="edu-line">' + esc(edu.program) + '</div>' +
+          '<div class="edu-line">' + esc(edu.degree) + '</div>' +
+        '</div>';
     }
+
+    $('#achievements').innerHTML = (p.achievements || []).map(function (a) {
+      return '' +
+        '<div class="ach-row">' +
+          '<span class="ach-icon">' + window.icon(a.icon, 'award') + '</span>' +
+          '<span><strong>' + esc(a.title) + '</strong><span>' + esc(a.detail || '') + '</span></span>' +
+        '</div>';
+    }).join('');
 
     $('#contactGrid').innerHTML = (p.contacts || []).map(function (c) {
       return '' +
@@ -136,6 +149,9 @@
     }
     if (p.links && p.links.demo) {
       links += '<a href="' + esc(p.links.demo) + '"' + (p.links.demo.charAt(0) === '#' ? '' : ' target="_blank" rel="noopener"') + ' data-stop aria-label="Демо">' + window.icon('play') + '</a>';
+    }
+    if (p.links && (p.links.registry || p.links.registryPdf)) {
+      links += '<a href="' + esc(p.links.registry || p.links.registryPdf) + '" target="_blank" rel="noopener" data-stop aria-label="Реестр ЭВМ">' + window.icon('award') + '</a>';
     }
     links += '<a href="#" data-open="' + esc(p.id) + '" data-stop aria-label="Подробнее">' + window.icon('link') + '</a>';
 
@@ -235,6 +251,9 @@
     }
     if (p.links && p.links.registry) {
       links += '<a class="btn btn-ghost btn-sm" href="' + esc(p.links.registry) + '" target="_blank" rel="noopener">' + window.icon('award') + 'Реестр ЭВМ</a>';
+    }
+    if (p.links && p.links.registryPdf) {
+      links += '<a class="btn btn-ghost btn-sm" href="' + esc(p.links.registryPdf) + '" target="_blank" rel="noopener">' + window.icon('award') + 'Свидетельство (PDF)</a>';
     }
 
     $('#modalPanel').innerHTML = '' +

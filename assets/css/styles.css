@@ -346,6 +346,37 @@ section { padding: 78px 0; position: relative; }
 .lang-row:last-child { border-bottom: 0; }
 .lang-row span { color: var(--muted); font-size: 13.5px; }
 
+.edu-item-top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.edu-item-top strong { font-size: 14.5px; }
+.edu-period {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 999px;
+  color: var(--accent-2);
+  border: 1px solid rgba(34, 211, 238, 0.32);
+  background: rgba(34, 211, 238, 0.08);
+  font-variant-numeric: tabular-nums;
+}
+.edu-line { font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+.ach-row { display: flex; gap: 11px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--border-soft); }
+.ach-row:last-child { border-bottom: 0; }
+.ach-icon {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.28);
+  color: #fbbf24;
+}
+.ach-icon svg { width: 15px; height: 15px; }
+.ach-row strong { display: block; font-size: 13.5px; }
+.ach-row span span { font-size: 12.5px; color: var(--muted); }
+
 /* ---------- skills ---------- */
 .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .skill-card {
