@@ -9,7 +9,7 @@ assets/img/screenshots/
 ├── survmine3d/        ← SurvMine 3D
 ├── tankgame/          ← TankGame
 ├── quest/             ← Демоны молодости
-├── trainsimulator/    ← VR-тренажёр ЕРМАК
+├── trainsimulator/    ← VR-тренажёр локомотивной бригады
 └── …                  ← ещё 28 папок
 ```
 

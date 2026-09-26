@@ -233,44 +233,6 @@
       }
     },
     {
-      "id": "undertale",
-      "title": "Undertale Battle",
-      "subtitle": "Боевая система в стиле Undertale",
-      "category": "games",
-      "featured": true,
-      "status": "Готовый продукт",
-      "year": "2026",
-      "engine": "Unity 6000.3.0f1",
-      "tags": [
-        "LeoECS Lite",
-        "VContainer",
-        "MessagePipe",
-        "UniTask",
-        "UniRx",
-        "Aseprite"
-      ],
-      "description": "Компактная и отточенная боевая система в стиле Undertale: пошаговые ходы, паттерны атак, выбор действий и кастомная спрайтовая анимация. Чистая архитектура на ECS и DI.",
-      "highlights": [
-        "Менеджеры боя, атак, целей и UI баттла",
-        "Кастомный спрайтовый аниматор с поддержкой Aseprite/PSD",
-        "Пошаговая логика: FIGHT / ACT / ITEM / MERCY",
-        "Учебный пример чистой архитектуры на LeoECS Lite + VContainer"
-      ],
-      "links": {
-        "github": "https://github.com/Nukiesto/Undertale",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#ef4444",
-          "#7f1d1d"
-        ],
-        "icon": "heart",
-        "monogram": "UT"
-      },
-      "hidden": true
-    },
-    {
       "id": "marsexpansion",
       "title": "Mars Expansion",
       "subtitle": "Строительство базы на Марсе",
@@ -427,73 +389,32 @@
       }
     },
     {
-      "id": "vr-shooter",
-      "title": "VR Shooter",
-      "subtitle": "Сетевой VR-шутер",
-      "category": "vr",
-      "featured": false,
-      "status": "Прототип",
-      "year": "2025",
-      "engine": "Unity 6000.0.40f1",
-      "tags": [
-        "OpenXR",
-        "Meta XR",
-        "Netcode",
-        "Multiplayer Services",
-        "BNG",
-        "UniTask",
-        "SurvDI"
-      ],
-      "description": "VR-шутер с сетевым мультиплеером: синхронизация захватываемых объектов, отслеживание головы и рук, призрачные игроки в лобби.",
-      "highlights": [
-        "Сетевые захватываемые объекты и синхронизация Grab",
-        "GhostPlayer и следование за головой игрока",
-        "Мультиплеер на Netcode for GameObjects",
-        "Мультиплеерные сервисы Unity"
-      ],
-      "links": {
-        "github": "",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#6366f1",
-          "#312e81"
-        ],
-        "icon": "gun",
-        "monogram": "VS"
-      },
-      "hidden": true
-    },
-    {
       "id": "trainsimulator",
-      "title": "VR-тренажёр ЕРМАК",
-      "subtitle": "Симулятор локомотивной бригады электровоза · ОАО «РЖД»",
+      "title": "VR-тренажёр локомотивной бригады",
+      "subtitle": "Симулятор обучения для отраслевого заказчика",
       "category": "vr",
       "featured": true,
       "status": "В разработке",
       "year": "2024–2026",
       "engine": "Unity 6000.0.35f1",
       "tags": [
-        "ОАО «РЖД»",
+        "VR",
         "OpenXR",
         "Meta XR",
-        "ArcGIS Maps SDK",
-        "WSM Train Controller",
-        "2ЭС5К",
-        "Мультиплеер",
-        "BNG"
+        "Pico XR",
+        "Netcode",
+        "Addressables",
+        "Мультиплеер"
       ],
-      "description": "Тренажёр-симулятор электровоза серии ЕРМАК для отработки эксплуатационной работы локомотивной бригады на участке «Слюдянка 1 — Большой луг». Выполняется по плану научно-технического развития ОАО «РЖД»; реализуется в среде VR и на мобильных устройствах.",
+      "description": "VR-тренажёр для отработки действий локомотивной бригады на реальном участке пути. Выполняется в рамках НИОКР для отраслевого заказчика; реализуется в среде VR и на мобильных устройствах.",
       "highlights": [
-        "Функциональные 3D-модели кабины, машинного отделения, механической части и кузова электровоза",
+        "Функциональные 3D-модели кабины, машинного отделения, механической части и кузова",
         "3D-сцена реального участка пути на основе карты профиля и видеозаписи поездки",
-        "Математическая модель движения поезда на горных участках с учётом внешних факторов",
-        "Модули: устранение неисправностей в машинном отделении, осмотр и закрепление поезда, приёмка и сдача локомотива, смена кабины",
-        "Кооперативный мультиплеер с регламентом переговоров локомотивной бригады",
+        "Математическая модель движения поезда с учётом внешних факторов",
+        "Учебные модули: устранение неисправностей, осмотр и закрепление состава, приёмка и сдача, смена кабины",
+        "Кооперативный мультиплеер с регламентом переговоров бригады",
         "Модуль инструктора: смена дня и ночи, погода, стрелки и светофоры, аварийные ситуации",
-        "Режимы: свободное управление, обучение, тестирование, экзамен",
-        "Интеграция ArcGIS Maps SDK и локомотив 2ЭС5К; соответствие ГОСТ Р 70449-2022"
+        "Режимы: свободное управление, обучение, тестирование, экзамен"
       ],
       "links": {
         "github": "",
@@ -505,7 +426,7 @@
           "#7f1d1d"
         ],
         "icon": "train",
-        "monogram": "ЕМ"
+        "monogram": "ЛБ"
       }
     },
     {
@@ -587,86 +508,6 @@
         "icon": "wallet",
         "monogram": "SDK"
       }
-    },
-    {
-      "id": "virtual-expert",
-      "title": "Виртуальный эксперт",
-      "subtitle": "VR-симулятор эксперта-криминалиста для СГЮА",
-      "category": "vr",
-      "featured": true,
-      "status": "В разработке",
-      "year": "2025–2026",
-      "engine": "Unity / C#",
-      "tags": [
-        "Unity",
-        "C#",
-        "VR",
-        "Офлайн-режим",
-        "Клиент-сервер",
-        "Адаптивное обучение",
-        "СГЮА"
-      ],
-      "description": "Программное обеспечение для подготовки студентов по специальности «Судебная экспертиза»: симуляция проведения криминалистических и иных видов экспертиз с интерактивными сценариями и мгновенной обратной связью. Реализуется совместно с Саратовской государственной юридической академией.",
-      "highlights": [
-        "Клиентская часть на Unity и C# с набором бинарных файлов, готовых к публикации",
-        "Серверная (облачная) часть с развёртыванием в Docker-контейнерах",
-        "Адаптивные алгоритмы обучения и оценки профессиональных навыков",
-        "Мгновенная обратная связь с рекомендациями по улучшению навыков",
-        "Сценарии на основе актуальных профессиональных стандартов и процедур",
-        "Работа в офлайн-режиме с доступом к последнему загруженному контенту",
-        "Этапы: архитектура, дизайн-макеты, клиентская и серверная разработка, юзабилити-тесты"
-      ],
-      "links": {
-        "github": "",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#0f766e",
-          "#134e4a"
-        ],
-        "icon": "firstaid",
-        "monogram": "ВЭ"
-      },
-      "hidden": true
-    },
-    {
-      "id": "xr-media",
-      "title": "VR180, 3D-туры и AR",
-      "subtitle": "Интерактивные обучающие медиаформаты",
-      "category": "media",
-      "featured": false,
-      "status": "Готовый продукт",
-      "year": "2025–2026",
-      "engine": "Unity · VR180 · WebGL",
-      "tags": [
-        "VR180",
-        "3D-туры",
-        "AR",
-        "Дополненная реальность",
-        "Видео 360",
-        "Мобильные приложения"
-      ],
-      "description": "Линейка интерактивных обучающих форматов: видеоинструкции в VR180 с бинокулярным эффектом, виртуальные 3D-туры и AR-приложения к учебным материалам.",
-      "highlights": [
-        "VR180-видеоинструкции с полным погружением в обучающую среду",
-        "3D-туры по ИрГУПС, анатомическому музею ИГМУ и парковкам нового терминала Иркутского аэропорта",
-        "AR-дополнения к учебникам и плакатам: видеовставки, интерактивные 3D-модели, звук",
-        "Применение в производственном и образовательном контексте"
-      ],
-      "links": {
-        "github": "",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#7c3aed",
-          "#312e81"
-        ],
-        "icon": "vr",
-        "monogram": "180"
-      },
-      "hidden": true
     },
     {
       "id": "survdi",
@@ -885,7 +726,7 @@
         "HTTPS через certbot и Let's Encrypt, отдельные access/error-логи nginx"
       ],
       "links": {
-        "github": "https://github.com/andrey-melnikov/vk-server",
+        "github": "",
         "demo": ""
       },
       "cover": {
@@ -1047,42 +888,6 @@
       }
     },
     {
-      "id": "codex-switcher",
-      "title": "Codex Switcher",
-      "subtitle": "Переключатель режимов Codex CLI для Windows",
-      "category": "tools",
-      "featured": false,
-      "status": "Готовый продукт",
-      "year": "2026",
-      "engine": "PowerShell",
-      "tags": [
-        "PowerShell",
-        "Windows",
-        "CLI",
-        "Автоматизация"
-      ],
-      "description": "Утилита для переключения Codex между режимом API-ключа и режимом аккаунта: резервное копирование, правка конфигов, миграция сессий и восстановление состояния.",
-      "highlights": [
-        "Переключение провайдеров и режимов авторизации",
-        "Резервное копирование и восстановление конфигов",
-        "Миграция сессий и локальной базы состояния",
-        "Режим одного клика для авторемонта"
-      ],
-      "links": {
-        "github": "",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#7c3aed",
-          "#4c1d95"
-        ],
-        "icon": "terminal",
-        "monogram": "CS"
-      },
-      "hidden": true
-    },
-    {
       "id": "execution",
       "title": "Execution Toolkit",
       "subtitle": "Удалённое управление ПК и браузерная voxel-игра",
@@ -1192,42 +997,6 @@
       }
     },
     {
-      "id": "presentation2",
-      "title": "Interactive Globe 2",
-      "subtitle": "Вторая версия интерактивной презентации",
-      "category": "apps",
-      "featured": false,
-      "status": "Прототип",
-      "year": "2025",
-      "engine": "Unity 6000.1.11f1",
-      "tags": [
-        "URP",
-        "Render Features",
-        "Blur",
-        "Панельные переходы"
-      ],
-      "description": "Развитие презентационного приложения: URP-эффекты размытия, менеджер переходов между панелями и улучшенная визуальная подача.",
-      "highlights": [
-        "Кастомные URP Render Features",
-        "Менеджер переходов между панелями",
-        "Улучшенная графика и постобработка",
-        "Переиспользование логики первой версии"
-      ],
-      "links": {
-        "github": "",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#0891b2",
-          "#155e75"
-        ],
-        "icon": "globe",
-        "monogram": "G2"
-      },
-      "hidden": true
-    },
-    {
       "id": "literature",
       "title": "Literature",
       "subtitle": "Интерактивное приложение по литературе",
@@ -1334,41 +1103,6 @@
       }
     },
     {
-      "id": "jungle",
-      "title": "Jungle",
-      "subtitle": "2D-мини-игры о животных",
-      "category": "games",
-      "featured": false,
-      "status": "Готовый продукт",
-      "year": "2025",
-      "engine": "Unity 6000.2.12f1",
-      "tags": [
-        "2D",
-        "Обучение",
-        "Мини-игры"
-      ],
-      "description": "Сборник 2D-мини-игр на тему животных: следы, юниты и уровни, объединённые общей системой загрузки сцен.",
-      "highlights": [
-        "Мини-игры Animal и FootPrint",
-        "Система уровней и юнитов",
-        "Общий менеджер загрузки сцен",
-        "Обучающая направленность"
-      ],
-      "links": {
-        "github": "",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#22c55e",
-          "#14532d"
-        ],
-        "icon": "wand",
-        "monogram": "JG"
-      },
-      "hidden": true
-    },
-    {
       "id": "horror",
       "title": "Horror",
       "subtitle": "Хоррор от первого лица в стиле PSX",
@@ -1402,42 +1136,6 @@
         "icon": "ghost",
         "monogram": "HR"
       }
-    },
-    {
-      "id": "ps1-style-game",
-      "title": "PS1 Style Movement",
-      "subtitle": "Прототип движения в стиле fragsurf",
-      "category": "games",
-      "featured": false,
-      "status": "Прототип",
-      "year": "2026",
-      "engine": "Unity 6000.3.13f1",
-      "tags": [
-        "Character Controller",
-        "Fragsurf",
-        "Физика",
-        "PSX"
-      ],
-      "description": "Небольшой прототип с модифицированной системой движения fragsurf: серфинг, физика персонажа и ретро-эстетика PS1.",
-      "highlights": [
-        "SurfCharacter и SurfController",
-        "Собственная физика серфинга",
-        "Ретро-визуал PS1",
-        "Компактный пример кода движения"
-      ],
-      "links": {
-        "github": "https://github.com/Nukiesto/PS1-Style-Game",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#6366f1",
-          "#1e1b4b"
-        ],
-        "icon": "ghost",
-        "monogram": "P1"
-      },
-      "hidden": true
     },
     {
       "id": "strategy2d",
@@ -1582,263 +1280,6 @@
         "icon": "sword",
         "monogram": "SR"
       }
-    },
-    {
-      "id": "old-rpg",
-      "title": "RPG 2D (ECS)",
-      "subtitle": "2D-RPG с ECS-движком",
-      "category": "games",
-      "featured": false,
-      "status": "Прототип",
-      "year": "2026",
-      "engine": "Unity 6000.3.0f1",
-      "tags": [
-        "LeoECS Lite",
-        "Damage Engine",
-        "Баффы",
-        "Экономика",
-        "IK",
-        "Toon Shader"
-      ],
-      "description": "2D-RPG с собственным движком урона и баффов, экономикой и IK-анимацией, использующая LeoECS Lite.",
-      "highlights": [
-        "Движок урона и система баффов",
-        "Экономика на монетах",
-        "IK-анимация и toon-шейдер",
-        "ECS-структура игрового мира"
-      ],
-      "links": {
-        "github": "https://github.com/Nukiesto/RPG2D",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#b91c1c",
-          "#450a0a"
-        ],
-        "icon": "sword",
-        "monogram": "R2"
-      },
-      "hidden": true
-    },
-    {
-      "id": "rpg-old",
-      "title": "RPG Dialogue",
-      "subtitle": "2D-RPG с редактором диалогов на графах",
-      "category": "games",
-      "featured": false,
-      "status": "Прототип",
-      "year": "2026",
-      "engine": "Unity 6000.3.0f1",
-      "tags": [
-        "Node Graph",
-        "Editor Tools",
-        "Диалоги",
-        "Оружие",
-        "UI"
-      ],
-      "description": "2D-RPG с полноценным редактором диалогов на основе графов узлов, оружием, огненными посохами и интерфейсом здоровья.",
-      "highlights": [
-        "Кастомный node-graph редактор диалогов",
-        "Сохранение и загрузка графов",
-        "Оружие и магические посохи",
-        "UI здоровья и боёвка"
-      ],
-      "links": {
-        "github": "https://github.com/Nukiesto/RPG-Game",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#9333ea",
-          "#3b0764"
-        ],
-        "icon": "wand",
-        "monogram": "RD"
-      },
-      "hidden": true
-    },
-    {
-      "id": "shooter",
-      "title": "DOTS Shooter",
-      "subtitle": "Шутер на Unity DOTS Entities",
-      "category": "games",
-      "featured": false,
-      "status": "Прототип",
-      "year": "2025",
-      "engine": "Unity 6000.1.5f1",
-      "tags": [
-        "DOTS Entities",
-        "Entities Graphics",
-        "Netcode",
-        "VContainer",
-        "MessagePipe"
-      ],
-      "description": "Доказательство технологий: шутер на Unity DOTS Entities с Entities Graphics, сетевым стеком и DI-интеграцией.",
-      "highlights": [
-        "ECS-компоненты и системы на DOTS",
-        "Entities Graphics для рендера",
-        "Интеграция VContainer и MessagePipe",
-        "Задел под сетевой мультиплеер"
-      ],
-      "links": {
-        "github": "",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#475569",
-          "#0f172a"
-        ],
-        "icon": "gun",
-        "monogram": "DS"
-      },
-      "hidden": true
-    },
-    {
-      "id": "coopgame",
-      "title": "Coop Game",
-      "subtitle": "Кооперативная игра с сетевым кодом",
-      "category": "games",
-      "featured": false,
-      "status": "Прототип",
-      "year": "2025",
-      "engine": "Unity 6000.0.40f1",
-      "tags": [
-        "Netcode",
-        "Multiplayer Tools",
-        "Authentication",
-        "ParrelSync",
-        "Animation Rigging"
-      ],
-      "description": "Кооперативный проект на Netcode с аутентификацией и ParrelSync для тестирования мультиплеера, анимационным риггингом и турелями.",
-      "highlights": [
-        "Сетевой каркас на Netcode for GameObjects",
-        "ParrelSync для локального теста мультиплеера",
-        "Аниматор персонажа и наведение турели",
-        "Unity Authentication"
-      ],
-      "links": {
-        "github": "",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#3b82f6",
-          "#172554"
-        ],
-        "icon": "network",
-        "monogram": "CO"
-      },
-      "hidden": true
-    },
-    {
-      "id": "shooterold",
-      "title": "FPS Prototype",
-      "subtitle": "Простой шутер от первого лица",
-      "category": "games",
-      "featured": false,
-      "status": "Архив",
-      "year": "2025",
-      "engine": "Unity 6000.1.1f1",
-      "tags": [
-        "FPS",
-        "Инвентарь оружия",
-        "Editor Tools"
-      ],
-      "description": "Ранний прототип шутера от первого лица с инвентарём оружия, управлением камерой и собственным редакторным инструментом.",
-      "highlights": [
-        "Инвентарь оружия и стрельба",
-        "Управление мышью",
-        "Редакторный AnimationPathAutoFixer",
-        "Учебный прототип FPS"
-      ],
-      "links": {
-        "github": "",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#52525b",
-          "#18181b"
-        ],
-        "icon": "gun",
-        "monogram": "FP"
-      },
-      "hidden": true
-    },
-    {
-      "id": "russian-survivor",
-      "title": "Russian Survivor",
-      "subtitle": "FPS-выживание в антураже российской глубинки",
-      "category": "games",
-      "featured": false,
-      "status": "Прототип",
-      "year": "2025",
-      "engine": "Unity 6000.0.40f1",
-      "tags": [
-        "Fragsurf",
-        "Steam Audio",
-        "MicroSplat",
-        "Погода",
-        "URP"
-      ],
-      "description": "Прототип выживания с упором на окружение: погода, дождь, снег, туман и реалистичная природа, а также контроллер FPS на базе fragsurf.",
-      "highlights": [
-        "Системы погоды: дождь, град, снег",
-        "Природа на Nature Renderer и MicroSplat",
-        "Пространственный звук Steam Audio",
-        "FPS-контроллер fragsurf"
-      ],
-      "links": {
-        "github": "",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#4b5563",
-          "#111827"
-        ],
-        "icon": "gun",
-        "monogram": "RS"
-      },
-      "hidden": true
-    },
-    {
-      "id": "minivn",
-      "title": "Mini Visual Novel",
-      "subtitle": "Визуальная новелла на фреймворке VIDE",
-      "category": "games",
-      "featured": false,
-      "status": "Прототип",
-      "year": "2025",
-      "engine": "Unity 6000.1.5f1",
-      "tags": [
-        "VIDE",
-        "Диалоги",
-        "2D",
-        "Аудио-пул"
-      ],
-      "description": "Небольшая визуальная новелла на диалоговом фреймворке VIDE с менеджером текста, выборами и пулом аудио.",
-      "highlights": [
-        "Диалоги и ветвление на VIDE",
-        "TextManager и UI выбора",
-        "Пул аудио для реплик",
-        "2D-подача с постобработкой"
-      ],
-      "links": {
-        "github": "",
-        "demo": ""
-      },
-      "cover": {
-        "gradient": [
-          "#d946ef",
-          "#701a75"
-        ],
-        "icon": "book",
-        "monogram": "VN"
-      },
-      "hidden": true
     }
   ]
 }
