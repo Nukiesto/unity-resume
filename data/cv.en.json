@@ -1,0 +1,222 @@
+{
+  "updated": "September 2026",
+  "position": "Unity Developer",
+  "positionVariants": ["Unity / XR Developer", "C# Gameplay Developer"],
+  "salary": "from 70,000 ₽",
+  "personal": {
+    "name": "Alexey Batanov",
+    "city": "Irkutsk",
+    "workFormat": "Remote · hybrid",
+    "email": "nukiesto@gmail.com",
+    "phone": "+7 924 290-25-62",
+    "phoneHref": "+79242902562",
+    "telegram": "@Nukiesto",
+    "telegramHref": "https://t.me/Nukiesto",
+    "github": "Nukiesto",
+    "githubHref": "https://github.com/Nukiesto",
+    "vk": "vk.ru/alex_batanov",
+    "vkHref": "https://vk.ru/alex_batanov",
+    "site": "nukiesto.github.io/unity-resume",
+    "siteHref": "https://nukiesto.github.io/unity-resume/"
+  },
+  "summary": "Unity developer with 4+ years of hands-on experience in game systems, VR and commercial SDKs. I build full-cycle projects: design architecture, write gameplay and networking code, create tools and payment integrations, and set up builds and CI/CD. Worked on a VR simulator for an industry customer, a VR quest registered in the software registry, and a payment SDK for games. Additional experience in database design and server infrastructure administration. Looking for game development and XR opportunities.",
+  "work": [
+    {
+      "company": "Mobile games customer",
+      "location": "Remote",
+      "position": "Unity Developer (contract)",
+      "period": "March — April 2026",
+      "type": "Contract",
+      "stack": ["Unity", "C#", "VK Pay", "RuStore Pay", "Android", "WebGL"],
+      "bullets": [
+        "Developed RuStore Pay and VK Pay integrations for the multiplatform monetization SDK (MultiplatformSDK Kit)",
+        "Unified payment providers behind a single purchases API across platforms",
+        "Tested payment flows on Android/RuStore and WebGL and wrote test scenarios"
+      ]
+    },
+    {
+      "company": "IrGUPS · R&D for a transport company",
+      "location": "Irkutsk",
+      "position": "Unity Developer (VR)",
+      "period": "2024 — 2026",
+      "type": "Contract",
+      "stack": ["Unity", "C#", "OpenXR", "Meta XR", "Pico XR", "SteamVR", "Netcode", "Addressables"],
+      "bullets": [
+        "Developed a locomotive crew VR simulator as part of an R&D project for an industry customer",
+        "Built 3D models of the cab, engine room and body, plus a scene of a real track section",
+        "Implemented 9 training modules: troubleshooting, train inspection and securing, locomotive acceptance and handover, cab change, instructor module, testing and exam",
+        "Built cooperative multiplayer with a locomotive crew communication protocol",
+        "Developed VR occupational safety and first aid simulators with action-order validation, and the VR quest 'Demons of Youth' (tasks, checkpoints, inventory, puzzles)",
+        "Delivered cross-platform XR (Meta/Oculus, Pico, SteamVR) and builds for Windows, Android and WebGL"
+      ]
+    },
+    {
+      "company": "Freelance",
+      "location": "Remote",
+      "position": "Unity Developer",
+      "period": "2021 — present",
+      "type": "Contract and personal projects",
+      "stack": ["Unity", "C#", "LeoECS", "VContainer", "Netcode", "DOTS", "Git"],
+      "bullets": [
+        "Developed a custom DI framework, SurvDI, used across several projects",
+        "Built the SurvMineModTool mod editor on .NET/Avalonia with shared contracts for Unity",
+        "Maintained the SurvMine multiplayer voxel sandbox with a modding platform and custom UPM packages",
+        "Built game prototypes across genres and backend services: a VK payment server on ASP.NET Core, Telegram bots, homelab infrastructure"
+      ]
+    }
+  ],
+  "skillGroups": [
+    {
+      "title": "Engines and languages",
+      "level": "Core",
+      "items": ["Unity", "C#", ".NET", "Godot", "Python", "JavaScript", "PowerShell", "Bash"]
+    },
+    {
+      "title": "Architecture and DI",
+      "level": "Core",
+      "items": ["VContainer", "Zenject", "SurvDI", "LeoECS Lite", "MessagePipe", "UniTask", "UniRx", "Assembly Definitions"]
+    },
+    {
+      "title": "XR and platforms",
+      "level": "Core",
+      "items": ["OpenXR", "Meta / Oculus XR", "Pico XR", "SteamVR", "XR Interaction Toolkit", "Android", "WebGL", "Windows"]
+    },
+    {
+      "title": "Networking and multiplayer",
+      "level": "Confident",
+      "items": ["Netcode for GameObjects", "Unity Multiplayer Services", "Photon", "Mirror", "WASM mods"]
+    },
+    {
+      "title": "Monetization and services",
+      "level": "Confident",
+      "items": ["VK Pay", "RuStore Pay", "Yandex Pay", "Playgama Bridge", "Unity IAP", "Google Firebase", "CloudSave"]
+    },
+    {
+      "title": "Tools and practices",
+      "level": "Core",
+      "items": ["Addressables", "Git", "GitHub Actions", "Gitea Actions", "Docker", "Linux", "CI/CD", "FMOD", "NUnit"]
+    },
+    {
+      "title": "Databases and infrastructure",
+      "level": "Familiar",
+      "items": ["MS SQL Server / T-SQL", "MySQL", "ER modeling", "Nginx", "BIND9", "OpenLDAP", "systemd", "Zabbix"]
+    },
+    {
+      "title": "Also familiar",
+      "level": "Familiar",
+      "items": ["DOTS / Burst", "ArcGIS Maps SDK", "Flutter / Dart", "MS Access", "ERwin / BPwin", "VirtualBox"]
+    }
+  ],
+  "projectIds": [
+    "trainsimulator",
+    "quest",
+    "sdk",
+    "survmine",
+    "survmine3d",
+    "tankgame",
+    "hardcore-geometry",
+    "survdi",
+    "survminemodtool",
+    "vk-server"
+  ],
+  "projects": [
+    {
+      "id": "trainsimulator",
+      "title": "Locomotive Crew VR Simulator",
+      "subtitle": "Training simulator for an industry customer",
+      "year": "2024–2026",
+      "tags": ["VR", "OpenXR", "Meta XR", "Pico XR", "Netcode", "Addressables", "Multiplayer"]
+    },
+    {
+      "id": "quest",
+      "title": "Demons of Youth",
+      "subtitle": "Anti-drug VR quest · Software Registry No. 2025660854",
+      "year": "2025",
+      "tags": ["OpenXR", "Meta XR", "Pico XR", "SteamVR", "BNG Framework", "SurvDI", "Cinemachine", "Software Registry"]
+    },
+    {
+      "id": "sdk",
+      "title": "Monetization SDK",
+      "subtitle": "MultiplatformSDK Kit: VK Pay, RuStore Pay, ads and services",
+      "year": "2026",
+      "tags": ["VK Pay", "RuStore Pay", "Yandex Pay", "Playgama Bridge", "Unity IAP", "WebGL", "Android", "RuStore"]
+    },
+    {
+      "id": "survmine",
+      "title": "SurvMine",
+      "subtitle": "2D survival sandbox with a modding platform",
+      "year": "2025–2026",
+      "tags": ["VContainer", "LeoECS Lite", "MessagePipe", "UniTask", "Addressables", "Netcode", "WASM mods", "Mod.io"]
+    },
+    {
+      "id": "survmine3d",
+      "title": "SurvMine 3D",
+      "subtitle": "3D voxel survival sandbox",
+      "year": "2026",
+      "tags": ["VContainer", "LeoECS Lite", "UniTask", "Netcode", "Jobs", "MessagePack", "URP"]
+    },
+    {
+      "id": "tankgame",
+      "title": "TankGame",
+      "subtitle": "Tank combat on DOTS physics and Netcode",
+      "year": "2026",
+      "tags": ["Unity Physics (DOTS)", "Netcode", "VContainer", "LeoECS Lite", "MessagePipe", "Splines", "URP"]
+    },
+    {
+      "id": "hardcore-geometry",
+      "title": "Hardcore Geometry",
+      "subtitle": "2D action with destructible geometry",
+      "year": "2021",
+      "tags": ["2D", "LeoECS", "Voronoi fractals", "Destructible Geometry", "HardLight2D", "Unity Ads", "IAP"]
+    },
+    {
+      "id": "survdi",
+      "title": "SurvDI",
+      "subtitle": "Custom dependency injection framework for Unity",
+      "year": "2025–2026",
+      "tags": ["Dependency Injection", "UPM", "Editor Tools", "Documentation"]
+    },
+    {
+      "id": "survminemodtool",
+      "title": "SurvMine Mod Tool",
+      "subtitle": "Mod editor for SurvMine built on Avalonia",
+      "year": "2026",
+      "tags": ["C#", ".NET", "Avalonia", "SkiaSharp", "YamlDotNet", "NUnit", "netstandard2.1"]
+    },
+    {
+      "id": "vk-server",
+      "title": "VK Payments Server",
+      "subtitle": "VK Mini Apps monetization backend in production",
+      "year": "2026",
+      "tags": ["C#", ".NET 8", "Kestrel", "Dapper", "SQLite", "Razor Pages", "systemd", "nginx", "certbot", "GitHub Actions"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "IrGUPS",
+      "full": "Irkutsk State Transport University",
+      "program": "Information Systems and Technologies",
+      "code": "09.03.02",
+      "degree": "Bachelor's degree",
+      "period": "2022 — 2026"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "ICPC Northern Eurasia Finals 2024",
+      "detail": "Honorable Mention · December 13–15, 2024"
+    },
+    {
+      "title": "ICPC East Siberian Regional Contest 2024",
+      "detail": "15th place · November 16–17, 2024"
+    },
+    {
+      "title": "State registration certificate for a computer program",
+      "detail": "VR quest 'Demons of Youth' · No. 2025660854"
+    }
+  ],
+  "languages": [
+    { "name": "Russian", "level": "Native" },
+    { "name": "English", "level": "B1/B2 · technical documentation reading" }
+  ]
+}

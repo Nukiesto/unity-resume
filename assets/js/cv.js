@@ -4,8 +4,33 @@
   var LEVEL_CLASS = {
     'Основное': '',
     'Уверенно': 'is-strong',
-    'Знаком': 'is-familiar'
+    'Знаком': 'is-familiar',
+    'Core': '',
+    'Confident': 'is-strong',
+    'Familiar': 'is-familiar'
   };
+
+  var I18N = {
+    ru: {
+      summary: 'О себе', skills: 'Навыки', work: 'Опыт работы',
+      projects: 'Ключевые проекты', education: 'Образование',
+      achievements: 'Достижения', languages: 'Языки', stack: 'Стек',
+      salary: 'Ожидания', updated: 'Обновлено', portfolio: 'Портфолио',
+      loadError: 'Ошибка загрузки CV'
+    },
+    en: {
+      summary: 'Summary', skills: 'Skills', work: 'Experience',
+      projects: 'Key Projects', education: 'Education',
+      achievements: 'Achievements', languages: 'Languages', stack: 'Stack',
+      salary: 'Expected salary', updated: 'Updated', portfolio: 'Portfolio',
+      loadError: 'Failed to load CV'
+    }
+  };
+
+  var LANG = String(window.CV_LANG || document.documentElement.lang || 'ru').toLowerCase();
+  LANG = LANG.indexOf('en') === 0 ? 'en' : 'ru';
+  var T = I18N[LANG];
+  var CV_URL = window.CV_DATA || '../data/cv.json';
 
   function $(sel, root) { return (root || document).querySelector(sel); }
 
@@ -39,7 +64,7 @@
       ? '<div class="cv-variants">' + esc(cv.positionVariants.join(' · ')) + '</div>'
       : '';
 
-    var metaParts = [p.city, p.workFormat, cv.salary ? 'Ожидания: ' + cv.salary : '']
+    var metaParts = [p.city, p.workFormat, cv.salary ? T.salary + ': ' + cv.salary : '']
       .filter(Boolean);
     var headMeta = '<div class="cv-head-meta">' + esc(metaParts.join(' · ')) + '</div>';
 
@@ -69,7 +94,7 @@
     if (!cv.summary) return '';
     return '' +
       '<section class="cv-section">' +
-        '<h2>О себе</h2>' +
+        '<h2>' + esc(T.summary) + '</h2>' +
         '<p class="cv-summary">' + esc(cv.summary) + '</p>' +
       '</section>';
   }
@@ -92,7 +117,7 @@
 
     return '' +
       '<section class="cv-section">' +
-        '<h2>Навыки</h2>' +
+        '<h2>' + esc(T.skills) + '</h2>' +
         '<div class="cv-skills">' + rows + '</div>' +
       '</section>';
   }
@@ -105,7 +130,7 @@
           }).join('') + '</ul>'
         : '';
       var stack = (w.stack || []).length
-        ? '<div class="cv-job-stack"><b>Стек:</b> ' + esc(w.stack.join(', ')) + '</div>'
+        ? '<div class="cv-job-stack"><b>' + esc(T.stack) + ':</b> ' + esc(w.stack.join(', ')) + '</div>'
         : '';
       var meta = [w.type, w.location].filter(Boolean).join(' · ');
 
@@ -124,7 +149,7 @@
 
     return '' +
       '<section class="cv-section">' +
-        '<h2>Опыт работы</h2>' +
+        '<h2>' + esc(T.work) + '</h2>' +
         jobs +
       '</section>';
   }
@@ -152,7 +177,7 @@
 
     return '' +
       '<section class="cv-section">' +
-        '<h2>Ключевые проекты</h2>' +
+        '<h2>' + esc(T.projects) + '</h2>' +
         '<div class="cv-projects">' + cards + '</div>' +
       '</section>';
   }
@@ -163,7 +188,7 @@
     var title = esc(edu.institution) + (edu.code ? ' · ' + esc(edu.code) : '');
     return '' +
       '<section class="cv-section">' +
-        '<h2>Образование</h2>' +
+        '<h2>' + esc(T.education) + '</h2>' +
         '<div class="cv-edu-degree">' + title + '</div>' +
         '<div class="cv-edu-line">' + esc(edu.program) + ' · ' + esc(edu.degree) + '</div>' +
         (edu.full ? '<div class="cv-edu-line">' + esc(edu.full) + '</div>' : '') +
@@ -186,7 +211,7 @@
     if (!items) return '';
     return '' +
       '<section class="cv-section">' +
-        '<h2>Достижения</h2>' +
+        '<h2>' + esc(T.achievements) + '</h2>' +
         '<div class="cv-ach">' + items + '</div>' +
       '</section>';
   }
@@ -198,15 +223,15 @@
     if (!rows) return '';
     return '' +
       '<section class="cv-section">' +
-        '<h2>Языки</h2>' +
+        '<h2>' + esc(T.languages) + '</h2>' +
         '<div class="cv-langs">' + rows + '</div>' +
       '</section>';
   }
 
   function renderFooter(cv) {
     var p = cv.personal;
-    var left = 'Обновлено: ' + esc(cv.updated || '');
-    var right = 'Портфолио: ' + esc(p.site);
+    var left = esc(T.updated) + ': ' + esc(cv.updated || '');
+    var right = esc(T.portfolio) + ': ' + esc(p.site);
     return '<div class="cv-note"><span>' + left + '</span><span>' + right + '</span></div>';
   }
 
@@ -214,7 +239,7 @@
 
   function render(cv, projects) {
     document.title = cv.personal.name + ' — ' + cv.position + ' · CV';
-    var salary = cv.salary ? '<div class="cv-job-meta">Ожидания: ' + esc(cv.salary) + '</div>' : '';
+    var salary = cv.salary ? '<div class="cv-job-meta">' + esc(T.salary) + ': ' + esc(cv.salary) + '</div>' : '';
 
     var html = '' +
       renderHead(cv) +
@@ -244,18 +269,22 @@
   function fail(err) {
     var page = $('#cvPage');
     if (page) {
-      page.innerHTML = '<p style="color:#b91c1c">Ошибка загрузки CV: ' + esc(err.message) + '</p>';
+      page.innerHTML = '<p style="color:#b91c1c">' + esc(T.loadError) + ': ' + esc(err.message) + '</p>';
     }
     console.error(err);
   }
 
   function init() {
-    Promise.all([
-      loadJSON('../data/cv.json'),
-      loadJSON('../data/projects.json')
-    ]).then(function (res) {
-      var projects = (res[1].projects || []).filter(function (p) { return !p.hidden; });
-      render(res[0], projects);
+    loadJSON(CV_URL).then(function (cv) {
+      if (Array.isArray(cv.projects)) {
+        return { cv: cv, projects: cv.projects };
+      }
+      return loadJSON('../data/projects.json').then(function (res) {
+        var projects = (res.projects || []).filter(function (p) { return !p.hidden; });
+        return { cv: cv, projects: projects };
+      });
+    }).then(function (data) {
+      render(data.cv, data.projects);
     }).catch(fail);
   }
 
