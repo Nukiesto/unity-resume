@@ -1,0 +1,191 @@
+{
+  "updated": "сентябрь 2026",
+  "position": "Системный администратор",
+  "positionVariants": ["Системный администратор / DevOps", "Инженер инфраструктуры"],
+  "salary": "по договорённости",
+  "personal": {
+    "name": "Алексей Батанов",
+    "city": "Иркутск",
+    "workFormat": "Удалённая работа · гибрид · офис",
+    "email": "nukiesto@gmail.com",
+    "phone": "+7 924 290-25-62",
+    "phoneHref": "+79242902562",
+    "telegram": "@Nukiesto",
+    "telegramHref": "https://t.me/Nukiesto",
+    "github": "Nukiesto",
+    "githubHref": "https://github.com/Nukiesto",
+    "vk": "vk.ru/alex_batanov",
+    "vkHref": "https://vk.ru/alex_batanov",
+    "site": "nukiesto.github.io/unity-resume",
+    "siteHref": "https://nukiesto.github.io/unity-resume/"
+  },
+  "summary": "Системный администратор с практическим опытом развёртывания и сопровождения серверной инфраструктуры. Настраиваю Linux-серверы, веб-серверы и обратные прокси, DNS, каталоги пользователей и СУБД, обеспечиваю мониторинг, резервное копирование и безопасность. Разворачиваю сервисы в Docker, автоматизирую рутину скриптами и выстраиваю CI/CD. Совмещаю администрирование с разработкой на C# и Python, поэтому быстро разбираюсь в прикладных сервисах и пишу для них инструменты.",
+  "work": [
+    {
+      "company": "Инфраструктура и сопровождение серверов",
+      "location": "Удалённо",
+      "position": "Системный администратор",
+      "period": "2024 — настоящее время",
+      "type": "Личные и заказные проекты",
+      "stack": ["Linux", "Ubuntu Server", "Nginx", "systemd", "Docker", "MySQL", "BIND9", "OpenLDAP", "Zabbix"],
+      "bullets": [
+        "Развернул и сопровождаю production-бэкенд VK Mini Apps на Ubuntu Server: nginx, systemd-сервис, HTTPS через Let's Encrypt, автодеплой",
+        "Настроил локальный DNS (BIND9), централизованную аутентификацию OpenLDAP и сетевые политики",
+        "Поднял стек сервисов в Docker (Portainer, File Browser, Home Assistant, Navidrome, Gitea) за обратным прокси Caddy",
+        "Организовал мониторинг на Zabbix, логирование в journald и резервное копирование",
+        "Автоматизировал рутинные операции скриптами на Bash, PowerShell и Python"
+      ]
+    },
+    {
+      "company": "ИрГУПС · серверные сервисы",
+      "location": "Иркутск",
+      "position": "Системный администратор (учебный проект)",
+      "period": "2026",
+      "type": "Курсовой проект",
+      "stack": ["Ubuntu Server", "Gitea", "MySQL", "Nginx", "BIND9", "OpenLDAP", "Docker", "systemd"],
+      "bullets": [
+        "Развернул Git-сервер Gitea на Ubuntu Server с управлением репозиториями, пользователями и правами доступа",
+        "Настроил MySQL: создание БД и служебных учётных записей, выдача привилегий",
+        "Поднял Nginx как обратный прокси и BIND9 с прямой и обратной зонами DNS",
+        "Настроил OpenLDAP для централизованной аутентификации с импортом пользователей через LDIF",
+        "Обеспечил безопасность: SSH, UFW, GPG-подписывание коммитов, сканирование утечек секретов, аудит операций",
+        "Развернул сервисы на Oracle VirtualBox и настроил systemd-юниты для автозапуска"
+      ]
+    },
+    {
+      "company": "Проектирование и администрирование баз данных",
+      "location": "Иркутск",
+      "position": "Администратор баз данных (учебные проекты)",
+      "period": "2024 — 2025",
+      "type": "ИрГУПС · курсовые проекты",
+      "stack": ["MS SQL Server", "T-SQL", "MySQL", "SQLite", "MS Access"],
+      "bullets": [
+        "Проектировал реляционные базы данных полного цикла: от ER-модели до реализации в СУБД",
+        "Писал аналитические запросы на T-SQL: JOIN, GROUP BY / HAVING, подзапросы, EXISTS, PIVOT",
+        "Управлял учётными записями и привилегиями пользователей СУБД",
+        "Работал с MySQL Workbench (forward engineering, экспорт/импорт) и MS Access (таблицы, формы, отчёты)"
+      ]
+    },
+    {
+      "company": "Разработка и автоматизация сервисов",
+      "location": "Удалённо",
+      "position": "Разработчик / администратор сервисов",
+      "period": "2021 — настоящее время",
+      "type": "Фриланс",
+      "stack": ["Python", "C#", ".NET", "systemd", "GitHub Actions", "SQLite"],
+      "bullets": [
+        "Разработал и сопровождаю телеграм-боты и бэкенд-сервисы с развёртыванием через systemd",
+        "Настроил автодеплой сервисов через GitHub Actions и отдельные deploy-ключи",
+        "Написал утилиты для удалённого администрирования ПК: Wake-on-LAN и запуск по SSH"
+      ]
+    }
+  ],
+  "skillGroups": [
+    {
+      "title": "Операционные системы",
+      "level": "Основное",
+      "items": ["Linux / Ubuntu Server", "Windows", "Debian", "Bash", "PowerShell"]
+    },
+    {
+      "title": "Серверные сервисы",
+      "level": "Основное",
+      "items": ["Nginx", "Caddy", "Kestrel", "Gitea", "systemd", "SSH"]
+    },
+    {
+      "title": "Сети и идентификация",
+      "level": "Основное",
+      "items": ["DNS / BIND9", "OpenLDAP", "TCP/IP", "UFW / firewall", "TLS / HTTPS", "Let's Encrypt / certbot"]
+    },
+    {
+      "title": "Виртуализация и контейнеры",
+      "level": "Уверенно",
+      "items": ["Docker", "Docker Compose", "Portainer", "Oracle VirtualBox"]
+    },
+    {
+      "title": "Базы данных",
+      "level": "Уверенно",
+      "items": ["MS SQL Server / T-SQL", "MySQL", "SQLite", "MS Access", "MySQL Workbench", "ER-моделирование"]
+    },
+    {
+      "title": "Мониторинг и надёжность",
+      "level": "Уверенно",
+      "items": ["Zabbix", "journald", "логирование nginx", "резервное копирование", "health-check"]
+    },
+    {
+      "title": "Автоматизация и CI/CD",
+      "level": "Уверенно",
+      "items": ["Bash", "PowerShell", "Python", "Git", "GitHub Actions", "Gitea Actions"]
+    },
+    {
+      "title": "Также знаком",
+      "level": "Знаком",
+      "items": ["C# / .NET", "Unity", "Flutter / Dart", "ERwin / BPwin", "MS Visio"]
+    }
+  ],
+  "projectIds": ["server", "vk-server", "miniserver", "opencode-telegram-bridge", "execution"],
+  "projects": [
+    {
+      "id": "server",
+      "title": "Homelab / 24nukiesto.ru",
+      "subtitle": "Инфраструктурный монорепозиторий домашней лаборатории",
+      "year": "2026",
+      "tags": ["Docker Compose", "Caddy", "Gitea Actions", "Python", "RCON", "Home Assistant"]
+    },
+    {
+      "id": "vk-server",
+      "title": "VK Payments Server",
+      "subtitle": "Бэкенд монетизации VK Mini Apps в production",
+      "year": "2026",
+      "tags": ["C# / .NET 8", "Kestrel", "SQLite", "systemd", "nginx", "certbot", "GitHub Actions"]
+    },
+    {
+      "id": "miniserver",
+      "title": "MiniServer Bot",
+      "subtitle": "Telegram-бот расписания с отслеживанием изменений",
+      "year": "2026",
+      "tags": ["Python", "asyncio", "SQLite", "systemd", "CI/CD"]
+    },
+    {
+      "id": "opencode-telegram-bridge",
+      "title": "OpenCode Telegram Bridge",
+      "subtitle": "Телеграм-мост к локальному OpenCode",
+      "year": "2026",
+      "tags": ["Python", "Telegram Bot API", "Long Polling", "OpenCode API"]
+    },
+    {
+      "id": "execution",
+      "title": "Execution Toolkit",
+      "subtitle": "Удалённое управление ПК и браузерная voxel-игра",
+      "year": "2026",
+      "tags": ["Python", "Tkinter", "SSH", "Wake-on-LAN", "Three.js"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "ИрГУПС",
+      "full": "Иркутский государственный университет путей сообщения",
+      "program": "Информационные системы и технологии",
+      "code": "09.03.02",
+      "degree": "Бакалавриат",
+      "period": "2022 — 2026"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "ICPC Northern Eurasia Finals 2024",
+      "detail": "Honorable Mention · 13–15 декабря 2024"
+    },
+    {
+      "title": "ICPC East Siberian Regional Contest 2024",
+      "detail": "15-е место · 16–17 ноября 2024"
+    },
+    {
+      "title": "Свидетельство о государственной регистрации программы для ЭВМ",
+      "detail": "VR-квест «Демоны молодости» · № 2025660854"
+    }
+  ],
+  "languages": [
+    { "name": "Русский", "level": "Родной" },
+    { "name": "Английский", "level": "B1/B2 · чтение технической документации" }
+  ]
+}

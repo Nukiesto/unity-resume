@@ -1,0 +1,191 @@
+{
+  "updated": "September 2026",
+  "position": "System Administrator",
+  "positionVariants": ["System Administrator / DevOps", "Infrastructure Engineer"],
+  "salary": "negotiable",
+  "personal": {
+    "name": "Alexey Batanov",
+    "city": "Irkutsk",
+    "workFormat": "Remote · hybrid · on-site",
+    "email": "nukiesto@gmail.com",
+    "phone": "+7 924 290-25-62",
+    "phoneHref": "+79242902562",
+    "telegram": "@Nukiesto",
+    "telegramHref": "https://t.me/Nukiesto",
+    "github": "Nukiesto",
+    "githubHref": "https://github.com/Nukiesto",
+    "vk": "vk.ru/alex_batanov",
+    "vkHref": "https://vk.ru/alex_batanov",
+    "site": "nukiesto.github.io/unity-resume",
+    "siteHref": "https://nukiesto.github.io/unity-resume/"
+  },
+  "summary": "System administrator with hands-on experience deploying and maintaining server infrastructure. I configure Linux servers, web servers and reverse proxies, DNS, directory services and databases, and ensure monitoring, backups and security. I run services in Docker, automate routine tasks with scripts, and build CI/CD. I combine administration with development in C# and Python, so I quickly understand application services and write tooling for them.",
+  "work": [
+    {
+      "company": "Server infrastructure and operations",
+      "location": "Remote",
+      "position": "System Administrator",
+      "period": "2024 — present",
+      "type": "Personal and contract projects",
+      "stack": ["Linux", "Ubuntu Server", "Nginx", "systemd", "Docker", "MySQL", "BIND9", "OpenLDAP", "Zabbix"],
+      "bullets": [
+        "Deployed and maintain a production VK Mini Apps backend on Ubuntu Server: nginx, systemd service, HTTPS via Let's Encrypt, auto-deploy",
+        "Configured local DNS (BIND9), centralized OpenLDAP authentication and network policies",
+        "Set up a Docker service stack (Portainer, File Browser, Home Assistant, Navidrome, Gitea) behind a Caddy reverse proxy",
+        "Organized Zabbix monitoring, journald logging and backups",
+        "Automated routine operations with Bash, PowerShell and Python scripts"
+      ]
+    },
+    {
+      "company": "IrGUPS · server services",
+      "location": "Irkutsk",
+      "position": "System Administrator (academic project)",
+      "period": "2026",
+      "type": "Course project",
+      "stack": ["Ubuntu Server", "Gitea", "MySQL", "Nginx", "BIND9", "OpenLDAP", "Docker", "systemd"],
+      "bullets": [
+        "Deployed a Gitea Git server on Ubuntu Server with repository, user and access-right management",
+        "Configured MySQL: database and service accounts, privilege grants",
+        "Set up Nginx as a reverse proxy and BIND9 with forward and reverse DNS zones",
+        "Configured OpenLDAP for centralized authentication with user import via LDIF",
+        "Ensured security: SSH, UFW, GPG commit signing, secret-leak scanning, operation audit",
+        "Deployed services on Oracle VirtualBox and configured systemd units for autostart"
+      ]
+    },
+    {
+      "company": "Database design and administration",
+      "location": "Irkutsk",
+      "position": "Database Administrator (academic projects)",
+      "period": "2024 — 2025",
+      "type": "IrGUPS · course projects",
+      "stack": ["MS SQL Server", "T-SQL", "MySQL", "SQLite", "MS Access"],
+      "bullets": [
+        "Designed relational databases end to end: from an ER model to implementation in a DBMS",
+        "Wrote analytical T-SQL queries: JOIN, GROUP BY / HAVING, subqueries, EXISTS, PIVOT",
+        "Managed DBMS user accounts and privileges",
+        "Worked with MySQL Workbench (forward engineering, export/import) and MS Access (tables, forms, reports)"
+      ]
+    },
+    {
+      "company": "Service development and automation",
+      "location": "Remote",
+      "position": "Developer / service administrator",
+      "period": "2021 — present",
+      "type": "Freelance",
+      "stack": ["Python", "C#", ".NET", "systemd", "GitHub Actions", "SQLite"],
+      "bullets": [
+        "Develop and maintain Telegram bots and backend services deployed via systemd",
+        "Set up automated service deployment through GitHub Actions and dedicated deploy keys",
+        "Built remote PC administration utilities: Wake-on-LAN and SSH launch"
+      ]
+    }
+  ],
+  "skillGroups": [
+    {
+      "title": "Operating systems",
+      "level": "Core",
+      "items": ["Linux / Ubuntu Server", "Windows", "Debian", "Bash", "PowerShell"]
+    },
+    {
+      "title": "Server services",
+      "level": "Core",
+      "items": ["Nginx", "Caddy", "Kestrel", "Gitea", "systemd", "SSH"]
+    },
+    {
+      "title": "Networking and identity",
+      "level": "Core",
+      "items": ["DNS / BIND9", "OpenLDAP", "TCP/IP", "UFW / firewall", "TLS / HTTPS", "Let's Encrypt / certbot"]
+    },
+    {
+      "title": "Virtualization and containers",
+      "level": "Confident",
+      "items": ["Docker", "Docker Compose", "Portainer", "Oracle VirtualBox"]
+    },
+    {
+      "title": "Databases",
+      "level": "Confident",
+      "items": ["MS SQL Server / T-SQL", "MySQL", "SQLite", "MS Access", "MySQL Workbench", "ER modeling"]
+    },
+    {
+      "title": "Monitoring and reliability",
+      "level": "Confident",
+      "items": ["Zabbix", "journald", "nginx logs", "backups", "health checks"]
+    },
+    {
+      "title": "Automation and CI/CD",
+      "level": "Confident",
+      "items": ["Bash", "PowerShell", "Python", "Git", "GitHub Actions", "Gitea Actions"]
+    },
+    {
+      "title": "Also familiar",
+      "level": "Familiar",
+      "items": ["C# / .NET", "Unity", "Flutter / Dart", "ERwin / BPwin", "MS Visio"]
+    }
+  ],
+  "projectIds": ["server", "vk-server", "miniserver", "opencode-telegram-bridge", "execution"],
+  "projects": [
+    {
+      "id": "server",
+      "title": "Homelab / 24nukiesto.ru",
+      "subtitle": "Infrastructure monorepo for a home lab",
+      "year": "2026",
+      "tags": ["Docker Compose", "Caddy", "Gitea Actions", "Python", "RCON", "Home Assistant"]
+    },
+    {
+      "id": "vk-server",
+      "title": "VK Payments Server",
+      "subtitle": "VK Mini Apps monetization backend in production",
+      "year": "2026",
+      "tags": ["C# / .NET 8", "Kestrel", "SQLite", "systemd", "nginx", "certbot", "GitHub Actions"]
+    },
+    {
+      "id": "miniserver",
+      "title": "MiniServer Bot",
+      "subtitle": "Telegram schedule bot with change tracking",
+      "year": "2026",
+      "tags": ["Python", "asyncio", "SQLite", "systemd", "CI/CD"]
+    },
+    {
+      "id": "opencode-telegram-bridge",
+      "title": "OpenCode Telegram Bridge",
+      "subtitle": "Telegram bridge to a local OpenCode instance",
+      "year": "2026",
+      "tags": ["Python", "Telegram Bot API", "Long Polling", "OpenCode API"]
+    },
+    {
+      "id": "execution",
+      "title": "Execution Toolkit",
+      "subtitle": "Remote PC control and a browser voxel game",
+      "year": "2026",
+      "tags": ["Python", "Tkinter", "SSH", "Wake-on-LAN", "Three.js"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "IrGUPS",
+      "full": "Irkutsk State Transport University",
+      "program": "Information Systems and Technologies",
+      "code": "09.03.02",
+      "degree": "Bachelor's degree",
+      "period": "2022 — 2026"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "ICPC Northern Eurasia Finals 2024",
+      "detail": "Honorable Mention · December 13–15, 2024"
+    },
+    {
+      "title": "ICPC East Siberian Regional Contest 2024",
+      "detail": "15th place · November 16–17, 2024"
+    },
+    {
+      "title": "State registration certificate for a computer program",
+      "detail": "VR quest 'Demons of Youth' · No. 2025660854"
+    }
+  ],
+  "languages": [
+    { "name": "Russian", "level": "Native" },
+    { "name": "English", "level": "B1/B2 · technical documentation reading" }
+  ]
+}

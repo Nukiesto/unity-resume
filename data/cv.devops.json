@@ -1,0 +1,203 @@
+{
+  "updated": "сентябрь 2026",
+  "position": "DevOps Engineer",
+  "positionVariants": ["DevOps / CI/CD Engineer", "Инженер инфраструктуры"],
+  "salary": "по договорённости",
+  "personal": {
+    "name": "Алексей Батанов",
+    "city": "Иркутск",
+    "workFormat": "Удалённая работа · гибрид",
+    "email": "nukiesto@gmail.com",
+    "phone": "+7 924 290-25-62",
+    "phoneHref": "+79242902562",
+    "telegram": "@Nukiesto",
+    "telegramHref": "https://t.me/Nukiesto",
+    "github": "Nukiesto",
+    "githubHref": "https://github.com/Nukiesto",
+    "vk": "vk.ru/alex_batanov",
+    "vkHref": "https://vk.ru/alex_batanov",
+    "site": "nukiesto.github.io/unity-resume",
+    "siteHref": "https://nukiesto.github.io/unity-resume/"
+  },
+  "summary": "DevOps-инженер с опытом построения CI/CD, контейнеризации и автоматизации развёртывания. Настраиваю пайплайны сборки, тестов и деплоя на GitHub Actions и Gitea Actions, упаковываю сервисы в Docker, разворачиваю приложения за nginx с systemd и автоматическим HTTPS. Администрирую Linux-серверы, организую DNS, каталоги пользователей, мониторинг и резервное копирование. Пришёл из разработки (C#/.NET, Unity), поэтому вижу полный цикл — от кода и тестов до релиза и эксплуатации.",
+  "work": [
+    {
+      "company": "CI/CD и автоматизация сборок",
+      "location": "Удалённо",
+      "position": "DevOps / CI-инженер",
+      "period": "2023 — настоящее время",
+      "type": "Личные и заказные проекты",
+      "stack": ["GitHub Actions", "Gitea Actions", "Docker", "Bash", "Unity", "NUnit"],
+      "bullets": [
+        "Настроил CI для Unity-проекта SurvMine на GitHub Actions: сборка, ~40 юнит-тестов и отчёт о производительности",
+        "Автоматизировал сборку WebGL-шаблонов и формирование отчётов о сборках в SDK монетизации",
+        "Выстроил автодеплой бэкенда через GitHub Actions по SSH с отдельным deploy-ключом",
+        "Описал пайплайны сборки и тестов (NUnit, pytest) для нескольких проектов"
+      ]
+    },
+    {
+      "company": "Production-бэкенд VK Mini Apps: развёртывание и эксплуатация",
+      "location": "Удалённо",
+      "position": "DevOps / Backend Engineer",
+      "period": "2026",
+      "type": "Production-сервис",
+      "stack": ["Ubuntu Server", "systemd", "nginx", "Kestrel", "SQLite", "certbot", "GitHub Actions"],
+      "bullets": [
+        "Развернул сервис по схеме nginx → systemd → Kestrel (127.0.0.1:8000) → SQLite",
+        "Настроил systemd-юнит с Restart=always, запуском от непривилегированного пользователя и логами в journald",
+        "Настроил HTTPS через certbot и Let's Encrypt, отдельные access/error-логи nginx",
+        "Написал bootstrap-скрипт сервера: пакеты, каталоги, env-файл, доступ к API",
+        "Организовал автодеплой через GitHub Actions и хранение в SQLite в режиме WAL"
+      ]
+    },
+    {
+      "company": "Git-сервер и CI/CD на Gitea",
+      "location": "Иркутск",
+      "position": "DevOps-инженер (учебный проект)",
+      "period": "2026",
+      "type": "ИрГУПС · курсовой проект",
+      "stack": ["Gitea", "Gitea Actions", "act_runner", "Docker", "MySQL", "Nginx", "BIND9", "OpenLDAP"],
+      "bullets": [
+        "Развернул Gitea на Ubuntu Server с управлением репозиториями, пользователями и правами",
+        "Настроил CI/CD на Gitea Actions: act_runner, Docker, автоматическая сборка, тесты и деплой",
+        "Обеспечил безопасность: обязательное GPG-подписывание коммитов, сканирование утечек секретов, аудит",
+        "Поднял Nginx как обратный прокси, BIND9 (прямая/обратная зоны) и OpenLDAP для аутентификации",
+        "Снимал метрики разработки (DORA) и разворачивал сервисы на Oracle VirtualBox"
+      ]
+    },
+    {
+      "company": "Контейнеризация и homelab-инфраструктура",
+      "location": "Удалённо",
+      "position": "Инженер инфраструктуры",
+      "period": "2026",
+      "type": "Личный проект",
+      "stack": ["Docker Compose", "Caddy", "Gitea Actions", "Portainer", "Python"],
+      "bullets": [
+        "Описал стек сервисов в Docker Compose: Portainer, File Browser, Home Assistant, Navidrome, Gitea",
+        "Настроил обратный прокси Caddy как единый источник маршрутизации",
+        "Организовал локальный DNS и CI/CD на Gitea Actions",
+        "Сопровождаю панель управления Minecraft-сервером с RCON-консолью"
+      ]
+    }
+  ],
+  "skillGroups": [
+    {
+      "title": "CI/CD",
+      "level": "Основное",
+      "items": ["GitHub Actions", "Gitea Actions", "act_runner", "автодеплой по SSH", "deploy-ключи", "DORA-метрики"]
+    },
+    {
+      "title": "Контейнеры",
+      "level": "Уверенно",
+      "items": ["Docker", "Docker Compose", "Portainer", "образы и тома"]
+    },
+    {
+      "title": "Операционные системы",
+      "level": "Основное",
+      "items": ["Linux / Ubuntu Server", "systemd", "Bash", "PowerShell", "Windows"]
+    },
+    {
+      "title": "Веб-серверы и прокси",
+      "level": "Основное",
+      "items": ["Nginx", "Caddy", "Kestrel", "HTTPS / TLS", "Let's Encrypt / certbot"]
+    },
+    {
+      "title": "Сети и идентификация",
+      "level": "Уверенно",
+      "items": ["DNS / BIND9", "OpenLDAP", "SSH", "UFW / firewall"]
+    },
+    {
+      "title": "Данные",
+      "level": "Уверенно",
+      "items": ["SQLite (WAL)", "MySQL", "MS SQL Server / T-SQL", "Dapper", "резервное копирование"]
+    },
+    {
+      "title": "Мониторинг и надёжность",
+      "level": "Уверенно",
+      "items": ["Zabbix", "journald", "логирование", "health-check", "Restart=always"]
+    },
+    {
+      "title": "Разработка и тесты",
+      "level": "Уверенно",
+      "items": ["C# / .NET", "Python", "NUnit", "pytest", "Git"]
+    },
+    {
+      "title": "Также знаком",
+      "level": "Знаком",
+      "items": ["Unity", "Flutter / Dart", "JavaScript", "Oracle VirtualBox"]
+    }
+  ],
+  "projectIds": ["vk-server", "server", "miniserver", "survmine", "sdk", "opencode-telegram-bridge"],
+  "projects": [
+    {
+      "id": "vk-server",
+      "title": "VK Payments Server",
+      "subtitle": "Бэкенд монетизации VK Mini Apps в production",
+      "year": "2026",
+      "tags": ["C# / .NET 8", "Kestrel", "SQLite", "systemd", "nginx", "certbot", "GitHub Actions"]
+    },
+    {
+      "id": "server",
+      "title": "Homelab / 24nukiesto.ru",
+      "subtitle": "Инфраструктурный монорепозиторий домашней лаборатории",
+      "year": "2026",
+      "tags": ["Docker Compose", "Caddy", "Gitea Actions", "Python", "RCON", "Home Assistant"]
+    },
+    {
+      "id": "miniserver",
+      "title": "MiniServer Bot",
+      "subtitle": "Telegram-бот расписания с отслеживанием изменений",
+      "year": "2026",
+      "tags": ["Python", "asyncio", "SQLite", "systemd", "CI/CD"]
+    },
+    {
+      "id": "survmine",
+      "title": "SurvMine",
+      "subtitle": "2D-песочница на выживание с платформой моддинга",
+      "year": "2025–2026",
+      "tags": ["GitHub Actions", "CI", "UPM", "Netcode", "Addressables"]
+    },
+    {
+      "id": "sdk",
+      "title": "Monetization SDK",
+      "subtitle": "MultiplatformSDK Kit: VK Pay, RuStore Pay, реклама и сервисы",
+      "year": "2026",
+      "tags": ["WebGL", "Android", "CI/CD", "Unity IAP"]
+    },
+    {
+      "id": "opencode-telegram-bridge",
+      "title": "OpenCode Telegram Bridge",
+      "subtitle": "Телеграм-мост к локальному OpenCode",
+      "year": "2026",
+      "tags": ["Python", "Telegram Bot API", "Long Polling", "OpenCode API"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "ИрГУПС",
+      "full": "Иркутский государственный университет путей сообщения",
+      "program": "Информационные системы и технологии",
+      "code": "09.03.02",
+      "degree": "Бакалавриат",
+      "period": "2022 — 2026"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "ICPC Northern Eurasia Finals 2024",
+      "detail": "Honorable Mention · 13–15 декабря 2024"
+    },
+    {
+      "title": "ICPC East Siberian Regional Contest 2024",
+      "detail": "15-е место · 16–17 ноября 2024"
+    },
+    {
+      "title": "Свидетельство о государственной регистрации программы для ЭВМ",
+      "detail": "VR-квест «Демоны молодости» · № 2025660854"
+    }
+  ],
+  "languages": [
+    { "name": "Русский", "level": "Родной" },
+    { "name": "Английский", "level": "B1/B2 · чтение технической документации" }
+  ]
+}

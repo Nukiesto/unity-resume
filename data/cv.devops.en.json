@@ -1,0 +1,203 @@
+{
+  "updated": "September 2026",
+  "position": "DevOps Engineer",
+  "positionVariants": ["DevOps / CI/CD Engineer", "Infrastructure Engineer"],
+  "salary": "negotiable",
+  "personal": {
+    "name": "Alexey Batanov",
+    "city": "Irkutsk",
+    "workFormat": "Remote · hybrid",
+    "email": "nukiesto@gmail.com",
+    "phone": "+7 924 290-25-62",
+    "phoneHref": "+79242902562",
+    "telegram": "@Nukiesto",
+    "telegramHref": "https://t.me/Nukiesto",
+    "github": "Nukiesto",
+    "githubHref": "https://github.com/Nukiesto",
+    "vk": "vk.ru/alex_batanov",
+    "vkHref": "https://vk.ru/alex_batanov",
+    "site": "nukiesto.github.io/unity-resume",
+    "siteHref": "https://nukiesto.github.io/unity-resume/"
+  },
+  "summary": "DevOps engineer with experience building CI/CD, containerization and deployment automation. I set up build, test and deploy pipelines on GitHub Actions and Gitea Actions, package services with Docker, and deploy applications behind nginx with systemd and automated HTTPS. I administer Linux servers and set up DNS, directory services, monitoring and backups. Coming from development (C#/.NET, Unity), I see the full cycle — from code and tests to release and operations.",
+  "work": [
+    {
+      "company": "CI/CD and build automation",
+      "location": "Remote",
+      "position": "DevOps / CI Engineer",
+      "period": "2023 — present",
+      "type": "Personal and contract projects",
+      "stack": ["GitHub Actions", "Gitea Actions", "Docker", "Bash", "Unity", "NUnit"],
+      "bullets": [
+        "Set up CI for the Unity project SurvMine on GitHub Actions: build, ~40 unit tests and a performance report",
+        "Automated WebGL template builds and build-report generation in the monetization SDK",
+        "Built backend auto-deploy through GitHub Actions over SSH with a dedicated deploy key",
+        "Defined build and test pipelines (NUnit, pytest) for several projects"
+      ]
+    },
+    {
+      "company": "VK Mini Apps production backend: deployment and operations",
+      "location": "Remote",
+      "position": "DevOps / Backend Engineer",
+      "period": "2026",
+      "type": "Production service",
+      "stack": ["Ubuntu Server", "systemd", "nginx", "Kestrel", "SQLite", "certbot", "GitHub Actions"],
+      "bullets": [
+        "Deployed the service as nginx → systemd → Kestrel (127.0.0.1:8000) → SQLite",
+        "Configured a systemd unit with Restart=always, running as an unprivileged user and logging to journald",
+        "Set up HTTPS via certbot and Let's Encrypt, with separate nginx access/error logs",
+        "Wrote the server bootstrap script: packages, directories, env file, API access",
+        "Set up auto-deploy via GitHub Actions and SQLite storage in WAL mode"
+      ]
+    },
+    {
+      "company": "Git server and CI/CD on Gitea",
+      "location": "Irkutsk",
+      "position": "DevOps Engineer (academic project)",
+      "period": "2026",
+      "type": "IrGUPS · course project",
+      "stack": ["Gitea", "Gitea Actions", "act_runner", "Docker", "MySQL", "Nginx", "BIND9", "OpenLDAP"],
+      "bullets": [
+        "Deployed Gitea on Ubuntu Server with repository, user and access-right management",
+        "Set up CI/CD on Gitea Actions: act_runner, Docker, automated build, tests and deploy",
+        "Ensured security: mandatory GPG commit signing, secret-leak scanning, audit",
+        "Set up Nginx as a reverse proxy, BIND9 (forward/reverse zones) and OpenLDAP for authentication",
+        "Collected development metrics (DORA) and deployed services on Oracle VirtualBox"
+      ]
+    },
+    {
+      "company": "Containerization and homelab infrastructure",
+      "location": "Remote",
+      "position": "Infrastructure Engineer",
+      "period": "2026",
+      "type": "Personal project",
+      "stack": ["Docker Compose", "Caddy", "Gitea Actions", "Portainer", "Python"],
+      "bullets": [
+        "Defined a Docker Compose service stack: Portainer, File Browser, Home Assistant, Navidrome, Gitea",
+        "Set up Caddy as a single source of routing (reverse proxy)",
+        "Set up local DNS and CI/CD on Gitea Actions",
+        "Maintain a Minecraft server control panel with an RCON console"
+      ]
+    }
+  ],
+  "skillGroups": [
+    {
+      "title": "CI/CD",
+      "level": "Core",
+      "items": ["GitHub Actions", "Gitea Actions", "act_runner", "SSH auto-deploy", "deploy keys", "DORA metrics"]
+    },
+    {
+      "title": "Containers",
+      "level": "Confident",
+      "items": ["Docker", "Docker Compose", "Portainer", "images and volumes"]
+    },
+    {
+      "title": "Operating systems",
+      "level": "Core",
+      "items": ["Linux / Ubuntu Server", "systemd", "Bash", "PowerShell", "Windows"]
+    },
+    {
+      "title": "Web servers and proxies",
+      "level": "Core",
+      "items": ["Nginx", "Caddy", "Kestrel", "HTTPS / TLS", "Let's Encrypt / certbot"]
+    },
+    {
+      "title": "Networking and identity",
+      "level": "Confident",
+      "items": ["DNS / BIND9", "OpenLDAP", "SSH", "UFW / firewall"]
+    },
+    {
+      "title": "Data",
+      "level": "Confident",
+      "items": ["SQLite (WAL)", "MySQL", "MS SQL Server / T-SQL", "Dapper", "backups"]
+    },
+    {
+      "title": "Monitoring and reliability",
+      "level": "Confident",
+      "items": ["Zabbix", "journald", "logging", "health checks", "Restart=always"]
+    },
+    {
+      "title": "Development and testing",
+      "level": "Confident",
+      "items": ["C# / .NET", "Python", "NUnit", "pytest", "Git"]
+    },
+    {
+      "title": "Also familiar",
+      "level": "Familiar",
+      "items": ["Unity", "Flutter / Dart", "JavaScript", "Oracle VirtualBox"]
+    }
+  ],
+  "projectIds": ["vk-server", "server", "miniserver", "survmine", "sdk", "opencode-telegram-bridge"],
+  "projects": [
+    {
+      "id": "vk-server",
+      "title": "VK Payments Server",
+      "subtitle": "VK Mini Apps monetization backend in production",
+      "year": "2026",
+      "tags": ["C# / .NET 8", "Kestrel", "SQLite", "systemd", "nginx", "certbot", "GitHub Actions"]
+    },
+    {
+      "id": "server",
+      "title": "Homelab / 24nukiesto.ru",
+      "subtitle": "Infrastructure monorepo for a home lab",
+      "year": "2026",
+      "tags": ["Docker Compose", "Caddy", "Gitea Actions", "Python", "RCON", "Home Assistant"]
+    },
+    {
+      "id": "miniserver",
+      "title": "MiniServer Bot",
+      "subtitle": "Telegram schedule bot with change tracking",
+      "year": "2026",
+      "tags": ["Python", "asyncio", "SQLite", "systemd", "CI/CD"]
+    },
+    {
+      "id": "survmine",
+      "title": "SurvMine",
+      "subtitle": "2D survival sandbox with a modding platform",
+      "year": "2025–2026",
+      "tags": ["GitHub Actions", "CI", "UPM", "Netcode", "Addressables"]
+    },
+    {
+      "id": "sdk",
+      "title": "Monetization SDK",
+      "subtitle": "MultiplatformSDK Kit: VK Pay, RuStore Pay, ads and services",
+      "year": "2026",
+      "tags": ["WebGL", "Android", "CI/CD", "Unity IAP"]
+    },
+    {
+      "id": "opencode-telegram-bridge",
+      "title": "OpenCode Telegram Bridge",
+      "subtitle": "Telegram bridge to a local OpenCode instance",
+      "year": "2026",
+      "tags": ["Python", "Telegram Bot API", "Long Polling", "OpenCode API"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "IrGUPS",
+      "full": "Irkutsk State Transport University",
+      "program": "Information Systems and Technologies",
+      "code": "09.03.02",
+      "degree": "Bachelor's degree",
+      "period": "2022 — 2026"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "ICPC Northern Eurasia Finals 2024",
+      "detail": "Honorable Mention · December 13–15, 2024"
+    },
+    {
+      "title": "ICPC East Siberian Regional Contest 2024",
+      "detail": "15th place · November 16–17, 2024"
+    },
+    {
+      "title": "State registration certificate for a computer program",
+      "detail": "VR quest 'Demons of Youth' · No. 2025660854"
+    }
+  ],
+  "languages": [
+    { "name": "Russian", "level": "Native" },
+    { "name": "English", "level": "B1/B2 · technical documentation reading" }
+  ]
+}
